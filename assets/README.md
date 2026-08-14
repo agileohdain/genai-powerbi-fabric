@@ -16,7 +16,7 @@ assets/
 │   └── brut/               # Sources CSV « telles que sorties de l'ERP » (avec défauts volontaires)
 ├── vocabulaire-metier.md   # Jargon AltiSport : source des instructions IA (fiche 04)
 ├── theme-charte.json       # Thème Power BI AltiSport (v1 — enrichi au module 05)
-└── modeles/                # Guide d'assemblage + projets PBIP altisport-v1 / altisport-v2
+└── modeles/                # Guide des modèles + projets PBIP altisport-v1 / altisport-v2
 ```
 
 ## Dictionnaire des données
@@ -66,7 +66,7 @@ DateKey (AAAAMMJJ), Date, Annee, Trimestre, MoisNum, MoisLbl, JourNum, JourSemLb
 
 ## Défauts volontaires (pièges pédagogiques)
 
-> Les CSV restent volontairement bruts (fiction « sortie ERP »). Power BI Desktop corrige certains défauts à l'import (types des montants et dates, relations) ; les autres subsistent dans le modèle et font la matière des démos. Détail de l'état réel après import : [modeles/guide-assemblage.md](modeles/guide-assemblage.md).
+> Les CSV restent volontairement bruts (fiction « sortie ERP »). Power BI Desktop corrige certains défauts à l'import (types des montants et dates, relations) ; les autres subsistent dans le modèle et font la matière des démos. Détail des écarts v1 → v2 et de leur justification : [modeles/guide-modeles.md](modeles/guide-modeles.md).
 
 | # | Piège | Où | Après import Desktop | Mis en évidence par |
 |---|---|---|---|---|
@@ -81,34 +81,37 @@ DateKey (AAAAMMJJ), Date, Annee, Trimestre, MoisNum, MoisLbl, JourNum, JourSemLb
 | 9 | Saisonnalité double pic (hiver + été) | ventes | ⚠️ subsiste (donnée) | Fiche 04 — « Saison blanche » / « Saison verte » |
 | 10 | Cibles mensuelles vendeurs | vendeurs | ⚠️ subsiste (donnée) | Fiche 04 — définition « Champion » |
 
-## Assemblage des modèles
+## Les modèles
 
 - Prérequis outils : [setup/01-powerbi-desktop.md](../setup/01-powerbi-desktop.md)
-- Pas-à-pas opérationnel (v1 « mal préparé » et v2 « bien préparé ») : [modeles/guide-assemblage.md](modeles/guide-assemblage.md)
+- **v1 et v2 sont fournis finis** dans `modeles/` — écarts et justifications : [modeles/guide-modeles.md](modeles/guide-modeles.md)
 
-Les sections ci-dessous constituent la **spécification cible** de v2 (schéma, mesures, hiérarchies), référencée par le guide d'assemblage.
+Les sections ci-dessous constituent la **spécification cible** de v2 (schéma, mesures, hiérarchies) — telle qu'implémentée dans le modèle fourni.
 
 ### Schéma cible (star schema)
 
-| Table | Colonnes clés |
+| Table | Colonnes |
 |---|---|
-| **FactVentes** | VenteID, DateVente→DateKey, IdProduit, IdMagasin, IdVendeur, IdClient, Quantite, TauxRemise, MontantBrutTTC, MontantNetTTC, CoutLigne, Canal, StatutCommande |
-| **DimDate** (marquée comme table de dates) | DateKey, Date, Année, Trimestre, Mois, Jour, Semaine |
-| **DimProduit** | IdProduit, Produit, Catégorie, SousCatégorie, Marque, PrixUnitaireTTC, CoutAchat |
-| **DimMagasin** | IdMagasin, Magasin, Ville, Département, Secteur, SurfaceM2, DateOuverture |
-| **DimVendeur** | IdVendeur, Vendeur, IdMagasin, CibleMensuelle |
-| **DimClient** | IdClient, Client, TypeClient, Ville, Secteur, DatePremierAchat |
+| **FactVentes** | VenteID, DateVente, DateKey, IdProduit, IdMagasin, IdVendeur, IdClient (clés masquées), Canal, StatutCommande, Quantite, TauxRemise, MontantBrutTTC, MontantNetTTC, CoutLigne |
+| **DimDate** (marquée comme table de dates) | DateKey (masquée), Date, Annee, Trimestre, Mois, NumeroMois (tri de Mois, masquée), JourSemaine, NumeroJour / NumeroSemaine (masquées) |
+| **DimProduit** | IdProduit / CodeCategorie (masquées), Produit, Categorie, SousCategorie, Marque, PrixUnitaireTTC, CoutAchat |
+| **DimMagasin** | IdMagasin (masquée), Magasin, Ville, Departement, Secteur, SurfaceM2, DateOuverture |
+| **DimVendeur** | IdVendeur / IdMagasin (masquées), Vendeur, CibleMensuelle |
+| **DimClient** | IdClient (masquée), Client, TypeClient, Ville, Secteur, DatePremierAchat |
+| **Mesures** | table dédiée, sans colonnes |
 
 Relations 1→* de chaque dimension vers FactVentes (clés DateKey / IdProduit / IdMagasin / IdVendeur / IdClient).
 
-### Mesures à créer (avec descriptions < 200 caractères)
+### Mesures (table dédiée, descriptions < 200 caractères)
+
+> Valeurs de `StatutCommande` après normalisation : `Livree`, `Encours`, `Annulee` (sans accent) — le DAX doit filtrer sur `"Annulee"`.
 
 | Mesure | DAX | Description |
 |---|---|---|
-| Total Ventes | `CALCULATE(SUM(FactVentes[MontantNetTTC]), FactVentes[StatutCommande] <> "Annulée")` | CA net TTC, commandes annulées exclues. À utiliser pour toute question sur les ventes. |
-| Total Marge | `CALCULATE(SUMX(FactVentes, [MontantNetTTC] - [CoutLigne]), FactVentes[StatutCommande] <> "Annulée")` | Marge commerciale (CA net − coût). Ne pas confondre avec les ventes. |
+| Total Ventes | `CALCULATE(SUM(FactVentes[MontantNetTTC]), FactVentes[StatutCommande] <> "Annulee")` | CA net TTC, commandes annulées exclues. À utiliser pour toute question sur les ventes. |
+| Total Marge | `CALCULATE(SUMX(FactVentes, [MontantNetTTC] - [CoutLigne]), FactVentes[StatutCommande] <> "Annulee")` | Marge commerciale (CA net − coût). Ne pas confondre avec les ventes. |
 | Taux de Marge | `DIVIDE([Total Marge], [Total Ventes])` | Marge en % du CA net |
-| Quantité Vendue | `CALCULATE(SUM(FactVentes[Quantite]), FactVentes[StatutCommande] <> "Annulée")` | Unités vendues, annulations exclues |
+| Quantité Vendue | `CALCULATE(SUM(FactVentes[Quantite]), FactVentes[StatutCommande] <> "Annulee")` | Unités vendues, annulations exclues |
 | Panier Moyen | `DIVIDE([Total Ventes], DISTINCTCOUNT(FactVentes[IdClient]))` | CA net moyen par client actif |
 | Ventes YTD | `TOTALYTD([Total Ventes], DimDate[Date])` | Cumul annuel des ventes |
 | Ventes N-1 | `CALCULATE([Total Ventes], SAMEPERIODLASTYEAR(DimDate[Date]))` | Ventes de la même période l'an dernier |
@@ -117,13 +120,13 @@ Relations 1→* de chaque dimension vers FactVentes (clés DateKey / IdProduit /
 
 ### Hiérarchies
 
-- DimDate : Année > Trimestre > Mois
-- DimMagasin : Secteur > Ville
-- DimProduit : Catégorie > Sous-catégorie
+- DimDate : « Hiérarchie Dates » (Annee > Trimestre > Mois)
+- DimMagasin : « Hiérarchie Géographie » (Secteur > Ville)
+- DimProduit : « Hiérarchie Produits » (Categorie > SousCategorie)
 
-### Calculation group (via Tabular Editor)
+### Pour aller plus loin : calculation groups
 
-« Intelligence temporelle » : Current, YTD, PY, YOY, YOY % — documenter chaque item dans la description de la colonne du groupe (fiche 01).
+Non implémentés dans v2 (mesures YTD/N-1 explicites suffisantes pour les démos). Principe : un calculation group applique des variantes de calcul (YTD, N-1, YOY…) à toutes les mesures sans dupliquer le DAX ; comme ses items n'apparaissent pas dans les métadonnées, on les documente dans la description de la colonne du groupe (fiche 01). Voir [guide des modèles](modeles/guide-modeles.md).
 
 ## Mapping démos ↔ assets
 
@@ -143,7 +146,8 @@ Relations 1→* de chaque dimension vers FactVentes (clés DateKey / IdProduit /
 - Enregistrer les modèles au format **PBIP** (Power BI Project) dans `assets/modeles/`
 - Les fichiers `.pbi/localSettings.json` et caches sont ignorés via le `.gitignore` racine
 - Ne jamais commiter de `.pbix` binaire
-- Après assemblage : commiter le dossier du projet PBIP (TMDL lisible en diff)
+- Chemin des CSV piloté par le **paramètre Power Query `DossierData`** (voir [guide des modèles](modeles/guide-modeles.md)) — à adapter si le dépôt n'est pas dans `C:\dev`
+- Après modification : commiter le dossier du projet PBIP (TMDL lisible en diff)
 
 ## Régénération des données
 

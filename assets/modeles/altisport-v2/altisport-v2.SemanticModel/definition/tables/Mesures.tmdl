@@ -1,0 +1,58 @@
+table Mesures
+	lineageTag: 3f2a9c10-7b5e-4d31-9c8a-1e2f3a4b5c6d
+
+	/// CA net TTC, commandes annulées exclues. À utiliser pour toute question sur les ventes.
+	measure 'Total Ventes' = CALCULATE(SUM(FactVentes[MontantNetTTC]), FactVentes[StatutCommande] <> "Annulee")
+		formatString: #,0
+		lineageTag: 5d1c7a21-8e4f-5a42-b7d9-2a1b3c4d5e6f
+
+	/// Marge commerciale (CA net − coût d'achat). Ne pas confondre avec les ventes.
+	measure 'Total Marge' = CALCULATE(SUMX(FactVentes, [MontantNetTTC] - [CoutLigne]), FactVentes[StatutCommande] <> "Annulee")
+		formatString: #,0
+		lineageTag: 6e2d8b32-9f5a-6b53-c8e1-3b2c4d5e6f7a
+
+	/// Marge en % du CA net.
+	measure 'Taux de Marge' = DIVIDE([Total Marge], [Total Ventes])
+		formatString: 0.0%
+		lineageTag: 7f3e9c43-0a6b-7c64-d9f2-4c3d5e6f7a8b
+
+	/// Unités vendues, commandes annulées exclues.
+	measure 'Quantité Vendue' = CALCULATE(SUM(FactVentes[Quantite]), FactVentes[StatutCommande] <> "Annulee")
+		formatString: #,0
+		lineageTag: 8a4fad54-1b7c-8d75-e2a3-5d4e6f7a8b9c
+
+	/// CA net moyen par client actif.
+	measure 'Panier Moyen' = DIVIDE([Total Ventes], DISTINCTCOUNT(FactVentes[IdClient]))
+		formatString: #,0
+		lineageTag: 9b5abe65-2c8d-9e86-f3b4-6e5f7a8b9c0d
+
+	/// Cumul annuel des ventes depuis le 1er janvier.
+	measure 'Ventes YTD' = TOTALYTD([Total Ventes], DimDate[Date])
+		formatString: #,0
+		lineageTag: ac6bcf76-3d9e-af97-a4c5-7f6a8b9c0d1e
+
+	/// Ventes de la même période l'an dernier.
+	measure 'Ventes N-1' = CALCULATE([Total Ventes], SAMEPERIODLASTYEAR(DimDate[Date]))
+		formatString: #,0
+		lineageTag: bd7cda87-4eaf-ba89-b5d6-8a7b9c0d1e2f
+
+	/// Évolution des ventes vs même période N-1.
+	measure 'Croissance Ventes %' = DIVIDE([Total Ventes] - [Ventes N-1], [Ventes N-1])
+		formatString: 0.0%
+		lineageTag: ce8deb98-5fb0-cb9a-c6e7-9b8c0d1e2f3a
+
+	/// Ventes du vendeur vs sa cible mensuelle. « Champion » si ≥ 100 %.
+	measure 'Atteinte Cible' = DIVIDE([Total Ventes], SELECTEDVALUE(DimVendeur[CibleMensuelle]))
+		formatString: 0.0%
+		lineageTag: df9efca9-6ac1-dcab-d7f8-ac9d1e2f3a4b
+
+	partition Mesures = m
+		mode: import
+		source =
+				let
+				  Source = #table({}, {})
+				in
+				  Source
+
+	annotation PBI_ResultType = Table
+

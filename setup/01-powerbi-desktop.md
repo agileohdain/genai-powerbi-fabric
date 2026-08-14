@@ -1,6 +1,6 @@
 # Setup 01 — Power BI Desktop
 
-Configuration de Power BI Desktop pour la formation : format PBIP, *Prep data for AI*, et outils externes. À faire une fois par poste (~5 minutes).
+Configuration de Power BI Desktop pour la formation : format PBIP et *Prep data for AI*. À faire une fois par poste (~5 minutes).
 
 ## 1. Version et compte
 
@@ -17,17 +17,11 @@ Configuration de Power BI Desktop pour la formation : format PBIP, *Prep data fo
    - ☑ **Prep data for AI** (« Préparer les données pour l'IA »)
 4. `OK` — **redémarrer Power BI Desktop** si demandé (fréquent pour .pbip)
 
-> **Réglages par défaut conservés** : cette formation n'étant pas un cours de modélisation ni de Power Query, on laisse actives la détection automatique des types et des relations. Les défauts que Power BI Desktop corrige seul à l'import ne sont pas traités en formation ; ceux qui subsistent dans le modèle sont listés dans le [guide d'assemblage](../assets/modeles/guide-assemblage.md).
+> **Réglages par défaut conservés** : cette formation n'étant pas un cours de modélisation ni de Power Query, on laisse actives la détection automatique des types et des relations. Les défauts que Power BI Desktop corrige seul à l'import ne sont pas traités en formation ; ceux qui subsistent dans le modèle sont listés dans le [guide des modèles](../assets/modeles/guide-modeles.md).
 
-## 3. Installer Tabular Editor 2
+> **Aucun outil externe requis** : la formation n'installe rien d'autre que Power BI Desktop (pas de Tabular Editor ni d'additif). Le poste du participant reste standard.
 
-1. Télécharger **Tabular Editor 2.x** (gratuit) : `https://tabulareditor.com/downloads` ou Microsoft Store (« Tabular Editor ») — pas la version 3 (payante)
-2. Installer et lancer une fois, puis fermer
-3. Vérification : dans Power BI Desktop, ruban **Outils externes** > « Tabular Editor » présent (le ruban s'active quand un modèle est ouvert)
-
-> Utilisé pour le **calculation group** du modèle v2 (non créable dans l'interface native) et en complément du module 04 (Best Practice Analyzer).
-
-## 4. Sources de données de démo
+## 3. Sources de données de démo
 
 Vérifier la présence des 6 CSV dans `assets/data/brut/` (voir le dictionnaire complet dans [assets/README.md](../assets/README.md)) :
 
@@ -43,8 +37,7 @@ Vérifier la présence des 6 CSV dans `assets/data/brut/` (voir le dictionnaire 
 ## Checklist finale
 
 - [ ] Aperçus activés : PBIP + Prep data for AI (redémarrage fait)
-- [ ] Tabular Editor visible dans Outils externes
-- [ ] `assets/modeles/altisport-v1/altisport-v1.pbip` s'ouvre
+- [ ] `assets/modeles/altisport-v1/altisport-v1.pbip` et `altisport-v2/altisport-v2.pbip` s'ouvrent
 - [ ] Les 6 CSV sont accessibles (régénération éventuelle via `assets/data/generer-donnees.ps1`)
 
 En cas de blocage (option introuvable, intitulé différent selon la version), vérifier la version de Desktop d'abord : les aperçus apparaissent et disparaissent au fil des mises à jour mensuelles.

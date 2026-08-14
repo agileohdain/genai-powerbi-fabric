@@ -56,7 +56,7 @@ Présenter côte à côte deux versions du même modèle (mal nommé / bien nomm
 
 ## Limites et pièges
 
-- Ne pas raisonner « pour l'IA » uniquement : ces bonnes pratiques servent d'abord aux utilisateurs humains et aux outils (Tabular Editor, ALM Toolkit…)
+- Ne pas raisonner « pour l'IA » uniquement : ces bonnes pratiques servent d'abord aux utilisateurs humains et aux outils d'audit
 - Les descriptions longues sont tronquées à 200 caractères : mettre l'essentiel en premier
 - Les colonnes cachées et techniques sont tolérées, mais elles ne doivent pas être celles que les utilisateurs demandent
 

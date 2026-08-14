@@ -1,0 +1,20 @@
+relationship AutoDetected_d6c0d480-cae1-4eb4-bcbd-c29c5ac2b1dd
+	fromColumn: FactVentes.IdClient
+	toColumn: DimClient.IdClient
+
+relationship AutoDetected_ca445a75-5e24-4f5c-be84-0662ecaaf35d
+	fromColumn: FactVentes.IdMagasin
+	toColumn: DimMagasin.IdMagasin
+
+relationship AutoDetected_dee11434-baf4-4810-b0b7-b341fc711bdb
+	fromColumn: FactVentes.IdProduit
+	toColumn: DimProduit.IdProduit
+
+relationship AutoDetected_7ef6262d-42f6-4534-9df9-85cc2bb74589
+	fromColumn: FactVentes.IdVendeur
+	toColumn: DimVendeur.IdVendeur
+
+relationship AutoDetected_c92aaa8d-7839-4df7-854a-bcd420bfb722
+	fromColumn: FactVentes.DateKey
+	toColumn: DimDate.DateKey
+

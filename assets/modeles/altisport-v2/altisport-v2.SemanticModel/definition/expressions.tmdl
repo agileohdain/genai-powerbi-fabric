@@ -1,0 +1,5 @@
+expression DossierData = "C:\dev\genai-powerbi-fabric\assets\data\brut" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 737d99ec-620f-410b-8e76-62f34bd4a75a
+
+	annotation PBI_ResultType = Text
+

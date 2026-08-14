@@ -1,0 +1,98 @@
+table DimProduit
+	lineageTag: a3c5c91a-96bb-4e5c-88b4-88d06cd5d19a
+
+	column IdProduit
+		dataType: string
+		isHidden
+		lineageTag: c7d768aa-c1b8-45b2-9a66-bd5cb9282af5
+		summarizeBy: none
+		sourceColumn: IdProduit
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodeCategorie
+		dataType: string
+		isHidden
+		lineageTag: 2725fa31-a2f1-40d5-af21-062918d427c9
+		summarizeBy: none
+		sourceColumn: CodeCategorie
+
+		annotation SummarizationSetBy = Automatic
+
+	column SousCategorie
+		dataType: string
+		lineageTag: 794e1e23-0d74-404f-ba22-e503af946774
+		summarizeBy: none
+		sourceColumn: SousCategorie
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marque
+		dataType: string
+		lineageTag: 6aea4a3a-22ad-416a-be8f-088127a7d9f8
+		summarizeBy: none
+		sourceColumn: Marque
+
+		annotation SummarizationSetBy = Automatic
+
+	column PrixUnitaireTTC
+		dataType: double
+		lineageTag: bfaf7261-009c-4798-a880-0febb9db868d
+		summarizeBy: none
+		sourceColumn: PrixUnitaireTTC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CoutAchat
+		dataType: double
+		lineageTag: 57306220-4f23-454c-95a4-908a48b1b1dd
+		summarizeBy: none
+		sourceColumn: CoutAchat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Produit
+		dataType: string
+		lineageTag: ead39f41-8490-497e-9825-e5488192591
+		summarizeBy: none
+		sourceColumn: Produit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categorie
+		dataType: string
+		lineageTag: 865f4b48-672f-4a27-9a63-bb80c8c3904b
+		summarizeBy: none
+		sourceColumn: Categorie
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie Produits'
+		lineageTag: 36d28c30-b6b8-44d5-8884-77d671ceb900
+
+		level Categorie
+			lineageTag: dce0a988-9042-4ba7-a131-d4ae9c13b415
+			column: Categorie
+
+		level SousCategorie
+			lineageTag: ceb328ce-da46-4e5f-b0d7-3f777767d9e2
+			column: SousCategorie
+
+	partition DimProduit = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents(DossierData & "\produits.csv"), [Delimiter = ";", Columns = 8, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"ProdID", type text}, {"PrdLbl", type text}, {"CatCd", type text}, {"CatLbl", type text}, {"SbCat", type text}, {"Marque", type text}, {"PU_TTC", Int64.Type}, {"CstA", type number}}, "fr"),
+				  #"Colonnes renommées" = Table.RenameColumns(#"Type de colonne changé",{{"ProdID", "IdProduit"}, {"PrdLbl", "Produit"}, {"CatCd", "CodeCategorie"}, {"CatLbl", "Categorie"}, {"SbCat", "SousCategorie"}, {"PU_TTC", "PrixUnitaireTTC"}, {"CstA", "CoutAchat"}}),
+				  #"Type modifié" = Table.TransformColumnTypes(#"Colonnes renommées",{{"PrixUnitaireTTC", type number}})
+				in
+				  #"Type modifié"
+
+	annotation PBI_ResultType = Table
+
