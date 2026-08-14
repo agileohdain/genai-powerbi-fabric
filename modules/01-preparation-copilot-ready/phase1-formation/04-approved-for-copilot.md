@@ -1,4 +1,4 @@
-# Fiche 05 — Tester, valider et marquer *Approved for Copilot*
+# Fiche 04 — Tester, valider et marquer *Approved for Copilot*
 
 ## Objectifs
 
@@ -69,7 +69,7 @@ Règles de réindexation :
 
 ## Limites et pièges
 
-- Le marquage *Approved* ne teste rien : la recette doit être faite en amont (voir [atelier 3](../phase2-ateliers/atelier-3-recette-validation.md)).
+- Le marquage *Approved* ne teste rien : la recette doit être faite en amont (voir [atelier 2](../phase2-ateliers/atelier-2-mise-en-oeuvre-recette.md)).
 - Les tests en Desktop surestiment les capacités : toujours valider avec le skill picker configuré selon l'environnement visé.
 
 ## Sources

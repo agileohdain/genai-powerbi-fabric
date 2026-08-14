@@ -28,8 +28,8 @@ Auteurs de rapports, analystes, développeurs BI ; les fiches 01, 03 et 04 conce
 
 | Phase | Contenu | Durée indicative |
 |---|---|---|
-| [Phase 1 — Formation](phase1-formation/) | 5 fiches : panorama des expériences, création de rapport, questions de données, narratifs et résumés, Copilot développeur | 1 demi-journée |
-| [Phase 2 — Ateliers](phase2-ateliers/) | 3 ateliers sur les modèles réels du client : découverte et recette, catalogue de prompts, adoption et diffusion | 1 jour |
+| [Phase 1 — Formation](phase1-formation/) | 5 fiches : panorama des expériences, création de rapport, questions de données, narratifs et résumés, Copilot développeur | ~3 h |
+| [Phase 2 — Ateliers](phase2-ateliers/) | 2 ateliers sur les modèles réels du client : découverte et recette, prompts et adoption | ≈ 0,75 jour |
 
 ## Points d'attention transversaux
 

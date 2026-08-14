@@ -61,7 +61,7 @@
 | # | Critère | Où vérifier | Correctif type | Priorité par défaut |
 |---|---|---|---|---|
 | 6.1 | RLS défini si données sensibles | Gérer les rôles | Créer les rôles | Haute |
-| 6.2 | Prise en compte des limites RLS/OLS des réponses vérifiées | [Fiche 03](../phase1-formation/03-reponses-verifiees.md) | Ne pas exposer de réponse vérifiée sur données sensibles | Haute |
+| 6.2 | Prise en compte des limites RLS/OLS des réponses vérifiées | [Fiche 02](../phase1-formation/02-schema-de-donnees-ia.md) | Ne pas exposer de réponse vérifiée sur données sensibles | Haute |
 
 ### 7. Volumes et indexation
 

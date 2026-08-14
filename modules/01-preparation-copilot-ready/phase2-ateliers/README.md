@@ -1,12 +1,13 @@
 # Phase 2 — Ateliers d'application
 
-Application de la démarche sur les **modèles sémantiques réels du client**. Les ateliers suivent la progression : audit > mise en œuvre > recette.
+Application de la démarche sur **un modèle sémantique réel du client** (modèle pilote). Les ateliers suivent la progression : audit > mise en œuvre et recette.
 
 | Atelier | Objectif | Durée indicative |
 |---|---|---|
-| [1 — Audit du modèle](atelier-1-audit-modele.md) | Évaluer les modèles du client avec la grille d'audit, produire un plan d'action priorisé | 2–3 h |
-| [2 — Mise en œuvre](atelier-2-mise-en-oeuvre.md) | Configurer schéma IA, réponses vérifiées, instructions IA sur un modèle réel | 3–4 h |
-| [3 — Recette et validation](atelier-3-recette-validation.md) | Tester, corriger, marquer *Approved for Copilot* et communiquer | 2 h |
+| [1 — Audit du modèle](atelier-1-audit-modele.md) | Évaluer le modèle pilote avec la grille d'audit, produire un plan d'action priorisé | 2 h |
+| [2 — Mise en œuvre & recette](atelier-2-mise-en-oeuvre-recette.md) | Configurer schéma IA, réponses vérifiées, instructions IA ; recetter et marquer *Approved for Copilot* | 4 h |
+
+> Total ≈ 0,75 jour sur **un seul modèle pilote**. La grille d'audit de l'atelier 1 est conçue pour être **réutilisée en autonomie** sur les autres modèles du client (manuellement, ou via MCP — module 04).
 
 ## Prérequis côté client
 
@@ -14,7 +15,7 @@ Application de la démarche sur les **modèles sémantiques réels du client**. 
 - Droits d'auteur sur le modèle sémantique cible (ou un espace de travail dédié avec une copie du modèle)
 - Q&A activable sur le modèle
 - Power BI Desktop (dernière version) avec *Prep data for AI* activé pour les participants
-- Liste des questions métier les plus fréquentes des utilisateurs du modèle (entrée clé des ateliers 2 et 3)
+- Liste des questions métier les plus fréquentes des utilisateurs du modèle (entrée clé de l'atelier 2)
 
 ## Organisation recommandée
 

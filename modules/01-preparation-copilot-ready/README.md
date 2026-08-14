@@ -27,8 +27,8 @@ Modélisateurs de données, développeurs BI, analystes responsables de modèles
 
 | Phase | Contenu | Durée indicative |
 |---|---|---|
-| [Phase 1 — Formation](phase1-formation/) | 6 fiches : évaluation du modèle, schéma IA, réponses vérifiées, instructions IA, validation, démarche globale | 1 demi-journée |
-| [Phase 2 — Ateliers](phase2-ateliers/) | 3 ateliers sur les modèles réels du client : audit, mise en œuvre, recette | 1 à 2 jours |
+| [Phase 1 — Formation](phase1-formation/) | 4 fiches : évaluation du modèle, schéma IA et réponses vérifiées, instructions IA, test et validation (démarche globale en anti-sèche dans le README de phase) | ~3 h |
+| [Phase 2 — Ateliers](phase2-ateliers/) | 2 ateliers sur un modèle pilote du client : audit, mise en œuvre et recette | ≈ 0,75 jour |
 
 ## Points d'attention transversaux
 

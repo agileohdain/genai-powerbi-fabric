@@ -1,4 +1,4 @@
-# Fiche 04 — Instructions IA (version courte)
+# Fiche 03 — Instructions IA (version courte)
 
 ## Objectifs
 

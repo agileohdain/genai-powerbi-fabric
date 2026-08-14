@@ -33,7 +33,7 @@ Vue Modèle > propriétés d'une mesure > bouton de génération : Copilot rédi
 
 > Besoin d'une autre langue : générer en anglais (meilleurs résultats), puis traduire (par Copilot ou outillage type semantic link).
 
-**Synergie** : les descriptions alimentent en retour la génération DAX, les questions de données (fiche 03) et la recherche Copilot (atelier 3) — c'est l'investissement le plus rentable du module 01.
+**Synergie** : les descriptions alimentent en retour la génération DAX, les questions de données (fiche 03) et la recherche Copilot (atelier 2) — c'est l'investissement le plus rentable du module 01.
 
 ## Modélisation web (service) — aperçu
 

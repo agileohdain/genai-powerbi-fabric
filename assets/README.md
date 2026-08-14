@@ -14,7 +14,7 @@ assets/
 ├── data/
 │   ├── generer-donnees.ps1 # Script de génération déterministe (graine 20260814)
 │   └── brut/               # Sources CSV « telles que sorties de l'ERP » (avec défauts volontaires)
-├── vocabulaire-metier.md   # Jargon AltiSport : source des instructions IA (fiche 04)
+├── vocabulaire-metier.md   # Jargon AltiSport : source des instructions IA (fiche 03 du module 01)
 ├── theme-charte.json       # Thème Power BI AltiSport (v1 — enrichi au module 05)
 └── modeles/                # Guide des modèles + projets PBIP altisport-v1 / altisport-v2
 ```
@@ -54,7 +54,7 @@ MagID, MagLbl, Ville, DeptCd, **Secteur** (Nord-Est, Nord-Ouest, Île-de-France,
 
 ### `vendeurs.csv` — 60 vendeurs
 
-VndID, VndLbl, MagID (rattachement), **CibleMens** (cible mensuelle en € — sert à la définition « Champion », fiche 04).
+VndID, VndLbl, MagID (rattachement), **CibleMens** (cible mensuelle en € — sert à la définition « Champion », fiche 03 du module 01).
 
 ### `clients.csv` — 220 clients
 

@@ -1,53 +1,66 @@
-# Fiche 02 — Schéma de données IA
+# Fiche 02 — Schéma de données IA & réponses vérifiées
 
 ## Objectifs
 
-- Restreindre le périmètre de champs que Copilot utilise pour répondre aux questions de données
-- Supprimer l'ambiguïté liée aux champs redondants ou techniques du modèle
-- Tester le périmètre retenu avec la méthode négatif/positif
+- Restreindre le périmètre de champs que Copilot utilise pour répondre aux questions de données (**schéma IA**)
+- Garantir une réponse visuelle **validée par un humain** sur les questions fréquentes ou sensibles (**réponses vérifiées**)
+- Tester le résultat avec la méthode négatif/positif
 
 ## Concepts clés
 
-Le **schéma de données IA** (AI data schema) permet à l'auteur du modèle de définir un sous-ensemble du schéma que Copilot priorise quand il génère ses réponses. Un schéma resserré réduit l'ambiguïté : Copilot utilise les bons champs sans demander de clarification à l'utilisateur.
+- **Schéma de données IA** : sous-ensemble du schéma que Copilot priorise quand il génère ses réponses. Un schéma resserré réduit l'ambiguïté : Copilot utilise les bons champs sans demander de clarification.
+- **Réponses vérifiées** : association d'un visuel, de **phrases déclencheuses** et de filtres optionnels, stockée **dans le modèle sémantique** — valable dans tous les rapports qui l'utilisent. Côté consommateur : coche « vérifié », phrase déclencheuse matched, résumé et lien *How Copilot arrived at this*.
 
-Le schéma IA s'applique uniquement aux capacités de Copilot qui s'appuient sur le schéma du modèle pour répondre aux questions de données (voir la matrice en [fiche 06](06-demarche-globale.md)).
+> Ces deux fonctionnalités ne couvrent que certaines capacités Copilot : voir la matrice capacité × fonctionnalité dans le [README de la phase](README.md).
 
 ## Cas d'usage typiques
 
-- **Ambiguïté d'indicateur** : le modèle contient `Total GPM` (marge) et `Total Sales` (ventes). Quand l'utilisateur demande « les ventes », Copilot peut retourner la marge — une interprétation légitime mais contraire à l'usage de l'équipe. Retirer `Total GPM` du schéma IA force Copilot sur la bonne mesure.
-- **Modèle de développement** : le modèle contient des tables techniques ou de travail inutiles aux utilisateurs finaux ; on les exclut du schéma IA.
-- **Grands modèles** : des champs au nom proche sèment la confusion ; on ne conserve que les champs réellement demandés.
+| Problème | Solution |
+|---|---|
+| « Les ventes » peut renvoyer la marge (`Total GPM`) au lieu de `Total Sales` | Retirer le champ ambigu du schéma IA |
+| « Ventes par secteur » : Copilot comprend *secteur produit*, l'attendu est *région* | Réponse vérifiée sur le visuel régional |
+| Question stratégique posée chaque semaine, réponse à normaliser | Réponse vérifiée (visuel approuvé + phrases déclencheuses) |
+| Tables techniques ou de travail inutiles aux utilisateurs | Les exclure du schéma IA |
 
-## Pas-à-pas
+## Pas-à-pas 1 — Schéma de données IA
 
-### Dans Power BI Desktop
+1. Ruban Accueil > **Prep data for AI** (onglets grisés : activer Q&A) > **Simplify data schema**.
+2. Sélectionner les champs que Copilot doit utiliser ; exclure technique, redondant, ambigu.
+3. **Apply** (même démarche dans le service, page du modèle sémantique).
 
-1. Bouton **Prep data for AI** sur le ruban Accueil (si les onglets sont grisés : activer Q&A pour le modèle).
-2. Onglet **Simplify data schema**.
-3. Sélectionner les champs que Copilot doit utiliser : privilégier les colonnes nettes et sans ambiguïté, retirer les champs sources de confusion.
-4. **Apply** : les changements sont enregistrés sur le modèle.
+## Pas-à-pas 2 — Réponses vérifiées (démo)
 
-### Dans le service Power BI
+1. Sélectionner le visuel correct (Desktop, ou service en mode édition) > **...** > **Set up a verified answer**.
+2. Ajouter **5 à 7 phrases déclencheuses** (manuellement ou via les suggestions Copilot — puiser dans les formulations réelles des utilisateurs).
+3. Option : jusqu'à **3 filtres** ajustables par l'utilisateur en langage naturel.
+4. **Apply** ; gestion via **Prep data for AI** > onglet **Verified answers** (éditer, supprimer).
 
-Même démarche depuis le ruban de la page du modèle sémantique, puis **Apply**.
+**Matching des phrases déclencheuses** (déclencheur : *Snowboard sales by month*) :
 
-### Tester (méthode négatif/positif)
+| Type | Comportement | Exemple |
+|---|---|---|
+| Exact | Caractère par caractère | « Snowboard sales by month » |
+| Sémantique — supporté | Synonymes, réordonnancement, filtre inclus dans le prompt | « Snowboard sales for November » |
+| Sémantique — non supporté | Ajout/retrait/changement de champ ou mesure | « Ski bib sales by month » |
 
-1. Ouvrir le volet Copilot du rapport dans Desktop.
-2. Skill picker > **Answer data question** (Répondre à des questions sur les données).
-3. Poser une question utilisant un champ **hors** schéma IA : Copilot ne doit pas répondre.
-4. Poser une question utilisant un champ **dans** le schéma IA : Copilot doit répondre.
-5. Publier dans le service pour la consommation.
+## Tester (méthode négatif/positif)
+
+1. Ouvrir le volet Copilot, skill picker > **Answer data question**.
+2. Question sur un champ **hors** schéma IA : Copilot ne doit pas répondre.
+3. Question sur un champ **dans** le schéma IA (et reformulations des phrases déclencheuses) : Copilot doit répondre.
+4. Après chaque modification : fermer et rouvrir le volet Copilot.
 
 ## Limites et pièges
 
-- Les consommateurs ne voient pas le schéma IA et **ne peuvent pas le désactiver**.
-- Ne s'applique pas aux résumés de rapport, questions sur les visuels, création de pages ou requêtes DAX : ces capacités utilisent le modèle complet.
-- Les relations restent respectées : un champ hors schéma mais lié peut encore apparaître dans une réponse via une relation.
-- Les champs masqués dans le modèle sont exclus du schéma IA initial, mais tous les champs apparaissent dans le volet de sélection.
-- Après chaque modification, fermer et rouvrir le volet Copilot pour tester.
+- Chiffres clés : **250** réponses vérifiées par modèle ; **15** phrases par réponse (500 caractères) ; **10** permutations de filtres.
+- Le schéma IA ne s'applique **qu'aux questions sur le modèle** (pas résumés, création de pages, DAX) ; les consommateurs ne le voient pas et ne peuvent pas le désactiver ; un champ lié par relation peut réapparaître dans une réponse.
+- Visuels non supportés en réponse vérifiée : zone de texte, Data Q&A, visuels IA (influenceurs, Narratif avec Copilot, Smart narratives, prévisions R/Python), visuels personnalisés ; non fonctionnel si champs masqués ou **mesures de rapport**.
+- Le visuel du rapport et la réponse vérifiée ne sont **pas synchronisés** : la modifier passe par la boîte de dialogue de gestion.
+- Après publication : ~15 min de délai ; intégration Git non supportée pour les réponses vérifiées.
+- **RLS/OLS non garantis** pendant l'aperçu : ne pas considérer les réponses vérifiées comme une fonction de sécurité (voir [docs/02-securite](../../../docs/02-securite/)).
 
 ## Sources
 
 - [Prepare your data for AI — AI data schemas](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-data-schema)
-- [FAQ — exemple de désambiguïsation par le schéma IA](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-faq)
+- [Prepare your data for AI — Verified answers](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-verified-answers)
+- [FAQ — exemple de désambiguïsation, quand utiliser les réponses vérifiées](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-faq)

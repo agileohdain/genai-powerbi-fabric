@@ -82,12 +82,12 @@ v2 ajoute : Hiérarchie Dates (Annee > Trimestre > Mois), Hiérarchie Géographi
 
 ### 9. Configuration Copilot (Prep data for AI)
 
-> ⏳ **À appliquer après activation de Copilot par l'admin** (prérequis de licences et tenant : [docs/01-prerequis-activation](../../docs/01-prerequis-activation/)). Le modèle v2 est fonctionnel sans cette étape ; elle est requise pour les démos des fiches 02 à 05.
+> ⏳ **À appliquer après activation de Copilot par l'admin** (prérequis de licences et tenant : [docs/01-prerequis-activation](../../docs/01-prerequis-activation/)). Le modèle v2 est fonctionnel sans cette étape ; elle est requise pour les démos des fiches 02 à 04.
 
 À appliquer dans Power BI Desktop (bouton **Prep data for AI**) :
 
 1. **Schéma de données IA** : tout sélectionner **sauf** Total Marge, Taux de Marge, PrixUnitaireTTC, CoutAchat, CoutLigne et colonnes techniques → « ventes » ne peut plus être confondu avec la marge (démo fiche 02)
-2. **Instructions IA** : coller le bloc FR de [vocabulaire-metier.md](../vocabulaire-metier.md) → saisons, Champion, closers, comptoir (démo fiche 04)
+2. **Instructions IA** : coller le bloc FR de [vocabulaire-metier.md](../vocabulaire-metier.md) → saisons, Champion, closers, comptoir (démo fiche 03)
 
 ---
 

@@ -31,13 +31,7 @@ Le visuel remplace progressivement l'ancien *smart narrative* : au premier ajout
 
 Dans le **volet Copilot** (lecteurs) : prompts prêts à l'emploi comme `What is this report page about?`, ou `Write an executive summary for the senior management team, focusing on the distribution of operational results across regions` (Rédige un résumé exécutif pour la direction, centré sur la répartition des résultats opérationnels par région). Le survol des notes de référence **spotlighte** les visuels sources, et le bouton copier permet de partager le texte.
 
-## Résumés dans les abonnements e-mail (aperçu)
-
-- Abonnements **Standard** uniquement ; pour la page ou le **rapport complet** en pièce jointe
-- Activer `Summary by Copilot` > **Preview summary** avant d'enregistrer ; activé par défaut sur les nouveaux abonnements éligibles
-- Tous les destinataires reçoivent le résumé ; généré **au nom du propriétaire** de l'abonnement
-- Pas de prompt personnalisé ; les filtres enregistrés via *Include my changes* sont appliqués
-- Rapports volumineux : le résumé peut être absent si Copilot met trop de temps à répondre
+> Les résumés dans les **abonnements e-mail** sont démontrés en [atelier 2](../phase2-ateliers/atelier-2-prompts-adoption.md) (démo optionnelle).
 
 ## Limites et pièges
 
@@ -51,5 +45,4 @@ Dans le **volet Copilot** (lecteurs) : prompts prêts à l'emploi comme `What is
 
 - [Create a narrative visual with Copilot](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-create-narrative?tabs=powerbi-service)
 - [Write Copilot prompts for narrative visuals](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prompts-narratives)
-- [Add Copilot summaries to email subscriptions](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-summaries-in-subscriptions)
 - [Tutorial: Explore data and gain insights](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-explore-data)

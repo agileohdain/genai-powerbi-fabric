@@ -1,25 +1,25 @@
 # Vocabulaire métier AltiSport
 
-Source des **instructions IA** (fiche 04) et des démos. À distribuer aux participants pour l'atelier 2, qui consiste à produire l'équivalent pour le vocabulaire de leur propre entreprise.
+Source des **instructions IA** (fiche 03 du module 01) et des démos. À distribuer aux participants pour l'atelier 2, qui consiste à produire l'équivalent pour le vocabulaire de leur propre entreprise.
 
 ## Glossaire officiel AltiSport
 
-| Terme | Définition officielle | Pattern (fiche 04) | Démo |
+| Terme | Définition officielle | Pattern (fiche 03) | Démo |
 |---|---|---|---|
-| **Ventes / CA** | Toujours la mesure *Total Ventes* : CA net TTC, commandes annulées exclues. **Jamais** la marge. | Mapping critique | Fiche 02, 03 |
+| **Ventes / CA** | Toujours la mesure *Total Ventes* : CA net TTC, commandes annulées exclues. **Jamais** la marge. | Mapping critique | Fiche 02 |
 | **GPM** | Marge commerciale — mesure *Total Marge* | Mapping | Fiche 02 |
-| **Secteur** | Zone géographique du magasin (Nord-Est, Nord-Ouest, Île-de-France, Sud-Est, Sud-Ouest). **Jamais** la catégorie de produit. | Mapping critique | Fiche 03 |
-| **Saison blanche** | Décembre à février (pic hiver) | Période métier | Fiche 04 |
-| **Saison verte** | Juin à août (pic été) | Période métier | Fiche 04 |
-| **Hors-saison** | Mars à mai et septembre à novembre | Période métier | Fiche 04 |
-| **Closers** | Les vendeurs AltiSport | Mapping 1:1 | Fiche 04 |
-| **Champion** | Vendeur atteignant 100 % ou plus de sa cible mensuelle (*Atteinte Cible* ≥ 100 %) | Définition conditionnelle | Fiche 04 |
-| **Comptoir** | Le canal Magasin (par opposition au Web) | Mapping 1:1 | Fiche 04 |
-| **Panier** | Montant net TTC moyen par client (*Panier Moyen*) | Mapping | Fiche 04 |
+| **Secteur** | Zone géographique du magasin (Nord-Est, Nord-Ouest, Île-de-France, Sud-Est, Sud-Ouest). **Jamais** la catégorie de produit. | Mapping critique | Fiche 02 |
+| **Saison blanche** | Décembre à février (pic hiver) | Période métier | Fiche 03 |
+| **Saison verte** | Juin à août (pic été) | Période métier | Fiche 03 |
+| **Hors-saison** | Mars à mai et septembre à novembre | Période métier | Fiche 03 |
+| **Closers** | Les vendeurs AltiSport | Mapping 1:1 | Fiche 03 |
+| **Champion** | Vendeur atteignant 100 % ou plus de sa cible mensuelle (*Atteinte Cible* ≥ 100 %) | Définition conditionnelle | Fiche 03 |
+| **Comptoir** | Le canal Magasin (par opposition au Web) | Mapping 1:1 | Fiche 03 |
+| **Panier** | Montant net TTC moyen par client (*Panier Moyen*) | Mapping | Fiche 03 |
 
 ## Instructions IA prêtes à coller (modèle v2)
 
-Extrait aligné sur le template de la [fiche 04](../modules/01-preparation-copilot-ready/phase1-formation/04-instructions-ia.md) — à coller dans *Prep data for AI* > *Add AI instructions* :
+Extrait aligné sur le template de la [fiche 03](../modules/01-preparation-copilot-ready/phase1-formation/03-instructions-ia.md) — à coller dans *Prep data for AI* > *Add AI instructions* :
 
 ```markdown
 ## Terminologie métier
