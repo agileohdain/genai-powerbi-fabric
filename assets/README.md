@@ -16,7 +16,7 @@ assets/
 │   └── brut/               # Sources CSV « telles que sorties de l'ERP » (avec défauts volontaires)
 ├── vocabulaire-metier.md   # Jargon AltiSport : source des instructions IA (fiche 04)
 ├── theme-charte.json       # Thème Power BI AltiSport (v1 — enrichi au module 05)
-└── modeles/                # À créer : projets PBIP altisport-v1 / altisport-v2 (voir guides ci-dessous)
+└── modeles/                # Guide d'assemblage + projets PBIP altisport-v1 / altisport-v2
 ```
 
 ## Dictionnaire des données
@@ -79,26 +79,12 @@ DateKey (AAAAMMJJ), Date, Annee, Trimestre, MoisNum, MoisLbl, JourNum, JourSemLb
 | 9 | Saisonnalité double pic (hiver + été) | ventes | Fiche 04 — « Saison blanche » / « Saison verte » |
 | 10 | Cibles mensuelles vendeurs | vendeurs | Fiche 04 — définition « Champion » |
 
-## Guide d'assemblage — Modèle v1 « mal préparé »
+## Assemblage des modèles
 
-Objectif : montrer le pire. Importer les CSV dans Power BI Desktop **tels quels** (Obtenir des données > Texte/CSV, encodage auto, délimiteur `;`), sans aucun nettoyage :
+- Prérequis outils : [setup/01-powerbi-desktop.md](../setup/01-powerbi-desktop.md)
+- Pas-à-pas opérationnel (v1 « mal préparé » et v2 « bien préparé ») : [modeles/guide-assemblage.md](modeles/guide-assemblage.md)
 
-- Types : laisser les montants et dates en texte
-- Relations : n'en créer aucune (ou laisser la détection automatique faire des rapprochements hasardeux)
-- Mesures : uniquement des mesures implicites (« Somme de MttTTcNet »)
-- Aucune description, aucune hiérarchie, table de dates non marquée
-- Enregistrer en `.pbip` dans `assets/modeles/altisport-v1/`
-
-Usage : démo « avant/après » (fiche 01), terrain d'audit (module 04).
-
-## Guide d'assemblage — Modèle v2 « bien préparé »
-
-### Power Query
-
-1. Typage : DateVente en date, montants/taux en décimal (remplacer `,` par `.` avant typage, paramètre régional fr), Qt en nombre entier
-2. Nettoyage : `Text.Proper` + `Trim` sur Canal et StatutCde (→ Magasin / Web / Livree / Encours / Annulee)
-3. Renommage métier de toutes les colonnes (voir schéma cible ci-dessous)
-4. Ne **pas** filtrer les Annulées à la source : la mesure s'en charge (pédagogie fiche 01 + audit module 04)
+Les sections ci-dessous constituent la **spécification cible** de v2 (schéma, mesures, hiérarchies), référencée par le guide d'assemblage.
 
 ### Schéma cible (star schema)
 
