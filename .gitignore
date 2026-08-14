@@ -1,0 +1,12 @@
+# Power BI / PBIP
+**/.pbi/localSettings.json
+**/.pbi/remoteSettings.json
+**/.pbi/cache/
+*.pbix
+*.pbit
+*.TempStorage*
+*.bim
+
+# OS
+Thumbs.db
+.DS_Store

@@ -1,0 +1,21 @@
+{
+  "name": "AltiSport",
+  "dataColors": ["#1F4E79", "#2E86C1", "#E67E22", "#27AE60", "#8E44AD", "#C0392B", "#16A085", "#F39C12", "#7F8C8D", "#D4AC0D"],
+  "good": "#27AE60",
+  "neutral": "#F39C12",
+  "bad": "#C0392B",
+  "maximum": "#1F4E79",
+  "center": "#F39C12",
+  "minimum": "#C0392B",
+  "null": "#BFBFBF",
+  "background": "#FFFFFF",
+  "secondaryBackground": "#F2F5F9",
+  "foreground": "#24333F",
+  "tableAccent": "#1F4E79",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#1F4E79" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 10, "color": "#24333F" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#24333F" },
+    "callout": { "fontFace": "Segoe UI Light", "fontSize": 32, "color": "#1F4E79" }
+  }
+}
