@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "altisport-v1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eb0300e5-f1c3-4462-bead-1e82b5daad39"
+  }
+}

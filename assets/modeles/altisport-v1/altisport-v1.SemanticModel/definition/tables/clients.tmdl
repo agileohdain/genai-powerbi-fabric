@@ -1,0 +1,66 @@
+table clients
+	lineageTag: 38e1e89b-d6f6-43ad-977b-9a34456d8f12
+
+	column CustNo
+		dataType: string
+		lineageTag: 36bfad08-767d-41ca-8436-f6a31e52dff1
+		summarizeBy: none
+		sourceColumn: CustNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column CliLbl
+		dataType: string
+		lineageTag: 48297d31-3ed3-420f-822a-7b04d74553ba
+		summarizeBy: none
+		sourceColumn: CliLbl
+
+		annotation SummarizationSetBy = Automatic
+
+	column TypCli
+		dataType: string
+		lineageTag: 0e5e1924-4c08-40e2-b8a3-f4e55d4e22af
+		summarizeBy: none
+		sourceColumn: TypCli
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ville
+		dataType: string
+		lineageTag: 8f9822f3-7389-4455-8264-141792022d05
+		summarizeBy: none
+		sourceColumn: Ville
+
+		annotation SummarizationSetBy = Automatic
+
+	column Secteur
+		dataType: string
+		lineageTag: 22f9acd5-e37d-4546-b0ed-e0c062b9e69b
+		summarizeBy: none
+		sourceColumn: Secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dt1erAchat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0f0b9c32-c9a9-4929-8220-3fc71219e81b
+		summarizeBy: none
+		sourceColumn: Dt1erAchat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition clients = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("C:\dev\genai-powerbi-fabric\assets\data\brut\clients.csv"), [Delimiter = ";", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"CustNo", type text}, {"CliLbl", type text}, {"TypCli", type text}, {"Ville", type text}, {"Secteur", type text}, {"Dt1erAchat", type date}}, "fr")
+				in
+				  #"Type de colonne changé"
+
+	annotation PBI_ResultType = Table
+

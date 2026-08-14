@@ -1,0 +1,76 @@
+table magasins
+	lineageTag: f6a52e84-f1a2-4555-ace4-eed68b7ca393
+
+	column MagID
+		dataType: string
+		lineageTag: 648e7d1e-d988-450b-814f-eb247d11f511
+		summarizeBy: none
+		sourceColumn: MagID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MagLbl
+		dataType: string
+		lineageTag: d5a3aee9-aede-4660-8a31-d9165b54c126
+		summarizeBy: none
+		sourceColumn: MagLbl
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ville
+		dataType: string
+		lineageTag: 72f30c60-9fed-4a3c-a56d-d3636d0bb08c
+		summarizeBy: none
+		sourceColumn: Ville
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeptCd
+		dataType: int64
+		formatString: 0
+		lineageTag: 86ab552d-dcdc-4973-895b-87f89e01601f
+		summarizeBy: sum
+		sourceColumn: DeptCd
+
+		annotation SummarizationSetBy = Automatic
+
+	column Secteur
+		dataType: string
+		lineageTag: 3f47d763-8b24-43cd-beb6-b9a484e50c98
+		summarizeBy: none
+		sourceColumn: Secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	column SurfM2
+		dataType: int64
+		formatString: 0
+		lineageTag: 962ac84d-5985-47bc-bc35-57a80d1766c4
+		summarizeBy: sum
+		sourceColumn: SurfM2
+
+		annotation SummarizationSetBy = Automatic
+
+	column DtOuvert
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6226a001-fba3-403e-9043-01df5ce014ed
+		summarizeBy: none
+		sourceColumn: DtOuvert
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition magasins = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("C:\dev\genai-powerbi-fabric\assets\data\brut\magasins.csv"), [Delimiter = ";", Columns = 7, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"MagID", type text}, {"MagLbl", type text}, {"Ville", type text}, {"DeptCd", Int64.Type}, {"Secteur", type text}, {"SurfM2", Int64.Type}, {"DtOuvert", type date}}, "fr")
+				in
+				  #"Type de colonne changé"
+
+	annotation PBI_ResultType = Table
+

@@ -17,18 +17,9 @@ Configuration de Power BI Desktop pour la formation : format PBIP, *Prep data fo
    - ☑ **Prep data for AI** (« Préparer les données pour l'IA »)
 4. `OK` — **redémarrer Power BI Desktop** si demandé (fréquent pour .pbip)
 
-## 3. Désactiver la détection automatique des relations
+> **Réglages par défaut conservés** : cette formation n'étant pas un cours de modélisation ni de Power Query, on laisse actives la détection automatique des types et des relations. Les défauts que Power BI Desktop corrige seul à l'import ne sont pas traités en formation ; ceux qui subsistent dans le modèle sont listés dans le [guide d'assemblage](../assets/modeles/guide-assemblage.md).
 
-1. `Fichier > Options et paramètres > Options`
-2. Section **Global** (ou **Fichier actif** selon la version) > **Chargement des données** (*Data Load*)
-3. Décocher :
-   - ☐ **Détecter automatiquement les relations entre les tables**
-   - ☐ *Importer les relations depuis les sources de données* (si présent)
-4. `OK`
-
-> Pourquoi : le modèle de démo v1 doit rester **sans aucune relation** (démo « modèle sale », module 01 / terrain d'audit, module 04). La détection automatique les recréerait à l'import. Pour v2, les relations sont créées manuellement et volontairement.
-
-## 4. Installer Tabular Editor 2
+## 3. Installer Tabular Editor 2
 
 1. Télécharger **Tabular Editor 2.x** (gratuit) : `https://tabulareditor.com/downloads` ou Microsoft Store (« Tabular Editor ») — pas la version 3 (payante)
 2. Installer et lancer une fois, puis fermer
@@ -36,7 +27,7 @@ Configuration de Power BI Desktop pour la formation : format PBIP, *Prep data fo
 
 > Utilisé pour le **calculation group** du modèle v2 (non créable dans l'interface native) et en complément du module 04 (Best Practice Analyzer).
 
-## 5. Sources de données de démo
+## 4. Sources de données de démo
 
 Vérifier la présence des 6 CSV dans `assets/data/brut/` (voir le dictionnaire complet dans [assets/README.md](../assets/README.md)) :
 
@@ -52,8 +43,8 @@ Vérifier la présence des 6 CSV dans `assets/data/brut/` (voir le dictionnaire 
 ## Checklist finale
 
 - [ ] Aperçus activés : PBIP + Prep data for AI (redémarrage fait)
-- [ ] Détection automatique des relations désactivée
 - [ ] Tabular Editor visible dans Outils externes
-- [ ] Les 6 CSV sont accessibles
+- [ ] `assets/modeles/altisport-v1/altisport-v1.pbip` s'ouvre
+- [ ] Les 6 CSV sont accessibles (régénération éventuelle via `assets/data/generer-donnees.ps1`)
 
 En cas de blocage (option introuvable, intitulé différent selon la version), vérifier la version de Desktop d'abord : les aperçus apparaissent et disparaissent au fil des mises à jour mensuelles.

@@ -1,0 +1,129 @@
+table ventes
+	lineageTag: 8b141c6f-0a14-4c00-91da-d4e5e9b5e4c2
+
+	column VteID
+		dataType: string
+		lineageTag: e52e8998-95ee-42ec-9c3c-d36f2a825fce
+		summarizeBy: none
+		sourceColumn: VteID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DtVte
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: eff953e6-a4de-4c36-9386-da40664e2c09
+		summarizeBy: none
+		sourceColumn: DtVte
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Canal
+		dataType: string
+		lineageTag: 75f35e4d-4160-48c2-932e-51e4678ca3cb
+		summarizeBy: none
+		sourceColumn: Canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column StatutCde
+		dataType: string
+		lineageTag: 0ff3d865-3e98-4785-8fa1-79a18bed5f90
+		summarizeBy: none
+		sourceColumn: StatutCde
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdID
+		dataType: string
+		lineageTag: 9f59c968-588c-41d8-b882-62b106164941
+		summarizeBy: none
+		sourceColumn: ProdID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Qt
+		dataType: int64
+		formatString: 0
+		lineageTag: d70c0b6f-6ee5-4bcf-b875-48644fd7909c
+		summarizeBy: sum
+		sourceColumn: Qt
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxRem
+		dataType: int64
+		formatString: 0
+		lineageTag: c2b96367-4c14-489d-a037-1f40c542043d
+		summarizeBy: sum
+		sourceColumn: TxRem
+
+		annotation SummarizationSetBy = Automatic
+
+	column MttBrutTTC
+		dataType: int64
+		formatString: 0
+		lineageTag: 6bbf98a3-88b3-4afb-a6ce-7bfc3dc31f03
+		summarizeBy: sum
+		sourceColumn: MttBrutTTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column MttTTcNet
+		dataType: double
+		lineageTag: cc5aebb9-9ae6-4a46-8f88-e29108be6e11
+		summarizeBy: sum
+		sourceColumn: MttTTcNet
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CstLigne
+		dataType: double
+		lineageTag: 0499597b-d0d2-4a91-9655-c6ca578caeed
+		summarizeBy: sum
+		sourceColumn: CstLigne
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MagID
+		dataType: string
+		lineageTag: df6ca9f8-9d84-47bf-89e2-2281053d0203
+		summarizeBy: none
+		sourceColumn: MagID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VndID
+		dataType: string
+		lineageTag: edfb5cf0-4f58-407b-8cee-9c9f3ef98198
+		summarizeBy: none
+		sourceColumn: VndID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustNo
+		dataType: string
+		lineageTag: dfe73bec-97f8-4a06-86fd-4e52c47b507e
+		summarizeBy: none
+		sourceColumn: CustNo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ventes = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("C:\dev\genai-powerbi-fabric\assets\data\brut\ventes.csv"), [Delimiter = ";", Columns = 13, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"VteID", type text}, {"DtVte", type date}, {"Canal", type text}, {"StatutCde", type text}, {"ProdID", type text}, {"Qt", Int64.Type}, {"TxRem", Int64.Type}, {"MttBrutTTC", Int64.Type}, {"MttTTcNet", type number}, {"CstLigne", type number}, {"MagID", type text}, {"VndID", type text}, {"CustNo", type text}}, "fr")
+				in
+				  #"Type de colonne changé"
+
+	annotation PBI_ResultType = Table
+

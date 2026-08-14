@@ -2,6 +2,7 @@
 **/.pbi/localSettings.json
 **/.pbi/remoteSettings.json
 **/.pbi/cache/
+**/.pbi/*.abf
 *.pbix
 *.pbit
 *.TempStorage*

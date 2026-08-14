@@ -1,0 +1,48 @@
+table vendeurs
+	lineageTag: aba74d47-668e-48fe-bdaa-7750da4467eb
+
+	column VndID
+		dataType: string
+		lineageTag: d78de4c7-5be8-422d-bd13-e116036de912
+		summarizeBy: none
+		sourceColumn: VndID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VndLbl
+		dataType: string
+		lineageTag: f6dc30dd-e9d1-4aa2-920d-6bb699481422
+		summarizeBy: none
+		sourceColumn: VndLbl
+
+		annotation SummarizationSetBy = Automatic
+
+	column MagID
+		dataType: string
+		lineageTag: 0c2f54b2-f380-478c-9d4c-209de846ef06
+		summarizeBy: none
+		sourceColumn: MagID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CibleMens
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b9159e8-5c12-4a6e-a39f-de6da4bf06d9
+		summarizeBy: sum
+		sourceColumn: CibleMens
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vendeurs = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("C:\dev\genai-powerbi-fabric\assets\data\brut\vendeurs.csv"), [Delimiter = ";", Columns = 4, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"VndID", type text}, {"VndLbl", type text}, {"MagID", type text}, {"CibleMens", Int64.Type}}, "fr")
+				in
+				  #"Type de colonne changé"
+
+	annotation PBI_ResultType = Table
+

@@ -66,18 +66,20 @@ DateKey (AAAAMMJJ), Date, Annee, Trimestre, MoisNum, MoisLbl, JourNum, JourSemLb
 
 ## Défauts volontaires (pièges pédagogiques)
 
-| # | Piège | Où | Mis en évidence par |
-|---|---|---|---|
-| 1 | Montants et taux en texte (virgule) | ventes, produits | Fiche 01 (types), module 04 (audit) |
-| 2 | Dates en texte | ventes, magasins, clients | Fiche 01 |
-| 3 | Casse incohérente sur Canal / StatutCde | ventes | Fiche 01 — nettoyage Power Query |
-| 4 | Commandes Annulées à exclure du CA | ventes.StatutCde | Fiche 01 — sinon le CA est faux |
-| 5 | Noms de colonnes obscurs (ProdID, Qt, MttTTcNet…) | partout | Fiche 01 — renommage |
-| 6 | CatLbl « Divers » (catégorie fourre-tout) | produits | Fiche 01 — nommage ambigu |
-| 7 | « Secteur » géographique vs catégorie produit | magasins / produits | Fiches 02-03 — ambiguïté « ventes par secteur » |
-| 8 | Deux indicateurs proches : ventes (MttTTcNet) vs marge (MttTTcNet − CstLigne) | ventes | Fiche 02 — schéma IA (Total Ventes vs Total Marge) |
-| 9 | Saisonnalité double pic (hiver + été) | ventes | Fiche 04 — « Saison blanche » / « Saison verte » |
-| 10 | Cibles mensuelles vendeurs | vendeurs | Fiche 04 — définition « Champion » |
+> Les CSV restent volontairement bruts (fiction « sortie ERP »). Power BI Desktop corrige certains défauts à l'import (types des montants et dates, relations) ; les autres subsistent dans le modèle et font la matière des démos. Détail de l'état réel après import : [modeles/guide-assemblage.md](modeles/guide-assemblage.md).
+
+| # | Piège | Où | Après import Desktop | Mis en évidence par |
+|---|---|---|---|---|
+| 1 | Montants et taux en texte (virgule) | ventes, produits | ✅ corrigé (types auto) | Fiche 01 — rappel |
+| 2 | Dates en texte | ventes, magasins, clients | ✅ corrigé (types auto) | Fiche 01 — rappel |
+| 3 | Casse incohérente sur Canal / StatutCde | ventes | ⚠️ subsiste | Fiche 01 — nettoyage |
+| 4 | Commandes Annulées à exclure du CA | ventes.StatutCde | ⚠️ subsiste | Fiche 01 — sinon le CA est faux |
+| 5 | Noms de colonnes obscurs (ProdID, Qt, MttTTcNet…) | partout | ⚠️ subsiste | Fiche 01 — renommage |
+| 6 | CatLbl « Divers » (catégorie fourre-tout) | produits | ⚠️ subsiste | Fiche 01 — nommage ambigu |
+| 7 | « Secteur » géographique vs catégorie produit | magasins / produits | ⚠️ subsiste | Fiches 02-03 — ambiguïté « ventes par secteur » |
+| 8 | Deux indicateurs proches : ventes (MttTTcNet) vs marge (MttTTcNet − CstLigne) | ventes | ⚠️ subsiste | Fiche 02 — schéma IA (Total Ventes vs Total Marge) |
+| 9 | Saisonnalité double pic (hiver + été) | ventes | ⚠️ subsiste (donnée) | Fiche 04 — « Saison blanche » / « Saison verte » |
+| 10 | Cibles mensuelles vendeurs | vendeurs | ⚠️ subsiste (donnée) | Fiche 04 — définition « Champion » |
 
 ## Assemblage des modèles
 

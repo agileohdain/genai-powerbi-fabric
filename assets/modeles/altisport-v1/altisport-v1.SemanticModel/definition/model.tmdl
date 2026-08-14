@@ -1,0 +1,24 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-CA
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["calendrier","clients","magasins","produits","vendeurs","ventes"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table calendrier
+ref table clients
+ref table magasins
+ref table produits
+ref table vendeurs
+ref table ventes
+
+ref cultureInfo fr-FR
+

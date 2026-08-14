@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "altisport-v1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c5406634-997a-4838-b62e-91eb46846a11"
+  }
+}

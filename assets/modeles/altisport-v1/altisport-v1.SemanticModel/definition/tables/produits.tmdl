@@ -1,0 +1,82 @@
+table produits
+	lineageTag: a3c5c91a-96bb-4e5c-88b4-88d06cd5d19a
+
+	column ProdID
+		dataType: string
+		lineageTag: c7d768aa-c1b8-45b2-9a66-bd5cb9282af5
+		summarizeBy: none
+		sourceColumn: ProdID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PrdLbl
+		dataType: string
+		lineageTag: ead39f41-8490-497e-9825-5e4848192591
+		summarizeBy: none
+		sourceColumn: PrdLbl
+
+		annotation SummarizationSetBy = Automatic
+
+	column CatCd
+		dataType: string
+		lineageTag: 2725fa31-a2f1-40d5-af21-062918d427c9
+		summarizeBy: none
+		sourceColumn: CatCd
+
+		annotation SummarizationSetBy = Automatic
+
+	column CatLbl
+		dataType: string
+		lineageTag: 865f0b48-672f-4a27-9a63-bb80c8c3904b
+		summarizeBy: none
+		sourceColumn: CatLbl
+
+		annotation SummarizationSetBy = Automatic
+
+	column SbCat
+		dataType: string
+		lineageTag: 794e1e23-0d74-404f-ba22-e503af946774
+		summarizeBy: none
+		sourceColumn: SbCat
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marque
+		dataType: string
+		lineageTag: 6aea74a3-22ad-416a-be8f-088127a7d9f5
+		summarizeBy: none
+		sourceColumn: Marque
+
+		annotation SummarizationSetBy = Automatic
+
+	column PU_TTC
+		dataType: int64
+		formatString: 0
+		lineageTag: bfaf7261-009c-4798-a880-0febb9db868d
+		summarizeBy: none
+		sourceColumn: PU_TTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column CstA
+		dataType: double
+		lineageTag: 57306220-4f23-454c-95a4-908a48b1b1dd
+		summarizeBy: none
+		sourceColumn: CstA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition produits = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("C:\dev\genai-powerbi-fabric\assets\data\brut\produits.csv"), [Delimiter = ";", Columns = 8, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"ProdID", type text}, {"PrdLbl", type text}, {"CatCd", type text}, {"CatLbl", type text}, {"SbCat", type text}, {"Marque", type text}, {"PU_TTC", Int64.Type}, {"CstA", type number}}, "fr")
+				in
+				  #"Type de colonne changé"
+
+	annotation PBI_ResultType = Table
+
