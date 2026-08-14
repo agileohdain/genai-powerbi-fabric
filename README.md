@@ -8,29 +8,31 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 
 | Phase | Contenu | Support |
 |---|---|---|
-| **Phase 1 — Formation & démonstrations** | Présentation des concepts, remise des guides et des actifs IA (fichiers d'instructions MCP) sur un jeu de données générique | `modules/*/phase1-formation/` |
+| **Phase 1 — Formation & démonstrations** | Concepts et démonstrations sur le jeu de données générique AltiSport (`assets/`) | `modules/*/phase1-formation/` |
 | **Phase 2 — Ateliers d'application** | Prise en main directe par l'équipe sur des cas d'usage et modèles sémantiques réels du client | `modules/*/phase2-ateliers/` |
 
 ## Modules
 
-| # | Module | Contenu |
-|---|---|---|
-| 01 | [Préparation Copilot-ready](modules/01-preparation-copilot-ready/) | Bonnes pratiques de préparation des données et modèles sémantiques pour Copilot, Data Agents |
-| 02 | [Copilot Power BI](modules/02-copilot-powerbi/) | Desktop & Service : génération de rapports, requêtes en langage naturel, prompting |
-| 03 | [Fabric Data Agents](modules/03-fabric-data-agents/) | Création, configuration, interrogation d'un Data Agent (no-code), matrice d'arbitrage |
-| 04 | [MCP Data Modelling](modules/04-mcp-data-modelling/) | Code agentique via VS Code : audit & correction DAX, documentation, modélisation guidée |
-| 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse |
-| 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling |
+| # | Module | Contenu | Statut | Durée |
+|---|---|---|---|---|
+| 01 | [Préparation Copilot-ready](modules/01-preparation-copilot-ready/) | Bonnes pratiques de préparation des données et modèles sémantiques pour Copilot, Data Agents | ✅ | ~3 h + ≈ 0,75 j |
+| 02 | [Copilot Power BI](modules/02-copilot-powerbi/) | Desktop & Service : génération de rapports, requêtes en langage naturel, prompting | ✅ | ~3 h + ≈ 0,75 j |
+| 03 | [Fabric Data Agents](modules/03-fabric-data-agents/) | Création, configuration, interrogation d'un Data Agent (no-code), matrice d'arbitrage | ⏳ | — |
+| 04 | [MCP Data Modelling](modules/04-mcp-data-modelling/) | Code agentique via VS Code : audit & correction DAX, documentation, modélisation guidée | ⏳ | — |
+| 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse | ⏳ | — |
+| 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling | ⏳ | — |
+
+> Durée couverte à ce jour par les modules rédigés (01-02) : **≈ 2,5 jours**.
 
 ## Documentation transversale
 
-| # | Sujet |
-|---|---|
-| 01 | [Prérequis & activation](docs/01-prerequis-activation/) — licences, régions, paramètres tenant |
-| 02 | [Sécurité](docs/02-securite/) — RLS/OLS et features IA, RGPD |
-| 03 | [Limites, hallucinations & validation humaine](docs/03-limites-hallucinations-validation/) |
-| 04 | [Consommation des CUs par les features IA](docs/04-consommation-cus-ia/) |
-| 05 | [Matrice d'arbitrage globale](docs/05-matrice-arbitrage-globale/) — Copilot vs Data Agent vs MCP vs Skills |
+| # | Sujet | Statut |
+|---|---|---|
+| 01 | [Prérequis & activation](docs/01-prerequis-activation/) — licences, régions, paramètres tenant | ✅ |
+| 02 | [Sécurité](docs/02-securite/) — RLS/OLS et features IA, RGPD | ⏳ |
+| 03 | [Limites, hallucinations & validation humaine](docs/03-limites-hallucinations-validation/) | ⏳ |
+| 04 | [Consommation des CUs par les features IA](docs/04-consommation-cus-ia/) | ⏳ |
+| 05 | [Matrice d'arbitrage globale](docs/05-matrice-arbitrage-globale/) — Copilot vs Data Agent vs MCP vs Skills | ⏳ |
 
 ## Arborescence
 
@@ -39,8 +41,8 @@ genai-powerbi-fabric/
 ├── README.md
 ├── docs/                                  # Documentation transversale
 ├── modules/                               # Modules de formation (phase1 / phase2)
-├── setup/                                 # Installation des ressources (MCP, fab CLI, licences…)
-└── assets/                                # Jeu de données générique, thèmes, prompt library
+├── setup/                                 # Installation des ressources (Desktop, MCP, fab CLI…)
+└── assets/                                # Jeu de données AltiSport, vocabulaire métier, thème, modèles PBIP
 ```
 
 ## Démarrer une mission client
@@ -50,3 +52,5 @@ Ce dépôt est un **template repository**. Pour créer une copie privée dédié
 ```powershell
 gh repo create client-xyz --template agileohdain/genai-powerbi-fabric --private
 ```
+
+Puis suivre les guides [setup](setup/) (postes des participants) et la checklist d'activation de [docs/01-prerequis-activation](docs/01-prerequis-activation/) (admin tenant).

@@ -1,6 +1,6 @@
 # Doc 01 — Prérequis & activation de Copilot
 
-Ce que l'admin doit activer **avant** la formation, et comment vérifier que tout est prêt. Toutes les démos Copilot (fiches 02-05, modules 02, 03 et 05) et l'étape *Prep data for AI* du modèle v2 en dépendent.
+Ce que l'admin doit activer **avant** la formation, et comment vérifier que tout est prêt. Toutes les démos Copilot (fiches 02-04, modules 02, 03 et 05) et l'étape *Prep data for AI* du modèle v2 en dépendent.
 
 > Copilot est **activé par défaut** sur les tenants disposant d'une capacité Fabric payante. Les étapes ci-dessous servent à le **vérifier**, le **cibler** (groupe de sécurité) et le rendre **utilisable dans Power BI Desktop**.
 

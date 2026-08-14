@@ -1,6 +1,6 @@
 # Fiche 01 — Évaluer son modèle sémantique
 
-> Fiche de référence de toute la formation pour les bonnes pratiques de modélisation. Les modules 02 à 05 s'y réfèrent.
+> Fiche de référence de toute la formation pour les bonnes pratiques de modélisation. Les autres modules s'y réfèrent.
 
 ## Objectifs
 

@@ -15,7 +15,7 @@ Les deux modèles sont **fournis finis** dans ce dépôt : rien à construire pe
 | Modèle | Rôle | Usage |
 |---|---|---|
 | `altisport-v1.pbip` | Import brut des CSV ERP, défauts laissés tels quels (ce que Desktop ne corrige pas seul) | Démos « avant/après » (fiche 01), terrain d'audit (module 04) |
-| `altisport-v2.pbip` | Mêmes données, modèle corrigé et préparé pour l'IA | Toutes les démos Copilot (fiches 02-05, modules 02 et 05) |
+| `altisport-v2.pbip` | Mêmes données, modèle corrigé et préparé pour l'IA | Toutes les démos Copilot (fiches 02-04, modules 02 et 05) |
 
 Ce que Power BI Desktop corrige **automatiquement** à l'import (types des montants et dates, relations) est identique dans v1 et v2 : ce ne sont pas des sujets de formation. Les écarts ci-dessous portent uniquement sur ce qui **subsiste** sans action humaine.
 

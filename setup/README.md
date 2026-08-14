@@ -12,5 +12,5 @@ Guides d'installation et de configuration des outils utilisés dans la formation
 ## Vérification rapide (tous modules)
 
 - [ ] Power BI Desktop à jour avec les aperçus activés (guide 01)
-- [ ] Compte connecté avec accès à une capacité Fabric (F64+ ou P1) dans une région supportée
+- [ ] Compte connecté avec accès à une capacité Fabric (F2+ ou P1+) dans une région supportée
 - [ ] Espace de travail Copilot-enabled disponible pour les tests
