@@ -76,4 +76,6 @@ Ce dépôt est un **template repository**. Pour créer une copie privée dédié
 gh repo create client-xyz --template agileohdain/genai-powerbi-fabric --private
 ```
 
+> Formateurs : suivez le **[guide formateur](docs/guide-formateur.md)** — chronologie de préparation d'une mission, de la signature à la clôture.
+
 Puis suivre les guides [setup](setup/) (postes des participants) et la checklist d'activation de [docs/01-prerequis-activation](docs/01-prerequis-activation/) (admin tenant).
