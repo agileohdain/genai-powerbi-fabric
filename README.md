@@ -35,7 +35,7 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse | ✅ | ~2,5 h + ≈ 0,75 j |
 | 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling | ✅ | ~2 h + ≈ 0,5 j |
 
-> Durée totale du parcours (modules 01-06, phases 1 + 2) : **≈ 6,25 jours**, + documentation transversale (docs 01-05) et installation des postes ([setup](setup/)).
+> Durée totale du parcours (modules 01-06, phases 1 + 2) : **≈ 6,25 jours**, + documentation transversale (docs 01-06) et installation des postes ([setup](setup/)).
 
 ## Documentation transversale
 
@@ -77,5 +77,7 @@ gh repo create client-xyz --template agileohdain/genai-powerbi-fabric --private
 ```
 
 > Formateurs : suivez le **[guide formateur](docs/guide-formateur.md)** — chronologie de préparation d'une mission, de la signature à la clôture.
+
+Présentation commerciale du parcours (projection + leave-behind) : [prevente/index.html](prevente/index.html).
 
 Puis suivre les guides [setup](setup/) (postes des participants) et la checklist d'activation de [docs/01-prerequis-activation](docs/01-prerequis-activation/) (admin tenant).
