@@ -31,6 +31,7 @@ Les cinq modules précédents ont rendu l'équipe **productrice** d'IA : Copilot
 |---|---|---|
 | [Phase 1 — Formation](phase1-formation/) | 3 fiches : capacités & throttling, consommation des features IA, gouvernance & alertes | ~2 h |
 | [Phase 2 — Ateliers](phase2-ateliers/) | 2 ateliers sur la capacité réelle du client : mesure, puis seuils + plan de gouvernance | ~0,5 jour |
+| [Quiz d'ancrage](phase1-formation/quiz.md) | 5 questions d'auto-évaluation (corrigé plié inclus) | ~10 min |
 
 ## Points d'attention transversaux
 

@@ -30,6 +30,7 @@ Auteurs de rapports, analystes, développeurs BI qui construisent et partagent d
 |---|---|---|
 | [Phase 1 — Formation](phase1-formation/) | 4 fiches : panorama et cas d'usage, création et configuration, qualité et vérification, publication et gouvernance | ~3 h |
 | [Phase 2 — Ateliers](phase2-ateliers/) | 2 ateliers sur les modèles réels du client : construction & recette, diffusion & adoption | ≈ 0,75 jour |
+| [Quiz d'ancrage](phase1-formation/quiz.md) | 5 questions d'auto-évaluation (corrigé plié inclus) | ~10 min |
 
 ## Points d'attention transversaux
 

@@ -11,6 +11,19 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | **Phase 1 — Formation & démonstrations** | Concepts et démonstrations sur le jeu de données générique AltiSport (`assets/`) | `modules/*/phase1-formation/` |
 | **Phase 2 — Ateliers d'application** | Prise en main directe par l'équipe sur des cas d'usage et modèles sémantiques réels du client | `modules/*/phase2-ateliers/` |
 
+## Feuille de route — 6 badges
+
+| Étape | Badge | Module | Capacité validée |
+|---|---|---|---|
+| 1 | 🛠️ Modèle Copilot-ready | [01](modules/01-preparation-copilot-ready/) | Préparer et valider un modèle sémantique pour l'IA |
+| 2 | 💬 Prompteur vérifié | [02](modules/02-copilot-powerbi/) | Générer et vérifier avec Copilot Power BI |
+| 3 | 🤖 Agent Builder | [03](modules/03-fabric-data-agents/) | Construire, recetter et partager un data agent |
+| 4 | 🔧 Agent Codeur | [04](modules/04-mcp-data-modelling/) | Auditer et documenter un modèle via MCP |
+| 5 | 🎨 Skill Author | [05](modules/05-fabric-skills-authoring/) | Créer, re-thématiser et traduire des rapports |
+| 6 | 🛡️ Gardien des CUs | [06](modules/06-gouvernance-cus/) | Mesurer et gouverner la consommation IA |
+
+> Chaque badge s'obtient sur preuve : quiz d'ancrage ≥ 4/5 **et** ateliers validés. Suivez votre progression dans le **[passeport IA](docs/passeport/)** ; planning dans l'[agenda suggéré](docs/06-agenda-suggere/).
+
 ## Modules
 
 | # | Module | Contenu | Statut | Durée |
@@ -33,6 +46,16 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 03 | [Limites, hallucinations & validation humaine](docs/03-limites-hallucinations-validation/) | ✅ |
 | 04 | [Consommation des CUs par les features IA](docs/04-consommation-cus-ia/) — tarifs tokens, throttling, Fabric Copilot capacity | ✅ |
 | 05 | [Matrice d'arbitrage globale](docs/05-matrice-arbitrage-globale/) — Copilot vs Data Agent vs MCP vs Skills | ✅ |
+| 06 | [Agenda suggéré](docs/06-agenda-suggere/) — formats intensif et alterné | ✅ |
+
+## Supports participants
+
+| Support | Usage |
+|---|---|
+| [Passeport IA](docs/passeport/) | Suivi de progression et 6 badges, à conserver tout au long du parcours |
+| [Antisèches](assets/antiseches/) | Prompting Copilot · MCP · arbitrage — 1 page chacune, à imprimer |
+| [Glossaire](docs/glossaire.md) | Vocabulaire IA & BI de la formation |
+| [Rétro express](docs/retro-module.md) | Modèle de rétro 5 min en fin de module |
 
 ## Arborescence
 
