@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formation GenAI Power BI &amp; Fabric — Synthèse prévente</title>
+<!--
+  Usage interne : page de synthèse pour prévente (projection + leave-behind imprimable/PDF).
+  Ce dossier peut être supprimé lors d'une copie client du template.
+  Sources de contenu : README.md, docs/06-agenda-suggere, docs/passeport, sections Livrables des ateliers.
+-->
+<style>
+  :root{
+    --navy:#1b2a41; --ink:#22272e; --muted:#5b6470; --line:#e3e7ec;
+    --accent:#f2c811; --accent-ink:#3d3300; --soft:#f7f9fb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);line-height:1.55;font-size:15px}
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px}
+
+  header{background:var(--navy);color:#fff;padding:38px 0 30px}
+  header .kicker{letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:600}
+  header h1{margin:8px 0 6px;font-size:30px;line-height:1.2}
+  header p.sub{margin:0;color:#c8d2df;max-width:640px}
+  .stats{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap}
+  .stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:12px 20px}
+  .stat b{display:block;font-size:22px;color:var(--accent)}
+  .stat span{font-size:12.5px;color:#c8d2df}
+
+  main{padding:34px 0 10px}
+  section{margin-bottom:38px}
+  h2{font-size:19px;margin:0 0 4px}
+  h2 .num{color:var(--muted);font-weight:600;font-size:14px;margin-right:8px}
+  p.lead{margin:0 0 16px;color:var(--muted)}
+
+  .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .step{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--soft)}
+  .step .badge{font-size:20px}
+  .step h3{margin:6px 0 2px;font-size:14.5px}
+  .step .mod{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+  .step p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+  .step .dur{margin-top:8px;font-size:12.5px;font-weight:600;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:6px;padding:2px 8px;display:inline-block}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{text-align:left;background:var(--navy);color:#fff;padding:9px 12px;font-weight:600}
+  td{border-bottom:1px solid var(--line);padding:9px 12px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--soft)}
+  td.mod{font-weight:600;white-space:nowrap}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .card h3{margin:0 0 8px;font-size:15px}
+  .card .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);border-radius:5px;padding:2px 8px;margin-bottom:8px}
+  .card ul{margin:0;padding-left:18px}
+  .card li{margin:3px 0;font-size:13.5px}
+
+  .ms{border-left:5px solid var(--accent);background:var(--soft);border-radius:0 10px 10px 0;padding:16px 20px}
+  .ms p{margin:6px 0}
+  .ms .big{font-size:16.5px;font-weight:600;margin:0 0 4px}
+  .chips{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:12px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--muted)}
+
+  .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;counter-reset:s}
+  .s3{border:1px solid var(--line);border-radius:10px;padding:14px 16px;position:relative}
+  .s3::before{counter-increment:s;content:counter(s);position:absolute;top:-10px;left:14px;background:var(--navy);color:#fff;font-weight:700;font-size:12px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .s3 h3{margin:6px 0 4px;font-size:14px}
+  .s3 p{margin:0;font-size:13px;color:var(--muted)}
+
+  footer{border-top:1px solid var(--line);margin-top:20px;padding:16px 0 30px;color:var(--muted);font-size:12.5px}
+
+  @media (max-width:760px){.timeline,.cols,.steps3{grid-template-columns:1fr}.stats{gap:8px}}
+  @media print{
+    body{font-size:12px}
+    header{padding:22px 0}
+    header h1{font-size:24px}
+    section{break-inside:avoid;margin-bottom:22px}
+    .step,.card,.s3{break-inside:avoid}
+    a{color:inherit;text-decoration:none}
+    .noprint{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">Proposition de formation · prévente</div>
+    <h1>IA générative pour Power BI &amp; Microsoft Fabric</h1>
+    <p class="sub">Parcours complet — de la préparation des modèles à la gouvernance des coûts — ancré dans la <b style="color:#fff">documentation officielle Microsoft</b> et ponctué de livrables concrets sur vos propres modèles.</p>
+    <div class="stats">
+      <div class="stat"><b>6</b><span>modules · 6 badges</span></div>
+      <div class="stat"><b>2</b><span>phases : formation + ateliers</span></div>
+      <div class="stat"><b>≈ 6,25 j</b><span>parcours complet (formats au choix)</span></div>
+      <div class="stat"><b>60+</b><span>liens Microsoft vérifiés</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 1. FEUILLE DE ROUTE -->
+  <section>
+    <h2><span class="num">01</span>Feuille de route — 6 modules, 6 badges</h2>
+    <p class="lead">Chaque module alterne formation (démonstrations sur un jeu de données dédié) puis ateliers d'application sur les modèles et rapports réels de vos équipes. Chaque étape validée = un badge dans le passeport du participant.</p>
+    <div class="timeline">
+      <div class="step"><span class="badge">🛠️</span><div class="mod">Module 01</div><h3>Préparation Copilot-ready</h3><p>Le socle : modèles sémantiques prêts pour l'IA (schéma IA, descriptions, validation).</p><span class="dur">~3 h + ≈ 0,75 j</span></div>
+      <div class="step"><span class="badge">💬</span><div class="mod">Module 02</div><h3>Copilot Power BI</h3><p>Génération de rapports, questions en langage naturel, prompting — et vérification des réponses.</p><span class="dur">~3 h + ≈ 0,75 j</span></div>
+      <div class="step"><span class="badge">🤖</span><div class="mod">Module 03</div><h3>Fabric Data Agents</h3><p>Construire, recetter et partager un agent conversationnel no-code sur vos données.</p><span class="dur">~3 h + ≈ 0,75 j</span></div>
+      <div class="step"><span class="badge">🔧</span><div class="mod">Module 04</div><h3>MCP Data Modelling</h3><p>Code agentique : audit, corrections DAX et documentation de masse via VS Code + Git.</p><span class="dur">~2,5 h + ≈ 0,75 j</span></div>
+      <div class="step"><span class="badge">🎨</span><div class="mod">Module 05</div><h3>Fabric Skills Authoring</h3><p>Création de rapports, charte visuelle, refactoring et traduction de masse.</p><span class="dur">~2,5 h + ≈ 0,75 j</span></div>
+      <div class="step"><span class="badge">🛡️</span><div class="mod">Module 06</div><h3>Gouvernance &amp; CUs</h3><p>Mesurer, chiffrer et gouverner la consommation IA — throttling, alertes, coûts.</p><span class="dur">~2 h + ~0,5 j</span></div>
+    </div>
+  </section>
+
+  <!-- 2. LIVRABLES -->
+  <section>
+    <h2><span class="num">02</span>Ce que vos équipes repartent avec — livrables par module</h2>
+    <p class="lead">Les ateliers produisent des artefacts réutilisables sur vos modèles, pas des exercices jetables.</p>
+    <table>
+      <tr><th style="width:26%">Module</th><th>Livrables d'atelier</th></tr>
+      <tr><td class="mod">01 · Préparation</td><td>Grille d'audit complétée · plan d'action priorisé · modèle pilote mis en œuvre et recetté</td></tr>
+      <tr><td class="mod">02 · Copilot</td><td>Recette rejouable verdict par question · catalogue de prompts recettés · lignes de conduite publiées</td></tr>
+      <tr><td class="mod">03 · Data Agents</td><td>Agent publié et partagé au groupe pilote · note de gouvernance · plan d'adoption</td></tr>
+      <tr><td class="mod">04 · MCP</td><td>Rapport d'audit versionné Git · plan de correction priorisé · modèle documenté · standard d'équipe</td></tr>
+      <tr><td class="mod">05 · Skills</td><td>Charte visuelle appliquée · refactoring par lots validés · traduction de masse · décision d'adoption consignée</td></tr>
+      <tr><td class="mod">06 · Gouvernance</td><td>Mesure de votre capacité réelle · seuils d'alerte · charte de gouvernance IA</td></tr>
+    </table>
+  </section>
+
+  <!-- 3. AGENDA -->
+  <section>
+    <h2><span class="num">03</span>Deux formats d'agenda, au choix</h2>
+    <p class="lead">Même contenu (≈ 6,25 jours), deux rythmes — à choisir selon la disponibilité de l'équipe.</p>
+    <div class="cols">
+      <div class="card">
+        <span class="tag">Intensif</span>
+        <h3>7 jours continus</h3>
+        <ul>
+          <li><b>J1-J3</b> — formation des 6 modules + quiz</li>
+          <li><b>J4-J7</b> — ateliers d'application sur vos modèles</li>
+          <li>Effet d'immersion fort, équipe équipée en 2 semaines</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">Alterné</span>
+        <h3>1 jour / semaine × 7</h3>
+        <ul>
+          <li><b>S1-S3</b> — formation (1 j/semaine)</li>
+          <li><b>S4-S7</b> — ateliers, appliqués entre deux sessions</li>
+          <li>Idéal équipe en production : chacun applique au fil de l'eau</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. GAMIFICATION -->
+  <section>
+    <h2><span class="num">04</span>Un parcours engageant — passeport, badges, quiz</h2>
+    <p class="lead">La progression est visible et mesurable : chaque participant tient son <b>passeport IA</b> du premier au dernier jour.</p>
+    <div class="cols">
+      <div class="card">
+        <h3>🛠️ 💬 🤖 🔧 🎨 🛡️ — 6 badges sur preuve</h3>
+        <ul>
+          <li>Un badge par module : <i>Modèle Copilot-ready</i>, <i>Prompteur vérifié</i>, <i>Agent Builder</i>, <i>Agent Codeur</i>, <i>Skill Author</i>, <i>Gardien des CUs</i></li>
+          <li>Obtention sur preuve : quiz ≥ 4/5 <b>et</b> ateliers validés — pas sur la présence</li>
+          <li>Mention finale « parcours accompli » en clôture</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📝 Quiz d'ancrage + antisèches</h3>
+        <ul>
+          <li>5 questions d'auto-évaluation par module, corrigé commenté fiche par fiche</li>
+          <li>3 antisèches imprimables : prompting Copilot, workflow MCP, arbitrage entre leviers IA</li>
+          <li>Glossaire IA &amp; BI pour les publics mixtes (métier + BI)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ANCRAGE MICROSOFT -->
+  <section>
+    <h2><span class="num">05</span>Ancré dans la documentation officielle Microsoft</h2>
+    <div class="ms">
+      <p class="big">Chaque fiche, chaque atelier cite ses sources Microsoft.</p>
+      <p>La formation est construite sur la documentation officielle — Microsoft Learn et les dépôts Microsoft sur GitHub — pas sur des interprétations tierces : <b>plus de 60 liens vers Microsoft, tous vérifiés</b>. Votre équipe apprend les règles du produit telles que Microsoft les documente, avec la source citée à chaque page : ce qui est appris reste vérifiable, daté et à jour.</p>
+      <div class="chips">
+        <span class="chip">Copilot for Power BI</span>
+        <span class="chip">Prepare data for AI</span>
+        <span class="chip">Fabric Data Agents</span>
+        <span class="chip">Power BI Modeling MCP</span>
+        <span class="chip">Skills for Fabric</span>
+        <span class="chip">Capacity &amp; throttling</span>
+        <span class="chip">Copilot consumption &amp; billing</span>
+        <span class="chip">Sécurité RLS / OLS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PROCHAINES ETAPES -->
+  <section>
+    <h2><span class="num">06</span>Prochaines étapes</h2>
+    <div class="steps3">
+      <div class="s3"><h3>Activation du tenant</h3><p>Checklist admin : licences, capacité Fabric, activation Copilot (guide fourni).</p></div>
+      <div class="s3"><h3>Installation des postes</h3><p>Guides pas à pas : Power BI Desktop, VS Code + MCP, Skills — 4 guides prêts à distribuer.</p></div>
+      <div class="s3"><h3>jour 1</h3><p>Lancement : distribution du passeport, module 01, premières démonstrations sur le jeu de données dédié.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Document de prévente — synthèse du parcours détaillé (6 modules, 22 fiches, 12 ateliers, 6 docs transversales). Contenu et durées : dossier de formation complet sur demande. · Août 2026
+  </div>
+</footer>
+
+</body>
+</html>
