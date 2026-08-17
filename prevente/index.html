@@ -41,7 +41,11 @@
   .step p{margin:6px 0 0;font-size:13px;color:var(--muted)}
   h3.sub{font-size:13.5px;margin:22px 0 8px;color:var(--navy);text-transform:uppercase;letter-spacing:.07em}
   p.note{font-size:12.5px;color:var(--muted);margin:6px 0 0}
-  code{font-family:Consolas,"Courier New",monospace;font-size:12px;background:#eef1f4;border:1px solid var(--line);border-radius:4px;padding:1px 5px;white-space:nowrap}
+  .mblock{border:1px solid var(--line);border-radius:10px;padding:13px 18px;margin:10px 0;background:#fff}
+  .mblock h4{margin:0 0 2px;font-size:15px;color:var(--navy)}
+  .mblock p.mini{margin:2px 0 8px;font-size:13px;color:var(--muted)}
+  .mblock ul{margin:0;padding-left:18px}
+  .mblock li{margin:4px 0;font-size:13.5px}
 
   table{width:100%;border-collapse:collapse;font-size:13.5px}
   th{text-align:left;background:var(--navy);color:#fff;padding:9px 12px;font-weight:600}
@@ -75,7 +79,7 @@
     header{padding:22px 0}
     header h1{font-size:24px}
     section{break-inside:avoid;margin-bottom:22px}
-    .step,.card,.s3{break-inside:avoid}
+    .step,.card,.s3,.mblock{break-inside:avoid}
     a{color:inherit;text-decoration:none}
     .noprint{display:none}
   }
@@ -104,77 +108,107 @@
     <h2><span class="num">01</span>Feuille de route — 6 modules, 6 badges</h2>
     <p class="lead">Chaque module alterne formation (démonstrations sur un jeu de données dédié) puis ateliers d'application sur les modèles et rapports réels de vos équipes. Chaque étape validée = un badge dans le passeport du participant.</p>
     <div class="timeline">
-      <div class="step"><span class="badge">🛠️</span><div class="mod">Module 01</div><h3>Préparation Copilot-ready</h3><p>Le socle : modèles sémantiques prêts pour l'IA (schéma IA, descriptions, validation).</p></div>
-      <div class="step"><span class="badge">💬</span><div class="mod">Module 02</div><h3>Copilot Power BI</h3><p>Génération de rapports, questions en langage naturel, prompting — et vérification des réponses.</p></div>
-      <div class="step"><span class="badge">🤖</span><div class="mod">Module 03</div><h3>Fabric Data Agents</h3><p>Construire, recetter et partager un agent conversationnel no-code sur vos données.</p></div>
-      <div class="step"><span class="badge">🔧</span><div class="mod">Module 04</div><h3>MCP Data Modelling</h3><p>Code agentique : audit, corrections DAX et documentation de masse via VS Code + Git.</p></div>
-      <div class="step"><span class="badge">🎨</span><div class="mod">Module 05</div><h3>Fabric Skills Authoring</h3><p>Création de rapports, charte visuelle, refactoring et traduction de masse.</p></div>
-      <div class="step"><span class="badge">🛡️</span><div class="mod">Module 06</div><h3>Gouvernance &amp; CUs</h3><p>Mesurer, chiffrer et gouverner la consommation IA — throttling, alertes, coûts.</p></div>
+      <div class="step"><span class="badge">🛠️</span><div class="mblock">Module 01</div><h3>Préparation Copilot-ready</h3><p>Le socle : modèles sémantiques prêts pour l'IA (schéma IA, descriptions, validation).</p></div>
+      <div class="step"><span class="badge">💬</span><div class="mblock">Module 02</div><h3>Copilot Power BI</h3><p>Génération de rapports, questions en langage naturel, prompting — et vérification des réponses.</p></div>
+      <div class="step"><span class="badge">🤖</span><div class="mblock">Module 03</div><h3>Fabric Data Agents</h3><p>Construire, recetter et partager un agent conversationnel no-code sur vos données.</p></div>
+      <div class="step"><span class="badge">🔧</span><div class="mblock">Module 04</div><h3>MCP Data Modelling</h3><p>Code agentique : audit, corrections DAX et documentation de masse via VS Code + Git.</p></div>
+      <div class="step"><span class="badge">🎨</span><div class="mblock">Module 05</div><h3>Fabric Skills Authoring</h3><p>Création de rapports, charte visuelle, refactoring et traduction de masse.</p></div>
+      <div class="step"><span class="badge">🛡️</span><div class="mblock">Module 06</div><h3>Gouvernance &amp; CUs</h3><p>Mesurer, chiffrer et gouverner la consommation IA — throttling, alertes, coûts.</p></div>
     </div>
   </section>
 
   <!-- 2. LIVRABLES -->
   <section>
     <h2><span class="num">02</span>Ce que vos équipes repartent avec — le dossier complet remis</h2>
-    <p class="lead">Tout le support est remis en fichiers Markdown consultables et réutilisables : fiches de formation, ateliers, assets de démonstration et références transversales.</p>
+    <p class="lead">Tout le support est remis en fichiers consultables et réutilisables : le contenu de formation module par module, les ateliers d'application sur vos modèles, et les documents transversaux.</p>
 
-    <h3 class="sub">A · Fiches de formation — 22 fiches + 6 quiz</h3>
-    <table>
-      <tr><th style="width:24%">Module</th><th>Fiches (.md)</th></tr>
-      <tr><td class="mod">01 · Préparation</td><td><code>01-evaluation-modele-semantique</code> · <code>02-schema-de-donnees-ia</code> · <code>03-instructions-ia</code> · <code>04-approved-for-copilot</code></td></tr>
-      <tr><td class="mod">02 · Copilot</td><td><code>01-panorama-experiences</code> · <code>02-creer-modifier-rapport</code> · <code>03-questions-de-donnees</code> · <code>04-narratifs-et-resumes</code> · <code>05-copilot-developpeur</code></td></tr>
-      <tr><td class="mod">03 · Data Agents</td><td><code>01-panorama-et-cas-usage</code> · <code>02-creer-et-configurer</code> · <code>03-qualite-et-verification</code> · <code>04-publier-partager-gouverner</code></td></tr>
-      <tr><td class="mod">04 · MCP</td><td><code>01-mcp-et-vscode</code> · <code>02-audit-existant</code> · <code>03-documentation</code></td></tr>
-      <tr><td class="mod">05 · Skills</td><td><code>01-skills-et-agentes</code> · <code>02-charte-et-creation</code> · <code>03-refactoring-et-traduction</code></td></tr>
-      <tr><td class="mod">06 · Gouvernance</td><td><code>01-capacites-et-throttling</code> · <code>02-consommation-features-ia</code> · <code>03-gouvernance-et-alertes</code></td></tr>
-    </table>
-    <p class="note">Chaque module se conclut par un quiz d'ancrage (5 questions, corrigé commenté) et chaque fiche cite ses sources Microsoft.</p>
+    <h3 class="sub">A · Fiches de formation — le contenu module par module</h3>
 
-    <h3 class="sub">B · Ateliers d'application — 12 ateliers sur vos modèles réels</h3>
-    <table>
-      <tr><th style="width:24%">Module</th><th>Ateliers &amp; livrables produits</th></tr>
-      <tr><td class="mod">01 · Préparation</td><td><b>Audit du modèle</b> — grille d'audit complétée, plan d'action priorisé · <b>Mise en œuvre &amp; recette</b> — modèle pilote corrigé et recetté</td></tr>
-      <tr><td class="mod">02 · Copilot</td><td><b>Découverte &amp; recette</b> — recette rejouable verdict par question · <b>Prompts &amp; adoption</b> — catalogue de prompts recettés, lignes de conduite publiées</td></tr>
-      <tr><td class="mod">03 · Data Agents</td><td><b>Construction &amp; recette</b> — agent pilote + fiche de recette rejouable · <b>Diffusion &amp; adoption</b> — agent publié et partagé, note de gouvernance, plan d'adoption</td></tr>
-      <tr><td class="mod">04 · MCP</td><td><b>Audit d'un modèle réel</b> — rapport d'audit versionné Git, plan de correction priorisé · <b>Documentation &amp; adoption</b> — modèle documenté (descriptions + markdown), standard d'équipe adopté</td></tr>
-      <tr><td class="mod">05 · Skills</td><td><b>Charte &amp; refactoring</b> — charte visuelle appliquée, refactoring par lots validés · <b>Traduction &amp; adoption</b> — traduction de masse du rapport, décision d'adoption consignée</td></tr>
-      <tr><td class="mod">06 · Gouvernance</td><td><b>Mesure de la capacité</b> — consommation réelle mesurée, throttling détecté ou écarté · <b>Plan de gouvernance</b> — seuils d'alerte, charte de gouvernance IA</td></tr>
-    </table>
-
-    <h3 class="sub">C · Assets remis — le pack de démarrage</h3>
-    <div class="cols">
-      <div class="card">
-        <h3><code>antiseches/</code></h3>
-        <ul>
-          <li>3 antisèches imprimables : prompting Copilot, workflow MCP, arbitrage entre leviers IA</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><code>modeles/</code></h3>
-        <ul>
-          <li>3 projets PBIP AltiSport prêts à ouvrir : <b>v1</b> (terrain d'audit), <b>v2</b> (modèle cible), <b>rapport legacy</b> (refactoring &amp; traduction)</li>
-          <li>Guide des modèles (rôle de chaque projet dans le parcours)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><code>data/</code></h3>
-        <ul>
-          <li>Jeu de données AltiSport complet (fichiers bruts) pour les démonstrations et l'entraînement</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Charte visuelle</h3>
-        <ul>
-          <li>Thème JSON AltiSport (couleurs, polices) utilisé dans les ateliers charte &amp; création</li>
-        </ul>
-      </div>
+    <div class="mblock">
+      <h4>01 · Préparation — rendre vos données fiables pour l'IA</h4>
+      <p class="mini">Le socle du parcours : la qualité de vos données détermine celle des réponses de l'IA.</p>
+      <ul>
+        <li><b>Auditer votre modèle de données</b> — structure, nommage, descriptions ; chaque défaut est relié à son impact direct sur la qualité des réponses</li>
+        <li><b>Cibler ce que l'IA a le droit de voir</b> — ne lui montrer que les champs utiles et sans ambiguïté, et sécuriser les questions fréquentes avec des réponses validées par vos équipes</li>
+        <li><b>Apprendre votre vocabulaire à l'IA</b> — traduire le jargon interne de l'entreprise en instructions simples, avec 3 modèles prêts à remplir</li>
+        <li><b>Valider avant la mise en production</b> — tester comme un vrai utilisateur, vérifier le raisonnement de l'IA derrière chaque réponse, puis marquer le modèle officiellement « approuvé »</li>
+      </ul>
     </div>
 
-    <h3 class="sub">D · Références transversales &amp; guides d'installation</h3>
+    <div class="mblock">
+      <h4>02 · Copilot Power BI — dialoguer avec vos rapports</h4>
+      <p class="mini">L'assistant IA intégré à Power BI — pour créer des rapports et interroger vos données, côté créateurs comme côté lecteurs.</p>
+      <ul>
+        <li><b>Créer un rapport en dialoguant</b> — décrivez la page voulue, l'IA la construit ; affinez ensuite visuel par visuel, avec annuler/rétablir</li>
+        <li><b>Poser des questions à vos données — et vérifier les réponses</b> — lire le raisonnement de l'IA (champs, filtres retenus) et connaître les pièges documentés avec leurs antidotes</li>
+        <li><b>Résumés automatiques</b> — synthèses dans le rapport et dans les e-mails d'abonnement, que l'on affine d'une simple phrase</li>
+        <li><b>L'assistant des créateurs avancés</b> — écrire, expliquer et documenter les calculs complexes, avec des garde-fous clairs</li>
+      </ul>
+    </div>
+
+    <div class="mblock">
+      <h4>03 · Data Agents — votre assistant données personnalisé</h4>
+      <p class="mini">Construire, sans une ligne de code, un assistant qui répond en langage naturel sur vos données — puis le partager au bon public.</p>
+      <ul>
+        <li><b>Choisir le bon moment</b> — quand un agent personnalisé s'impose plutôt que Copilot, et par quels canaux vos utilisateurs le consulteront</li>
+        <li><b>Construire et configurer</b> — sélectionner les sources et tables utiles, rédiger les instructions qui guident l'agent au quotidien</li>
+        <li><b>Garantir la qualité des réponses</b> — lire la requête générée derrière chaque réponse, la croiser avec une référence, itérer jusqu'à un niveau fiable</li>
+        <li><b>Publier et partager en sécurité</b> — versions figées au partage, permissions minimales, gouvernance des données sources</li>
+      </ul>
+    </div>
+
+    <div class="mblock">
+      <h4>04 · MCP Data Modelling — l'audit automatique de vos modèles</h4>
+      <p class="mini">L'IA travaille directement sur vos modèles de données, dans l'environnement de développement, toujours avec un filet de sécurité.</p>
+      <ul>
+        <li><b>Comprendre l'outil avant de l'utiliser</b> — ce qu'il peut toucher, ce qu'il ne peut pas, et la confirmation exigée avant chaque écriture</li>
+        <li><b>Auditer un modèle existant</b> — rapport classé par gravité (critique / important / recommandé), puis corrections appliquées par petits lots validés</li>
+        <li><b>Documenter en masse</b> — une description pour chaque table et chaque calcul en une seule passe, plus un document de synthèse complet du modèle — revus par vos équipes</li>
+      </ul>
+    </div>
+
+    <div class="mblock">
+      <h4>05 · Fabric Skills — créer et moderniser vos rapports</h4>
+      <p class="mini">Piloter la couche rapport (pages, visuels, charte) en langage naturel, avec vérification du rendu à chaque étape.</p>
+      <ul>
+        <li><b>Le mode d'emploi des skills</b> — comment l'agent suit une méthode fiable : modifier, valider, recharger, capturer le résultat</li>
+        <li><b>De la charte au rapport</b> — transformer votre charte visuelle (ou une maquette) en rapport complet et thématisé</li>
+        <li><b>Moderniser et traduire en masse</b> — migrer les anciens visuels, appliquer la charte partout, traduire tous les libellés d'un rapport en une fois</li>
+      </ul>
+    </div>
+
+    <div class="mblock">
+      <h4>06 · Gouvernance &amp; coûts — maîtriser ce que l'IA consomme</h4>
+      <p class="mini">Mesurer, chiffrer et piloter la consommation de votre capacité — pour une adoption maîtrisée et durable.</p>
+      <ul>
+        <li><b>Comprendre le modèle de capacité</b> — comment la consommation est comptée, pourquoi un pic n'est pas un problème, et les 4 niveaux de saturation progressifs</li>
+        <li><b>Chiffrer le coût réel de l'IA</b> — tarifs officiels par usage, ordres de grandeur, et qui ne consomme rien (l'audit et la documentation tournent sur les postes de travail)</li>
+        <li><b>Mettre la gouvernance en place</b> — regrouper la facturation IA, poser des alertes sur seuils, activer progressivement par groupes d'utilisateurs</li>
+      </ul>
+    </div>
+
+    <h3 class="sub">B · Ateliers d'application — sur vos modèles et rapports réels</h3>
     <table>
-      <tr><th style="width:24%">Dossier</th><th>Contenu (.md)</th></tr>
-      <tr><td class="mod">docs/</td><td><code>01-prerequis-activation</code> · <code>02-securite</code> · <code>03-limites-hallucinations-validation</code> · <code>04-consommation-cus-ia</code> · <code>05-matrice-arbitrage-globale</code> · <code>06-agenda-suggere</code> · <code>glossaire</code> · <code>passeport/</code> (suivi des badges)</td></tr>
-      <tr><td class="mod">setup/</td><td>4 guides d'installation des postes : <code>01</code> Power BI Desktop · <code>02</code> VS Code &amp; MCP · <code>03</code> Skills &amp; Copilot CLI · <code>04</code> Capacité &amp; gouvernance</td></tr>
+      <tr><th style="width:24%">Module</th><th>Ateliers &amp; livrables produits</th></tr>
+      <tr><td class="mblock">01 · Préparation</td><td><b>Audit du modèle</b> — grille d'audit complétée, plan d'action priorisé · <b>Mise en œuvre &amp; recette</b> — modèle pilote corrigé et recetté</td></tr>
+      <tr><td class="mblock">02 · Copilot</td><td><b>Découverte &amp; recette</b> — fiche de tests rejouable, question par question · <b>Prompts &amp; adoption</b> — catalogue de prompts éprouvés, lignes de conduite publiées</td></tr>
+      <tr><td class="mblock">03 · Data Agents</td><td><b>Construction &amp; recette</b> — agent pilote + fiche de recette rejouable · <b>Diffusion &amp; adoption</b> — agent publié et partagé, note de gouvernance, plan d'adoption</td></tr>
+      <tr><td class="mblock">04 · MCP</td><td><b>Audit d'un modèle réel</b> — rapport d'audit conservé et traçable, plan de correction priorisé · <b>Documentation &amp; adoption</b> — modèle documenté, standard d'équipe adopté</td></tr>
+      <tr><td class="mblock">05 · Skills</td><td><b>Charte &amp; refactoring</b> — charte visuelle appliquée, modernisation des visuels par lots validés · <b>Traduction &amp; adoption</b> — traduction complète du rapport, décision d'adoption consignée</td></tr>
+      <tr><td class="mblock">06 · Gouvernance</td><td><b>Mesure de la capacité</b> — consommation réelle mesurée, saturation détectée ou écartée · <b>Plan de gouvernance</b> — seuils d'alerte, charte de gouvernance IA</td></tr>
+    </table>
+
+    <h3 class="sub">C · Documents transversaux &amp; guides d'installation</h3>
+    <table>
+      <tr><th style="width:30%">Document</th><th>Ce qu'il apporte</th></tr>
+      <tr><td class="mblock">01 · Prérequis &amp; activation</td><td>Tout ce qu'il faut activer avant de commencer — la checklist prête pour vos équipes IT</td></tr>
+      <tr><td class="mblock">02 · Sécurité</td><td>Qui voit quelles données quand l'IA répond — et les précautions à prendre</td></tr>
+      <tr><td class="mblock">03 · Limites &amp; validation</td><td>Pourquoi l'IA peut se tromper, comment le détecter, et la règle du « toujours vérifier »</td></tr>
+      <tr><td class="mblock">04 · Consommation &amp; coûts</td><td>Ce que chaque usage de l'IA coûte sur votre capacité, et comment le suivre et le maîtriser</td></tr>
+      <tr><td class="mblock">05 · Matrice d'arbitrage</td><td>Quel outil IA pour quel besoin — l'aide de décision de l'équipe, en une page</td></tr>
+      <tr><td class="mblock">06 · Agenda suggéré</td><td>Deux rythmes de déroulé possibles pour organiser les journées de formation</td></tr>
+      <tr><td class="mblock">Glossaire &amp; passeport</td><td>Le vocabulaire IA expliqué simplement · le carnet de progression des participants</td></tr>
+      <tr><td class="mblock">Guides d'installation</td><td>4 guides pas à pas pour équiper les postes : Power BI Desktop, VS Code &amp; MCP, Skills, capacité &amp; gouvernance</td></tr>
     </table>
   </section>
 
