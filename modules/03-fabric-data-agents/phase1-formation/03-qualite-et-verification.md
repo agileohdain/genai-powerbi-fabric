@@ -34,7 +34,7 @@ Réflexes : si la réponse cite un montant mais que la requête filtre mal (ex. 
 |---|---|
 | 1. Jeu de questions de référence | 10-15 questions réelles (EN), avec valeurs attendues validées par le métier ou un visuel |
 | 2. Test brouillon | Exécuter le jeu sur le brouillon, noter conformité par question |
-| 3. Correction | Ajuster les instructions de l'agent (routage, définitions) ou, si la cause est le modèle, remonter au [module 01](../01-preparation-copilot-ready/) |
+| 3. Correction | Ajuster les instructions de l'agent (routage, définitions) ou, si la cause est le modèle, remonter au [module 01](../../01-preparation-copilot-ready/) |
 | 4. Re-test | Rejouer les questions non conformes ; comparer brouillon vs publié (bascule publiable) pour valider l'amélioration |
 | 5. Publier | Figer la version (fiche 04) — et garder le jeu de questions comme **recette** rejouable |
 

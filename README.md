@@ -20,9 +20,9 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 03 | [Fabric Data Agents](modules/03-fabric-data-agents/) | Création, configuration, interrogation d'un Data Agent (no-code), matrice d'arbitrage | ✅ | ~3 h + ≈ 0,75 j |
 | 04 | [MCP Data Modelling](modules/04-mcp-data-modelling/) | Code agentique via VS Code : audit & corrections DAX, documentation de masse | ✅ | ~2,5 h + ≈ 0,75 j |
 | 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse | ✅ | ~2,5 h + ≈ 0,75 j |
-| 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling | ⏳ | — |
+| 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling | ✅ | ~2 h + ≈ 0,5 j |
 
-> Durée couverte à ce jour par les modules rédigés (01-05) : **≈ 5,5 jours**.
+> Durée couverte à ce jour par les modules rédigés (01-06) : **≈ 6,25 jours**.
 
 ## Documentation transversale
 
@@ -31,7 +31,7 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 01 | [Prérequis & activation](docs/01-prerequis-activation/) — licences, régions, paramètres tenant | ✅ |
 | 02 | [Sécurité](docs/02-securite/) — RLS/OLS et features IA, RGPD | ⏳ |
 | 03 | [Limites, hallucinations & validation humaine](docs/03-limites-hallucinations-validation/) | ⏳ |
-| 04 | [Consommation des CUs par les features IA](docs/04-consommation-cus-ia/) | ⏳ |
+| 04 | [Consommation des CUs par les features IA](docs/04-consommation-cus-ia/) — tarifs tokens, throttling, Fabric Copilot capacity | ✅ |
 | 05 | [Matrice d'arbitrage globale](docs/05-matrice-arbitrage-globale/) — Copilot vs Data Agent vs MCP vs Skills | ⏳ |
 
 ## Arborescence
