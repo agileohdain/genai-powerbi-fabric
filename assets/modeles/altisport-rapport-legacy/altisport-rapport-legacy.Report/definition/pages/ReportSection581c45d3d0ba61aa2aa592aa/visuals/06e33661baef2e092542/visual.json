@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "06e33661baef2e092542",
+  "position": {
+    "x": 20,
+    "y": 410,
+    "z": 3000,
+    "height": 290,
+    "width": 620,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMagasin"
+                    }
+                  },
+                  "Property": "Secteur"
+                }
+              },
+              "queryRef": "DimMagasin.Secteur",
+              "nativeQueryRef": "Secteur",
+              "displayName": "Region"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactVentes"
+                        }
+                      },
+                      "Property": "Quantite"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "FactVentes.Quantite",
+              "nativeQueryRef": "Quantite",
+              "displayName": "Items Sold"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Items Sold by Region'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

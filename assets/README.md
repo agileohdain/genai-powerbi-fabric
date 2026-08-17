@@ -16,7 +16,7 @@ assets/
 │   └── brut/               # Sources CSV « telles que sorties de l'ERP » (avec défauts volontaires)
 ├── vocabulaire-metier.md   # Jargon AltiSport : source des instructions IA (fiche 03 du module 01)
 ├── theme-charte.json       # Thème Power BI AltiSport (v1 — enrichi au module 05)
-└── modeles/                # Guide des modèles + projets PBIP altisport-v1 / altisport-v2
+└── modeles/                # Guide des modèles + projets PBIP altisport-v1 / v2 / rapport legacy
 ```
 
 ## Dictionnaire des données
@@ -139,7 +139,7 @@ Non implémentés dans v2 (mesures YTD/N-1 explicites suffisantes pour les démo
 | Module 02 — fiches 01-05 (panorama, création de rapport, questions, narratifs, DAX) | v2 + un rapport de départ 2-3 pages à construire (voir README phase 1 du module) |
 | Module 03 — fiches 01-04 (panorama, création/config, qualité, publication) | v2 comme source du data agent (Read suffit) ; v1/v2 comparés sur une même question (fiche 03) ; vocabulaire-metier.md pour les instructions de l'agent |
 | Module 04 — fiches 01-03 (MCP, audit, documentation) | v1 (audit + corrections guidées) → v2 (cible) ; gabarit doc (fiche 03) ; setup/02 pour VS Code + MCP |
-| Module 05 (à venir) — charte, refactoring | theme-charte.json, rapport v2 à construire |
+| Module 05 — fiches 01-03 (skills, charte, refactoring, traduction) | rapport legacy (`altisport-rapport-legacy/`, visuels legacy + libellés EN) = terrain fiche 03 ; rapport vide v2 = création/charte fiche 02 ; theme-charte.json ; setup/03 (Copilot CLI + plugin + CLIs) |
 
 ## Conventions PBIP & Git
 

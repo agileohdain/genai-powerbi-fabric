@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "5a4ff0fc9763b37e13d8",
+  "position": {
+    "x": 660,
+    "y": 240,
+    "z": 6000,
+    "height": 460,
+    "width": 600,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "table",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMagasin"
+                    }
+                  },
+                  "Property": "Magasin"
+                }
+              },
+              "queryRef": "DimMagasin.Magasin",
+              "nativeQueryRef": "Magasin",
+              "displayName": "Store"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactVentes"
+                    }
+                  },
+                  "Property": "DateVente"
+                }
+              },
+              "queryRef": "FactVentes.DateVente",
+              "nativeQueryRef": "DateVente",
+              "displayName": "Date"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactVentes"
+                        }
+                      },
+                      "Property": "MontantNetTTC"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "FactVentes.MontantNetTTC",
+              "nativeQueryRef": "MontantNetTTC",
+              "displayName": "Total Sales"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactVentes"
+                        }
+                      },
+                      "Property": "Quantite"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "FactVentes.Quantite",
+              "nativeQueryRef": "Quantite",
+              "displayName": "Items Sold"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

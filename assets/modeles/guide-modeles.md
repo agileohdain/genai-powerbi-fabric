@@ -16,6 +16,7 @@ Les deux modèles sont **fournis finis** dans ce dépôt : rien à construire pe
 |---|---|---|
 | `altisport-v1.pbip` | Import brut des CSV ERP, défauts laissés tels quels (ce que Desktop ne corrige pas seul) | Démos « avant/après » (fiche 01), terrain d'audit (module 04) |
 | `altisport-v2.pbip` | Mêmes données, modèle corrigé et préparé pour l'IA | Toutes les démos Copilot (fiches 02-04, modules 02 et 05) |
+| `altisport-rapport-legacy.pbip` | **Couche rapport volontairement datée** sur le modèle v2 : visuels legacy (`card`, `table`, `matrix`), libellés EN, thème par défaut | Module 05 : refactoring de visuels, re-thémérisation, traduction (fiche 03), ateliers |
 
 Ce que Power BI Desktop corrige **automatiquement** à l'import (types des montants et dates, relations) est identique dans v1 et v2 : ce ne sont pas des sujets de formation. Les écarts ci-dessous portent uniquement sur ce qui **subsiste** sans action humaine.
 
@@ -117,3 +118,31 @@ Uniquement pour reproduire les modèles si les `.pbip` étaient perdus :
 5. **Prep data for AI** : schéma IA sans la marge, instructions IA (section 9 ci-dessus)
 
 Spécification complète (dictionnaire, pièges, mapping démos) : [assets/README.md](../README.md).
+
+---
+
+## Le rapport legacy (module 05)
+
+`altisport-rapport-legacy.pbip` est un projet PBIP autonome (rapport + **copie** du modèle sémantique v2) dont la **couche rapport** est volontairement « à rénover » — c'est son seul intérêt.
+
+### Structure
+
+| Élément | Valeur |
+|---|---|
+| Pages | 2 : `Sales Overview` (EN), `Stores Analysis` (EN) |
+| Visuels legacy | `card` ×2, `table` ×1, `matrix` ×1 (types modernes dérivés : 2 graphiques, 1 slicer, 2 textboxes) |
+| Libellés | EN (titres de pages, titres de visuels, textboxes) — cible de la démo de traduction |
+| Thème | Thème de base par défaut (pas la charte AltiSport) — cible de la démo de charte |
+| Données | Lecteur de données via le même paramètre `DossierData` (les requêtes sont celles du modèle v2 copié) |
+
+### Pourquoi une copie du modèle v2
+
+- Le rapport ne peut pas partager le dossier PBIP de v2 (un projet PBIP = 1 rapport + 1 modèle) ; la copie le rend **autonome et reproductible**
+- Le **périmètre d'écriture du module 05 est le rapport uniquement** : le modèle copié n'est pas modifié pendant les démos (un changement de modèle = module 04)
+- ⚠️ La copie **dérive** si v2 évolue : pour la resynchroniser, recopier `assets/modeles/altisport-v2/altisport-v2.SemanticModel/` vers `.../altisport-rapport-legacy.SemanticModel/` (tout sauf `.pbi/`) puis vérifier l'ouverture du `.pbip`
+
+### Vérifier / reproduire
+
+- Validation hors Desktop : `powerbi-report-author validate altisport-rapport-legacy.Report` (=> `succeeded`)
+- Ouverture : double-clic sur `altisport-rapport-legacy.pbip` (Desktop à jour, voir [setup/01](../../setup/01-powerbi-desktop.md))
+- Le rapport legacy s'appuie sur le [setup/03 — Copilot CLI + plugin + CLIs](../../setup/03-skills-copilot-cli.md)

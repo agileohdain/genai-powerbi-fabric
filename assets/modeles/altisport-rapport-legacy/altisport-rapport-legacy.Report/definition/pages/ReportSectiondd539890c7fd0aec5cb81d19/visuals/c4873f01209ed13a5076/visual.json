@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "c4873f01209ed13a5076",
+  "position": {
+    "x": 420,
+    "y": 90,
+    "z": 3000,
+    "height": 130,
+    "width": 380,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactVentes"
+                        }
+                      },
+                      "Property": "Quantite"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "FactVentes.Quantite",
+              "nativeQueryRef": "Quantite",
+              "displayName": "Total Items Sold"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

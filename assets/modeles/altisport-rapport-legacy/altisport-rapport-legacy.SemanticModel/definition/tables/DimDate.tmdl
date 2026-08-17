@@ -1,0 +1,118 @@
+table DimDate
+	lineageTag: c718e0c1-f602-4f6b-8ca9-492a25427020
+	dataCategory: Time
+
+	column DateKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 510ae921-aa51-4575-a9e3-fa28b7636195
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 95edde51-5846-42b8-ac03-c9ae7cafd905
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Annee
+		dataType: int64
+		formatString: 0
+		lineageTag: d4f7424c-10ae-4138-8274-9c6012c777f7
+		summarizeBy: none
+		sourceColumn: Annee
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		dataType: string
+		lineageTag: 26d2c2f5-4af5-4a2b-8e55-e97444202ed3
+		summarizeBy: none
+		sourceColumn: Trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumeroMois
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6fa23430-8bad-4fa7-9d1c-a4dbeaa4d57d
+		summarizeBy: none
+		sourceColumn: NumeroMois
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		dataType: string
+		lineageTag: 44f77a35-292c-4a56-8fc1-88001e095491
+		summarizeBy: none
+		sourceColumn: Mois
+		sortByColumn: NumeroMois
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumeroJour
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 09327af9-53e6-4f6f-90a9-999d02a2c2e4
+		summarizeBy: none
+		sourceColumn: NumeroJour
+
+		annotation SummarizationSetBy = Automatic
+
+	column JourSemaine
+		dataType: string
+		lineageTag: 065bcc9d-9f4d-4ad3-a9ff-2d4595ea7e75
+		summarizeBy: none
+		sourceColumn: JourSemaine
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumeroSemaine
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 310bb9ee-2c88-4dad-894e-48ce1b633d72
+		summarizeBy: none
+		sourceColumn: NumeroSemaine
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie Dates'
+		lineageTag: 54312a4b-b810-4a98-8a5a-6bf0e15a213b
+
+		level Annee
+			lineageTag: 62375652-8d7e-4156-a3d0-6a4e4e6c09ee
+			column: Annee
+
+		level Trimestre
+			lineageTag: 78a897a6-7f00-4d10-98d8-2b69725f72f0
+			column: Trimestre
+
+		level Mois
+			lineageTag: 47087e6b-b65e-4a54-99ec-a6e089449724
+			column: Mois
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents(DossierData & "\calendrier.csv"), [Delimiter = ";", Columns = 9, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"DateKey", Int64.Type}, {"Date", type date}, {"Annee", Int64.Type}, {"Trimestre", type text}, {"MoisNum", Int64.Type}, {"MoisLbl", type text}, {"JourNum", Int64.Type}, {"JourSemLbl", type text}, {"NumSem", Int64.Type}}, "fr"),
+				  #"Colonnes renommées" = Table.RenameColumns(#"Type de colonne changé",{{"MoisNum", "NumeroMois"}, {"MoisLbl", "Mois"}, {"JourNum", "NumeroJour"}, {"JourSemLbl", "JourSemaine"}, {"NumSem", "NumeroSemaine"}})
+				in
+				  #"Colonnes renommées"
+
+	annotation PBI_ResultType = Table
+

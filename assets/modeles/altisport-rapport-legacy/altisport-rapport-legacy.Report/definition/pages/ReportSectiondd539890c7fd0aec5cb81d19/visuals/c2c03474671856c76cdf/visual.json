@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "c2c03474671856c76cdf",
+  "position": {
+    "x": 20,
+    "y": 90,
+    "z": 2000,
+    "height": 130,
+    "width": 380,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactVentes"
+                        }
+                      },
+                      "Property": "MontantNetTTC"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "FactVentes.MontantNetTTC",
+              "nativeQueryRef": "MontantNetTTC",
+              "displayName": "Total Sales"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "altisport-rapport-legacy"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7f1a2b3c-4d5e-6f70-8192-a3b4c5d6e7f8"
+  }
+}

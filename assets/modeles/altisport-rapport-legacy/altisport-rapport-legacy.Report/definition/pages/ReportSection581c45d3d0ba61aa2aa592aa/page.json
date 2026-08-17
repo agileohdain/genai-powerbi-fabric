@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "ReportSection581c45d3d0ba61aa2aa592aa",
+  "displayName": "Stores Analysis",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

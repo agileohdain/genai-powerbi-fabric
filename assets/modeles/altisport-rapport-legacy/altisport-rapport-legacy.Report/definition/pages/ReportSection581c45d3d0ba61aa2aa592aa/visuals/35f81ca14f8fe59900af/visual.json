@@ -1,0 +1,81 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "35f81ca14f8fe59900af",
+  "position": {
+    "x": 20,
+    "y": 90,
+    "z": 2000,
+    "height": 300,
+    "width": 1240,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "matrix",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMagasin"
+                    }
+                  },
+                  "Property": "Secteur"
+                }
+              },
+              "queryRef": "DimMagasin.Secteur",
+              "nativeQueryRef": "Secteur",
+              "displayName": "Region"
+            }
+          ]
+        },
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactVentes"
+                    }
+                  },
+                  "Property": "Canal"
+                }
+              },
+              "queryRef": "FactVentes.Canal",
+              "nativeQueryRef": "Canal",
+              "displayName": "Channel"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactVentes"
+                        }
+                      },
+                      "Property": "MontantNetTTC"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "FactVentes.MontantNetTTC",
+              "nativeQueryRef": "MontantNetTTC",
+              "displayName": "Total Sales"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

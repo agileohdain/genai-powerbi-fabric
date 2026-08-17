@@ -1,0 +1,51 @@
+table DimVendeur
+	lineageTag: aba74d47-668e-48fe-bdaa-7750da4467eb
+
+	column IdVendeur
+		dataType: string
+		isHidden
+		lineageTag: d78de4c7-5be8-422d-bd13-e116036de912
+		summarizeBy: none
+		sourceColumn: IdVendeur
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vendeur
+		dataType: string
+		lineageTag: f6dc30dd-e9d1-4aa2-920d-6bb699481422
+		summarizeBy: none
+		sourceColumn: Vendeur
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdMagasin
+		dataType: string
+		isHidden
+		lineageTag: 0c2f54b2-f380-478c-9d4c-209de846ef06
+		summarizeBy: none
+		sourceColumn: IdMagasin
+
+		annotation SummarizationSetBy = Automatic
+
+	column CibleMensuelle
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b9159e8-5c12-4a6e-a39f-de6da4bf06d9
+		summarizeBy: none
+		sourceColumn: CibleMensuelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimVendeur = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents(DossierData & "\vendeurs.csv"), [Delimiter = ";", Columns = 4, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"VndID", type text}, {"VndLbl", type text}, {"MagID", type text}, {"CibleMens", Int64.Type}}, "fr"),
+				  #"Colonnes renommées" = Table.RenameColumns(#"Type de colonne changé",{{"VndID", "IdVendeur"}, {"VndLbl", "Vendeur"}, {"MagID", "IdMagasin"}, {"CibleMens", "CibleMensuelle"}})
+				in
+				  #"Colonnes renommées"
+
+	annotation PBI_ResultType = Table
+

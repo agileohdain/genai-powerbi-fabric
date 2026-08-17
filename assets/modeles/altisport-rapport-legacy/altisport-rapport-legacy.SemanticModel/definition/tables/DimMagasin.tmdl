@@ -1,0 +1,89 @@
+table DimMagasin
+	lineageTag: f6a52e84-f1a2-4555-ace4-eed68b7ca393
+
+	column IdMagasin
+		dataType: string
+		isHidden
+		lineageTag: 648e7d1e-d988-450b-814f-eb247d11f511
+		summarizeBy: none
+		sourceColumn: IdMagasin
+
+		annotation SummarizationSetBy = Automatic
+
+	column Magasin
+		dataType: string
+		lineageTag: d5a3aee9-aede-4660-8a31-d9165b54c126
+		summarizeBy: none
+		sourceColumn: Magasin
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ville
+		dataType: string
+		lineageTag: 72f30c60-9fed-4a3c-a56d-d3636d0bb08c
+		summarizeBy: none
+		sourceColumn: Ville
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departement
+		dataType: int64
+		formatString: 0
+		lineageTag: 86ab552d-dcdc-4973-895b-87f89e01601f
+		summarizeBy: none
+		sourceColumn: Departement
+
+		annotation SummarizationSetBy = Automatic
+
+	column Secteur
+		dataType: string
+		lineageTag: 3f47d763-8b24-43cd-beb6-b9a484e50c98
+		summarizeBy: none
+		sourceColumn: Secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	column SurfaceM2
+		dataType: int64
+		formatString: 0
+		lineageTag: 962ac84d-5985-47bc-bc35-57a80d1766c4
+		summarizeBy: sum
+		sourceColumn: SurfaceM2
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateOuverture
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6226a001-fba3-403e-9043-01df5ce014ed
+		summarizeBy: none
+		sourceColumn: DateOuverture
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	hierarchy 'Hiérarchie Géographie'
+		lineageTag: 43d35298-0836-43bb-b340-adb989372cde
+
+		level Secteur
+			lineageTag: db124547-b060-4617-b249-ec9ad70fb7d2
+			column: Secteur
+
+		level Ville
+			lineageTag: a274c0dd-fa67-413a-af0e-16a9c11cdee4
+			column: Ville
+
+	partition DimMagasin = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents(DossierData & "\magasins.csv"), [Delimiter = ";", Columns = 7, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Type de colonne changé" = Table.TransformColumnTypes(#"En-têtes promus", {{"MagID", type text}, {"MagLbl", type text}, {"Ville", type text}, {"DeptCd", Int64.Type}, {"Secteur", type text}, {"SurfM2", Int64.Type}, {"DtOuvert", type date}}, "fr"),
+				  #"Colonnes renommées" = Table.RenameColumns(#"Type de colonne changé",{{"MagID", "IdMagasin"}, {"MagLbl", "Magasin"}, {"DeptCd", "Departement"}, {"SurfM2", "SurfaceM2"}, {"DtOuvert", "DateOuverture"}})
+				in
+				  #"Colonnes renommées"
+
+	annotation PBI_ResultType = Table
+

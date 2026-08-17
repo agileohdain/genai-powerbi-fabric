@@ -19,10 +19,10 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 02 | [Copilot Power BI](modules/02-copilot-powerbi/) | Desktop & Service : génération de rapports, requêtes en langage naturel, prompting | ✅ | ~3 h + ≈ 0,75 j |
 | 03 | [Fabric Data Agents](modules/03-fabric-data-agents/) | Création, configuration, interrogation d'un Data Agent (no-code), matrice d'arbitrage | ✅ | ~3 h + ≈ 0,75 j |
 | 04 | [MCP Data Modelling](modules/04-mcp-data-modelling/) | Code agentique via VS Code : audit & corrections DAX, documentation de masse | ✅ | ~2,5 h + ≈ 0,75 j |
-| 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse | ⏳ | — |
+| 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse | ✅ | ~2,5 h + ≈ 0,75 j |
 | 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling | ⏳ | — |
 
-> Durée couverte à ce jour par les modules rédigés (01-04) : **≈ 4,5 jours**.
+> Durée couverte à ce jour par les modules rédigés (01-05) : **≈ 5,5 jours**.
 
 ## Documentation transversale
 
@@ -41,7 +41,7 @@ genai-powerbi-fabric/
 ├── README.md
 ├── docs/                                  # Documentation transversale
 ├── modules/                               # Modules de formation (phase1 / phase2)
-├── setup/                                 # Installation des ressources (Desktop, MCP, fab CLI…)
+├── setup/                                 # Installation des ressources (Desktop, VS Code/MCP, Skills for Fabric, capacités…)
 └── assets/                                # Jeu de données AltiSport, vocabulaire métier, thème, modèles PBIP
 ```
 
