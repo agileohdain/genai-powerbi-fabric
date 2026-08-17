@@ -4,6 +4,10 @@
 
 Capitaliser l'atelier 1 et préparer la vie de Copilot après la formation : un **catalogue de prompts éprouvés**, un contenu **découvrable** par le Copilot autonome, et des **lignes de conduite** claires sur « quand utiliser Copilot plutôt que lire le rapport ».
 
+## Durée
+
+≈ 4 h (sections minutées ci-dessous).
+
 ## 1. Catalogue de prompts (2 h)
 
 Les prompts efficaces dépendent du **vocabulaire réel du modèle** (noms de mesures, de catégories) : les cataloguer fige les formulations qui ont passé la recette (atelier 1) et constitue un actif d'équipe — support idéal de la formation des utilisateurs.
@@ -57,9 +61,21 @@ Rédiger une page de consignes courtes pour les utilisateurs :
 2. Élargissement par vagues, en s'appuyant sur le groupe de sécurité activé lors du paramétrage ([docs/01](../../../docs/01-prerequis-activation/))
 3. Suivi de la consommation CUs dans l'app Fabric Capacity Metrics (opération *Copilot in Fabric*) → ajuster le périmètre si besoin ([docs/04](../../../docs/04-consommation-cus-ia/))
 
-## Livrable
+## Livrables
 
 Catalogue de prompts versionné (à côté du rapport, ex. même espace de travail), descriptions/métadonnées complétées, décision « recherche limitée aux items approuvés », lignes de conduite publiées, vagues de déploiement datées.
+
+## Critères de succès
+
+- Le catalogue ne contient que des prompts **recettés**, chaque entrée référençant sa ligne de recette (atelier 1)
+- Les décisions de gouvernance sont actées : recherche limitée (ou non) aux items approuvés, vagues de déploiement datées
+- Les lignes de conduite « Copilot vs rapport » sont publiées à destination des utilisateurs
+
+## Antidotes aux dérives d'atelier
+
+- Catalogue qui gonfle : **seuls les prompts recettés entrent** — pas de saisie « de mémoire » sans rejeu
+- Ne pas activer les résumés Copilot sur tous les abonnements d'un coup : chaque résumé consomme des CUs ([docs/04](../../../docs/04-consommation-cus-ia/)) — piloter d'abord
+- La décision « recherche limitée aux items approuvés » ne se prend pas par défaut : la relier explicitement à la stratégie de gouvernance du module 01
 
 ## Sources
 

@@ -4,6 +4,10 @@
 
 Appliquer la démarche officielle (anti-sèche du [README de phase 1](../phase1-formation/README.md)) sur le **modèle pilote** du client — schéma IA, réponses vérifiées, instructions IA — puis recetter et marquer *Approved for Copilot*. L'équipe repart avec un **modèle configuré avec son propre vocabulaire**, pas un exemple générique.
 
+## Durée
+
+≈ 3 h 30 (étapes minutées ci-dessous).
+
 ## Prérequis
 
 - Atelier 1 réalisé ; points Haute priorité de la grille traités
@@ -62,14 +66,26 @@ Puis : modèle sémantique > **Paramètres** > section **Approved for Copilot** 
 
 Gouvernance express : nommer un référent pour les évolutions futures (instructions, réponses vérifiées) ; process léger : modification > mini-recette sur les points impactés > republication ; informer les utilisateurs (modèle approuvé, exemples de questions posables).
 
-## Livrables de l'atelier
+## Livrables
 
 - Modèle pilote configuré, recetté et marqué *Approved for Copilot*
 - Template d'instructions rempli avec le vocabulaire du client (réutilisable sur d'autres modèles)
 - Plan de recette complété (tableaux de tests) + note de gouvernance (référent, process)
 
-## Points d'attention
+## Critères de succès
+
+- Toutes les questions critiques de la liste client reçoivent une réponse correcte (checklist de l'étape 6 validée avant marquage)
+- Les réponses vérifiées se déclenchent sur les formulations réelles (taux > 90 % des tests)
+- Aucune réponse vérifiée n'expose de données sensibles (RLS/OLS)
+- Le template d'instructions est rempli avec le vocabulaire du client, réutilisable sur d'autres modèles
+
+## Antidotes aux dérives d'atelier
 
 - Itérer par petites touches : modifier, tester, mesurer — pas de grande rédaction d'instructions d'un coup
 - Si le modèle est partagé par plusieurs populations : un terme = une seule définition (limite actuelle), arbitrer avec le métier
 - Après l'atelier : surveiller les questions sans réponse remontées par les utilisateurs — matière première pour de nouvelles réponses vérifiées / instructions ; réutiliser la grille d'audit (atelier 1) sur les autres modèles, manuellement ou via MCP (module 04)
+
+## Sources
+
+- [Add AI instructions to your semantic model](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-instructions)
+- [Create verified answers](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-verified-answers)

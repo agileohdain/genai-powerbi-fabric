@@ -4,6 +4,10 @@
 
 Parcourir toutes les expériences Copilot sur un **rapport réel du client** et produire la **fiche de recette** qui servira à encadrer l'usage après la formation : questions types, réponses attendues, points de vérification.
 
+## Durée
+
+≈ 3 h (parcours guidé sur une demi-journée, recette en continu).
+
 ## Déroulé
 
 ### 1. Parcours guidé (matinée)
@@ -34,12 +38,24 @@ Réflexes de vérification systématiques (fiche 03) : déployer *How Copilot ar
 - Alimentation du plan d'action [module 01](../../01-preparation-copilot-ready/phase2-ateliers/) : chaque cause « modèle » devient un ticket de correction
 - Questions à interdire provisoirement (réponses non fiables) : liste explicite dans la fiche de recette
 
-## Livrable
+## Livrables
 
 Fiche de recette Copilot du rapport (tableau ci-dessus complété), détenue par le propriétaire du rapport, à rejouer après chaque évolution du modèle.
 
-## Points d'attention
+## Critères de succès
+
+- Chaque question testée a sa ligne de recette complète (prompt, attendu, champs/filtres utilisés, verdict)
+- Le taux de conformité est calculé et les écarts ont une cause classée (modèle / prompt / limite produit)
+- Le plan d'action du [module 01](../../01-preparation-copilot-ready/phase2-ateliers/) est alimenté par les causes « modèle »
+- Les questions non fiables sont listées explicitement comme interdites provisoirement
+
+## Antidotes aux dérives d'atelier
 
 - Ne recetter que des **questions plausibles** : la recette doit refléter l'usage réel, pas un catalogue exhaustif
 - Si un modèle non préparé donne de mauvaises réponses : c'est le résultat attendu — le documenter comme argument pour la préparation (module 01) plutôt que comme échec de Copilot
 - Garder la traçabilité des prompts : ils amorcent l'atelier 2
+
+## Sources
+
+- [Ask Copilot questions about your data](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question)
+- [Evaluate Copilot responses](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-evaluate-data)

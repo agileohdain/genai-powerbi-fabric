@@ -4,6 +4,10 @@
 
 Publier l'agent pilote, le partager à un **groupe pilote** avec les bonnes permissions, choisir le canal de consommation adapté à l'organisation et verrouiller les règles de gouvernance avant élargissement.
 
+## Durée
+
+≈ 2 h 30 (sections minutées ci-dessous).
+
 ## Déroulé
 
 ### 1. Publication et partage (45 min)
@@ -40,12 +44,23 @@ Décision : canal de lancement du pilote, avec plan de test dédié (la recette 
 - Anti-sèche d'une page : 5-10 questions types + rappel des règles (anglais, 25 lignes max, vérifier avant de diffuser)
 - Critères d'entrée en production : taux de conformité recette ≥ seuil convenu, questions interdites levées, gouvernance validée
 
-## Livrable
+## Livrables
 
 Agent **publié et partagé** au groupe pilote + note de gouvernance (permissions, politique, propriétaire, fréquence de revue) + plan d'adoption.
 
-## Points d'attention
+## Critères de succès
+
+- L'agent est **publié** (pas resté en brouillon) et le scénario consommateur est vérifié avec un **compte du groupe pilote** (permission agent + Read sur la source)
+- Le canal de consommation est choisi, avec la recette de l'atelier 1 rejouée sur ce canal
+- La note de gouvernance couvre permissions, politiques de données, revue périodique et suivi des CUs
+
+## Antidotes aux dérives d'atelier
 
 - Publier **avant** de partager : un agent non publié n'est pas interrogable avec la permission par défaut (fiche 04)
 - Donner Read seul au groupe pilote : c'est le test grandeur nature du modèle de permission allégé — documenter les retours (c'est souvent le premier contact d'utilisateurs sans droit Build)
 - Ne pas élargir le périmètre (nouvelles sources, nouveaux publics) avant le verdict du pilote : la recette et les CUs diront si l'agent est prêt
+
+## Sources
+
+- [Fabric data agent sharing and permission management](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-sharing)
+- [Configure Fabric data agent tenant settings](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-tenant-settings)

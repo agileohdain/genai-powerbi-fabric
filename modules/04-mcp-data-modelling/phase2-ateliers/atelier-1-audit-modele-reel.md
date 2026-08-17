@@ -4,6 +4,10 @@
 
 Auditer un **modèle réel du client** avec le MCP server, produire le rapport d'audit gradué et le **plan de correction** articulé avec la grille de préparation du [module 01](../../01-preparation-copilot-ready/).
 
+## Durée
+
+≈ 2 h 45 (sections minutées ci-dessous).
+
 ## Déroulé
 
 ### 1. Cadrage (30 min)
@@ -30,13 +34,25 @@ Pour chaque constat : noter s'il est **technique** (l'agent a raison, on corrige
 2. Articuler avec la grille du [module 01](../../01-preparation-copilot-ready/phase2-ateliers/) : chaque constat « modèle » correspond à une ligne de la grille — l'audit MCP est la **preuve par l'exemple** de ce que la grille demande
 3. **Ne pas corriger en masse aujourd'hui** : le plan est validé, les corrections s'appliquent en atelier 2 (ou en suivi) avec le métier présent
 
-## Livrable
+## Livrables
 
 Rapport d'audit markdown (committé) + plan de correction priorisé (niveau par famille, responsable, lien avec la grille module 01) + liste des constats à valider métier.
 
-## Points d'attention
+## Critères de succès
+
+- La baseline Git est posée **avant** l'audit (commit du dossier PBIP)
+- Le rapport d'audit est gradué (CRITIQUE / IMPORTANT / RECOMMANDÉ) et committé dans le dépôt
+- Chaque constat est classé **technique** ou **à valider métier**
+- Le plan de correction est validé mais **aucune correction n'est appliquée en masse** le jour même
+
+## Antidotes aux dérives d'atelier
 
 - L'audit en un seul prompt est superficiel : la **relecture entre phases** fait la qualité du rapport
 - Ne pas confondre « l'agent classe critique » et « c'est critique pour le client » : la gravité métier se valide avec l'équipe
 - Si le modèle est loin d'être préparé, le rapport documente l'état réel : c'est l'argument de cadrage du travail de préparation (module 01), pas un constat d'échec
 - Garder les prompts d'audit : ils amorcent l'atelier 2 (documentation) et les audits suivants
+
+## Sources
+
+- [Power BI Modeling MCP Server (README officiel)](https://github.com/microsoft/powerbi-modeling-mcp)
+- [Fiche 02 — audit d'un existant](../phase1-formation/02-audit-existant.md) (démarche phase par phase)

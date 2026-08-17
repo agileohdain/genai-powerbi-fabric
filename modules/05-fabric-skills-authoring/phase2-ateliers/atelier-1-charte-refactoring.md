@@ -61,3 +61,8 @@ Prendre un **rapport réel du client** (PBIP) avec sa **charte/matériel PowerPo
 | L'agent « en fait trop » (refactor global non demandé) | Compter les étapes : thème d'abord, migration ensuite, toujours par lot validé |
 | L'équipe attend que l'agent décide à sa place | Chaque choix de charte/archetype passe par une question métier humaine |
 | Script du formateur ressassé | Choisir des rapports différents de la démo phase 1 (jamais AltiSport en atelier) |
+
+## Sources
+
+- [Skills for Fabric (dépôt Microsoft)](https://github.com/microsoft/skills-for-fabric)
+- [Report Design skill — vue d'ensemble](https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-report-design-skill-overview)

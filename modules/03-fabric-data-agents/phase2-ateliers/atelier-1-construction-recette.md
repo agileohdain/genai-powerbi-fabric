@@ -4,6 +4,10 @@
 
 Spécifier et construire le **data agent pilote** sur un modèle réel du client, et produire la **recette de questions vérifiées** qui encadrera l'usage après la formation.
 
+## Durée
+
+≈ 3 h 45 (sections minutées ci-dessous).
+
 ## Déroulé
 
 ### 1. Cadrage (45 min) — avec les utilisateurs métier
@@ -38,13 +42,24 @@ Vérification systématique (fiche 03) : lire la requête générée, croiser av
 - Alimentation du plan d'action [module 01](../../01-preparation-copilot-ready/phase2-ateliers/) : chaque cause « modèle » devient un ticket de correction
 - Questions à interdire provisoirement (réponses non fiables) : liste explicite dans la recette
 
-## Livrable
+## Livrables
 
 Agent pilote (brouillon, en attente de validation) + fiche de recette rejouable, détenue par le propriétaire de l'agent, à rejouer après chaque évolution du modèle ou des instructions.
 
-## Points d'attention
+## Critères de succès
+
+- Les 10-15 questions réelles du cadrage passent avec une **requête générée lisible et conforme** (verdict Conforme ou Conforme avec réserve)
+- Chaque écart a une cause classée : modèle / agent (instructions) / limite produit
+- Les questions non fiables sont listées comme interdites provisoirement dans la recette
+
+## Antidotes aux dérives d'atelier
 
 - Ne recetter que des **questions plausibles** : la recette doit refléter l'usage réel
 - Un modèle non préparé qui donne de mauvaises réponses est le **résultat attendu** : le documenter comme argument pour la préparation (module 01), pas comme un échec de l'agent
 - Les questions non conformes pour cause « limite produit » (ex. trop de lignes) ne sont pas des défauts : les exclure du périmètre d'adoption
 - Garder la traçabilité des prompts : elle amorce l'atelier 2 (canaux, formation des utilisateurs)
+
+## Sources
+
+- [Fabric data agent creation (concept, GA)](https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent)
+- [Fabric data agent scenario — bout en bout](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-end-to-end-tutorial)

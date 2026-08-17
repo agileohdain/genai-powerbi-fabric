@@ -6,6 +6,10 @@
 
 > La grille ci-dessous est **générique et réutilisable** : elle sert d'audit manuel ici, et de référentiel pour l'audit automatisé via MCP (module 04). Vous pouvez la réappliquer sur tous vos modèles.
 
+## Durée
+
+≈ 3 h (à moduler selon le nombre de modèles audités).
+
 ## Mode d'emploi
 
 1. Ouvrir le modèle dans Power BI Desktop (vue Modèle + vue Rapport) et/ou dans le service.
@@ -71,7 +75,7 @@
 | 7.2 | Valeurs texte < 100 caractères (au-delà : non indexées) | Aperçu des données | Raccourcir les libellés longs | Basse |
 | 7.3 | Cardinalité globale sous controle (limite 5 M de valeurs) | Vue Modèle / stats | Limiter les colonnes à forte cardinalité exposées | Moyenne |
 
-## Livrable de l'atelier
+## Livrables
 
 - Grille complétée (statuts + correctifs + priorités)
 - Plan d'action priorisé : points Haute priorité traités avant l'atelier 2
@@ -80,3 +84,20 @@
 ## Réutilisation
 
 Cette grille sert de référentiel pour l'**audit automatisé via MCP** (module 04) : chaque critère peut être vérifié par un agent (audit & correction DAX, documentation générée). La version MCP générera un rapport d'audit au même format.
+
+## Critères de succès
+
+- Chaque critère de la grille porte un statut et une priorité (aucune ligne vide), écarts documentés avec correctif proposé
+- Le plan d'action est priorisé et daté ; les points Haute priorité sont planifiés **avant** l'atelier 2
+- Le modèle pilote de l'atelier 2 est désigné et justifié
+
+## Antidotes aux dérives d'atelier
+
+- Vouloir tout auditer d'un coup : commencer par le modèle pilote (celui des ateliers 2 et des démos IA), étendre ensuite
+- Corriger pendant l'audit : l'atelier produit un **plan d'action**, les corrections se font en atelier 2 — sinon la grille reste inachevée
+- Remplir la grille sans le métier : les critères « KPI attendus » (3.3) et vocabulaire exigent un échange métier réel
+
+## Sources
+
+- [Update your data model to work well with Copilot](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai)
+- [Fiche 01 — évaluation du modèle](../phase1-formation/01-evaluation-modele-semantique.md) (grille pédagogique)

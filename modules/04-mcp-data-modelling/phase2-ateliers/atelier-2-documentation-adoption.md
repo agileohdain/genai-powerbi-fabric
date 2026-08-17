@@ -4,6 +4,10 @@
 
 Documenter les **modèles réels du client** (descriptions + document markdown au standard d'équipe), appliquer la revue humaine, et installer la routine d'équipe : documentation versionnée dans Git, rejouée à chaque évolution du modèle.
 
+## Durée
+
+≈ 2 h 15 (sections minutées ci-dessous).
+
 ## Déroulé
 
 ### 1. Descriptions en masse (45 min)
@@ -30,12 +34,24 @@ Documenter les **modèles réels du client** (descriptions + document markdown a
 - Les descriptions ajoutées sont-elles **consommées** ? Test rapide : rejouer une question Copilot (module 02) ou une question de data agent (module 03) sur le modèle documenté et comparer avec la réponse d'avant
 - S'il y a un écart persistant : instructions IA du modèle (module 01, fiche 03), pas la documentation
 
-## Livrable
+## Livrables
 
 Modèle documenté (descriptions + markdown, committés) + standard d'équipe adopté (gabarit, emplacement, routine) + constat avant/après sur une question IA rejouée.
 
-## Points d'attention
+## Critères de succès
+
+- Les descriptions sont passées en revue sur le **diff TMDL** : aucune triviale, définitions sensibles validées métier
+- Le document markdown suit le gabarit standard et a fait l'objet d'une **revue humaine en groupe**
+- Un constat avant/après atteste l'effet des descriptions sur au moins une question IA rejouée
+- La routine d'équipe est adoptée : emplacement fixe dans Git, rejeu à chaque évolution du modèle
+
+## Antidotes aux dérives d'atelier
 
 - La documentation générée **sans revue humaine** est un livrable faible : la séance de revue en groupe est le cœur de l'atelier
 - Ne pas tout documenter : le 20/80 s'applique aux mesures ; les colonnes techniques masquées (module 01) n'ont pas à être documentées
 - Une documentation à jour fait gagner plus que le temps de sa génération : la routine Git est le vrai livrable de l'adoption
+
+## Sources
+
+- [Power BI Modeling MCP Server (README officiel)](https://github.com/microsoft/powerbi-modeling-mcp)
+- [Fiche 03 — documentation](../phase1-formation/03-documentation.md) (gabarit et passe de descriptions)

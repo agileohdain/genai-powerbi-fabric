@@ -68,3 +68,8 @@ Faciliter une décision collective sur l'emploi réel des skills :
 | Tradition « au fil de l'eau » qui touche les données | Refuser tout diff touchant DAX/valeurs avant revue |
 | L'adoption reste un vœu | Exiger une décision consignée (même « on ne généralise pas » est une décision) |
 | Chacun traduit à sa sauce | Un seul prompt de mission unique pour tout le rapport, puis revue |
+
+## Sources
+
+- [Skills for Fabric (dépôt Microsoft)](https://github.com/microsoft/skills-for-fabric)
+- [CLI `@microsoft/powerbi-report-authoring-cli`](https://www.npmjs.com/package/@microsoft/powerbi-report-authoring-cli)
