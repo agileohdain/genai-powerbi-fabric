@@ -31,7 +31,7 @@ Développeurs BI, data engineers, analystes avancés à l'aise avec VS Code/Copi
 | Phase | Contenu | Durée indicative |
 |---|---|---|
 | [Phase 1 — Formation](phase1-formation/) | 3 fiches : skills & agents, charte & création, refactoring & traduction | ~2,5 h |
-| [Phase 2 — Ateliers](phase2-ateliers/) | 2 ateliers sur les rapports réels du client : charte + refactor, traduction + adoption | ~ 0,75 jour |
+| [Phase 2 — Ateliers](phase2-ateliers/) | 2 ateliers sur les rapports réels du client : charte + refactor, traduction + adoption | ≈ 0,75 jour |
 
 ## Points d'attention transversaux
 

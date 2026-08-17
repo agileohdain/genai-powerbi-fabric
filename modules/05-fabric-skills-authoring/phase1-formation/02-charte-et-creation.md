@@ -79,7 +79,7 @@ powerbi-desktop screenshot-all
 
 Examiner les captures : données visibles, couleurs charte appliquées, titres pertinents (pas de noms bruts type `FactVentes`, `MontantNetTTC`), aucun visuel vide.
 
-### Piège fréquent en démo
+## Limites et pièges
 
 | Symptôme | Cause courante | Correction |
 |---|---|---|
