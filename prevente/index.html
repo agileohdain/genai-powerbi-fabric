@@ -39,7 +39,9 @@
   .step h3{margin:6px 0 2px;font-size:14.5px}
   .step .mod{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
   .step p{margin:6px 0 0;font-size:13px;color:var(--muted)}
-  .step .dur{margin-top:8px;font-size:12.5px;font-weight:600;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:6px;padding:2px 8px;display:inline-block}
+  h3.sub{font-size:13.5px;margin:22px 0 8px;color:var(--navy);text-transform:uppercase;letter-spacing:.07em}
+  p.note{font-size:12.5px;color:var(--muted);margin:6px 0 0}
+  code{font-family:Consolas,"Courier New",monospace;font-size:12px;background:#eef1f4;border:1px solid var(--line);border-radius:4px;padding:1px 5px;white-space:nowrap}
 
   table{width:100%;border-collapse:collapse;font-size:13.5px}
   th{text-align:left;background:var(--navy);color:#fff;padding:9px 12px;font-weight:600}
@@ -50,7 +52,6 @@
   .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .card{border:1px solid var(--line);border-radius:10px;padding:16px 18px}
   .card h3{margin:0 0 8px;font-size:15px}
-  .card .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);border-radius:5px;padding:2px 8px;margin-bottom:8px}
   .card ul{margin:0;padding-left:18px}
   .card li{margin:3px 0;font-size:13.5px}
 
@@ -90,7 +91,7 @@
     <div class="stats">
       <div class="stat"><b>6</b><span>modules · 6 badges</span></div>
       <div class="stat"><b>2</b><span>phases : formation + ateliers</span></div>
-      <div class="stat"><b>≈ 6,25 j</b><span>parcours complet (formats au choix)</span></div>
+      <div class="stat"><b>≈ 6,25 j</b><span>parcours complet</span></div>
       <div class="stat"><b>60+</b><span>liens Microsoft vérifiés</span></div>
     </div>
   </div>
@@ -103,83 +104,83 @@
     <h2><span class="num">01</span>Feuille de route — 6 modules, 6 badges</h2>
     <p class="lead">Chaque module alterne formation (démonstrations sur un jeu de données dédié) puis ateliers d'application sur les modèles et rapports réels de vos équipes. Chaque étape validée = un badge dans le passeport du participant.</p>
     <div class="timeline">
-      <div class="step"><span class="badge">🛠️</span><div class="mod">Module 01</div><h3>Préparation Copilot-ready</h3><p>Le socle : modèles sémantiques prêts pour l'IA (schéma IA, descriptions, validation).</p><span class="dur">~3 h + ≈ 0,75 j</span></div>
-      <div class="step"><span class="badge">💬</span><div class="mod">Module 02</div><h3>Copilot Power BI</h3><p>Génération de rapports, questions en langage naturel, prompting — et vérification des réponses.</p><span class="dur">~3 h + ≈ 0,75 j</span></div>
-      <div class="step"><span class="badge">🤖</span><div class="mod">Module 03</div><h3>Fabric Data Agents</h3><p>Construire, recetter et partager un agent conversationnel no-code sur vos données.</p><span class="dur">~3 h + ≈ 0,75 j</span></div>
-      <div class="step"><span class="badge">🔧</span><div class="mod">Module 04</div><h3>MCP Data Modelling</h3><p>Code agentique : audit, corrections DAX et documentation de masse via VS Code + Git.</p><span class="dur">~2,5 h + ≈ 0,75 j</span></div>
-      <div class="step"><span class="badge">🎨</span><div class="mod">Module 05</div><h3>Fabric Skills Authoring</h3><p>Création de rapports, charte visuelle, refactoring et traduction de masse.</p><span class="dur">~2,5 h + ≈ 0,75 j</span></div>
-      <div class="step"><span class="badge">🛡️</span><div class="mod">Module 06</div><h3>Gouvernance &amp; CUs</h3><p>Mesurer, chiffrer et gouverner la consommation IA — throttling, alertes, coûts.</p><span class="dur">~2 h + ~0,5 j</span></div>
+      <div class="step"><span class="badge">🛠️</span><div class="mod">Module 01</div><h3>Préparation Copilot-ready</h3><p>Le socle : modèles sémantiques prêts pour l'IA (schéma IA, descriptions, validation).</p></div>
+      <div class="step"><span class="badge">💬</span><div class="mod">Module 02</div><h3>Copilot Power BI</h3><p>Génération de rapports, questions en langage naturel, prompting — et vérification des réponses.</p></div>
+      <div class="step"><span class="badge">🤖</span><div class="mod">Module 03</div><h3>Fabric Data Agents</h3><p>Construire, recetter et partager un agent conversationnel no-code sur vos données.</p></div>
+      <div class="step"><span class="badge">🔧</span><div class="mod">Module 04</div><h3>MCP Data Modelling</h3><p>Code agentique : audit, corrections DAX et documentation de masse via VS Code + Git.</p></div>
+      <div class="step"><span class="badge">🎨</span><div class="mod">Module 05</div><h3>Fabric Skills Authoring</h3><p>Création de rapports, charte visuelle, refactoring et traduction de masse.</p></div>
+      <div class="step"><span class="badge">🛡️</span><div class="mod">Module 06</div><h3>Gouvernance &amp; CUs</h3><p>Mesurer, chiffrer et gouverner la consommation IA — throttling, alertes, coûts.</p></div>
     </div>
   </section>
 
   <!-- 2. LIVRABLES -->
   <section>
-    <h2><span class="num">02</span>Ce que vos équipes repartent avec — livrables par module</h2>
-    <p class="lead">Les ateliers produisent des artefacts réutilisables sur vos modèles, pas des exercices jetables.</p>
+    <h2><span class="num">02</span>Ce que vos équipes repartent avec — le dossier complet remis</h2>
+    <p class="lead">Tout le support est remis en fichiers Markdown consultables et réutilisables : fiches de formation, ateliers, assets de démonstration et références transversales.</p>
+
+    <h3 class="sub">A · Fiches de formation — 22 fiches + 6 quiz</h3>
     <table>
-      <tr><th style="width:26%">Module</th><th>Livrables d'atelier</th></tr>
-      <tr><td class="mod">01 · Préparation</td><td>Grille d'audit complétée · plan d'action priorisé · modèle pilote mis en œuvre et recetté</td></tr>
-      <tr><td class="mod">02 · Copilot</td><td>Recette rejouable verdict par question · catalogue de prompts recettés · lignes de conduite publiées</td></tr>
-      <tr><td class="mod">03 · Data Agents</td><td>Agent publié et partagé au groupe pilote · note de gouvernance · plan d'adoption</td></tr>
-      <tr><td class="mod">04 · MCP</td><td>Rapport d'audit versionné Git · plan de correction priorisé · modèle documenté · standard d'équipe</td></tr>
-      <tr><td class="mod">05 · Skills</td><td>Charte visuelle appliquée · refactoring par lots validés · traduction de masse · décision d'adoption consignée</td></tr>
-      <tr><td class="mod">06 · Gouvernance</td><td>Mesure de votre capacité réelle · seuils d'alerte · charte de gouvernance IA</td></tr>
+      <tr><th style="width:24%">Module</th><th>Fiches (.md)</th></tr>
+      <tr><td class="mod">01 · Préparation</td><td><code>01-evaluation-modele-semantique</code> · <code>02-schema-de-donnees-ia</code> · <code>03-instructions-ia</code> · <code>04-approved-for-copilot</code></td></tr>
+      <tr><td class="mod">02 · Copilot</td><td><code>01-panorama-experiences</code> · <code>02-creer-modifier-rapport</code> · <code>03-questions-de-donnees</code> · <code>04-narratifs-et-resumes</code> · <code>05-copilot-developpeur</code></td></tr>
+      <tr><td class="mod">03 · Data Agents</td><td><code>01-panorama-et-cas-usage</code> · <code>02-creer-et-configurer</code> · <code>03-qualite-et-verification</code> · <code>04-publier-partager-gouverner</code></td></tr>
+      <tr><td class="mod">04 · MCP</td><td><code>01-mcp-et-vscode</code> · <code>02-audit-existant</code> · <code>03-documentation</code></td></tr>
+      <tr><td class="mod">05 · Skills</td><td><code>01-skills-et-agentes</code> · <code>02-charte-et-creation</code> · <code>03-refactoring-et-traduction</code></td></tr>
+      <tr><td class="mod">06 · Gouvernance</td><td><code>01-capacites-et-throttling</code> · <code>02-consommation-features-ia</code> · <code>03-gouvernance-et-alertes</code></td></tr>
+    </table>
+    <p class="note">Chaque module se conclut par un quiz d'ancrage (5 questions, corrigé commenté) et chaque fiche cite ses sources Microsoft.</p>
+
+    <h3 class="sub">B · Ateliers d'application — 12 ateliers sur vos modèles réels</h3>
+    <table>
+      <tr><th style="width:24%">Module</th><th>Ateliers &amp; livrables produits</th></tr>
+      <tr><td class="mod">01 · Préparation</td><td><b>Audit du modèle</b> — grille d'audit complétée, plan d'action priorisé · <b>Mise en œuvre &amp; recette</b> — modèle pilote corrigé et recetté</td></tr>
+      <tr><td class="mod">02 · Copilot</td><td><b>Découverte &amp; recette</b> — recette rejouable verdict par question · <b>Prompts &amp; adoption</b> — catalogue de prompts recettés, lignes de conduite publiées</td></tr>
+      <tr><td class="mod">03 · Data Agents</td><td><b>Construction &amp; recette</b> — agent pilote + fiche de recette rejouable · <b>Diffusion &amp; adoption</b> — agent publié et partagé, note de gouvernance, plan d'adoption</td></tr>
+      <tr><td class="mod">04 · MCP</td><td><b>Audit d'un modèle réel</b> — rapport d'audit versionné Git, plan de correction priorisé · <b>Documentation &amp; adoption</b> — modèle documenté (descriptions + markdown), standard d'équipe adopté</td></tr>
+      <tr><td class="mod">05 · Skills</td><td><b>Charte &amp; refactoring</b> — charte visuelle appliquée, refactoring par lots validés · <b>Traduction &amp; adoption</b> — traduction de masse du rapport, décision d'adoption consignée</td></tr>
+      <tr><td class="mod">06 · Gouvernance</td><td><b>Mesure de la capacité</b> — consommation réelle mesurée, throttling détecté ou écarté · <b>Plan de gouvernance</b> — seuils d'alerte, charte de gouvernance IA</td></tr>
+    </table>
+
+    <h3 class="sub">C · Assets remis — le pack de démarrage</h3>
+    <div class="cols">
+      <div class="card">
+        <h3><code>antiseches/</code></h3>
+        <ul>
+          <li>3 antisèches imprimables : prompting Copilot, workflow MCP, arbitrage entre leviers IA</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><code>modeles/</code></h3>
+        <ul>
+          <li>3 projets PBIP AltiSport prêts à ouvrir : <b>v1</b> (terrain d'audit), <b>v2</b> (modèle cible), <b>rapport legacy</b> (refactoring &amp; traduction)</li>
+          <li>Guide des modèles (rôle de chaque projet dans le parcours)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><code>data/</code></h3>
+        <ul>
+          <li>Jeu de données AltiSport complet (fichiers bruts) pour les démonstrations et l'entraînement</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Charte visuelle</h3>
+        <ul>
+          <li>Thème JSON AltiSport (couleurs, polices) utilisé dans les ateliers charte &amp; création</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sub">D · Références transversales &amp; guides d'installation</h3>
+    <table>
+      <tr><th style="width:24%">Dossier</th><th>Contenu (.md)</th></tr>
+      <tr><td class="mod">docs/</td><td><code>01-prerequis-activation</code> · <code>02-securite</code> · <code>03-limites-hallucinations-validation</code> · <code>04-consommation-cus-ia</code> · <code>05-matrice-arbitrage-globale</code> · <code>06-agenda-suggere</code> · <code>glossaire</code> · <code>passeport/</code> (suivi des badges)</td></tr>
+      <tr><td class="mod">setup/</td><td>4 guides d'installation des postes : <code>01</code> Power BI Desktop · <code>02</code> VS Code &amp; MCP · <code>03</code> Skills &amp; Copilot CLI · <code>04</code> Capacité &amp; gouvernance</td></tr>
     </table>
   </section>
 
-  <!-- 3. AGENDA -->
+  <!-- 3. ANCRAGE MICROSOFT -->
   <section>
-    <h2><span class="num">03</span>Deux formats d'agenda, au choix</h2>
-    <p class="lead">Même contenu (≈ 6,25 jours), deux rythmes — à choisir selon la disponibilité de l'équipe.</p>
-    <div class="cols">
-      <div class="card">
-        <span class="tag">Intensif</span>
-        <h3>7 jours continus</h3>
-        <ul>
-          <li><b>J1-J3</b> — formation des 6 modules + quiz</li>
-          <li><b>J4-J7</b> — ateliers d'application sur vos modèles</li>
-          <li>Effet d'immersion fort, équipe équipée en 2 semaines</li>
-        </ul>
-      </div>
-      <div class="card">
-        <span class="tag">Alterné</span>
-        <h3>1 jour / semaine × 7</h3>
-        <ul>
-          <li><b>S1-S3</b> — formation (1 j/semaine)</li>
-          <li><b>S4-S7</b> — ateliers, appliqués entre deux sessions</li>
-          <li>Idéal équipe en production : chacun applique au fil de l'eau</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. GAMIFICATION -->
-  <section>
-    <h2><span class="num">04</span>Un parcours engageant — passeport, badges, quiz</h2>
-    <p class="lead">La progression est visible et mesurable : chaque participant tient son <b>passeport IA</b> du premier au dernier jour.</p>
-    <div class="cols">
-      <div class="card">
-        <h3>🛠️ 💬 🤖 🔧 🎨 🛡️ — 6 badges sur preuve</h3>
-        <ul>
-          <li>Un badge par module : <i>Modèle Copilot-ready</i>, <i>Prompteur vérifié</i>, <i>Agent Builder</i>, <i>Agent Codeur</i>, <i>Skill Author</i>, <i>Gardien des CUs</i></li>
-          <li>Obtention sur preuve : quiz ≥ 4/5 <b>et</b> ateliers validés — pas sur la présence</li>
-          <li>Mention finale « parcours accompli » en clôture</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>📝 Quiz d'ancrage + antisèches</h3>
-        <ul>
-          <li>5 questions d'auto-évaluation par module, corrigé commenté fiche par fiche</li>
-          <li>3 antisèches imprimables : prompting Copilot, workflow MCP, arbitrage entre leviers IA</li>
-          <li>Glossaire IA &amp; BI pour les publics mixtes (métier + BI)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. ANCRAGE MICROSOFT -->
-  <section>
-    <h2><span class="num">05</span>Ancré dans la documentation officielle Microsoft</h2>
+    <h2><span class="num">03</span>Ancré dans la documentation officielle Microsoft</h2>
     <div class="ms">
       <p class="big">Chaque fiche, chaque atelier cite ses sources Microsoft.</p>
       <p>La formation est construite sur la documentation officielle — Microsoft Learn et les dépôts Microsoft sur GitHub — pas sur des interprétations tierces : <b>plus de 60 liens vers Microsoft, tous vérifiés</b>. Votre équipe apprend les règles du produit telles que Microsoft les documente, avec la source citée à chaque page : ce qui est appris reste vérifiable, daté et à jour.</p>
@@ -196,9 +197,9 @@
     </div>
   </section>
 
-  <!-- 6. PROCHAINES ETAPES -->
+  <!-- 4. PROCHAINES ETAPES -->
   <section>
-    <h2><span class="num">06</span>Prochaines étapes</h2>
+    <h2><span class="num">04</span>Prochaines étapes</h2>
     <div class="steps3">
       <div class="s3"><h3>Activation du tenant</h3><p>Checklist admin : licences, capacité Fabric, activation Copilot (guide fourni).</p></div>
       <div class="s3"><h3>Installation des postes</h3><p>Guides pas à pas : Power BI Desktop, VS Code + MCP, Skills — 4 guides prêts à distribuer.</p></div>
