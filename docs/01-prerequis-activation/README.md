@@ -51,10 +51,13 @@ L'accès Copilot est contrôlé par le **rôle dans le workspace** : pas de lice
 
 ## 5. Power BI Desktop
 
-Desktop n'a pas de réglage Copilot propre :
+Le bouton **Copilot** du ruban est toujours visible ; c'est la **sélection d'un workspace éligible** qui l'active :
 
 1. `Fichier > Compte` : être connecté
-2. Sélectionner comme **workspace actif** un workspace assigné à la capacité → le bouton **Copilot** apparaît (ruban Accueil)
+2. Cliquer sur **Copilot** (ruban Accueil) → le volet invite à choisir un **workspace assigné à une capacité Copilot** (seuls les éligibles s'affichent)
+3. Pour revoir ou changer ce workspace : engrenage ⚙️ en bas à droite → **Options > Copilot (préversion)**
+
+> Contrairement au service (contrôle au niveau workspace), Copilot Desktop requiert en plus le **réglage tenant actif** (étape 2) — sinon le bouton reste grisé. Erreur type dans *Options > Copilot (préversion)* : *« Either none of your workspaces have the right capacity to use Copilot, or you don't have the right permission to use them »* → capacité non éligible ou droits insuffisants (retour aux étapes 1-4).
 
 L'usage est imputé à la capacité du workspace sélectionné.
 
@@ -72,5 +75,6 @@ Une fois ces prérequis acquis, appliquer la [configuration *Prep data for AI* d
 
 - [Enable and configure Copilot in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/fundamentals/copilot-enable-fabric) (maj. 05/2026)
 - [Copilot settings in the admin portal](https://learn.microsoft.com/en-us/fabric/admin/service-admin-portal-copilot)
+- [Use Copilot in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-power-bi-desktop)
 - [Fabric region availability](https://learn.microsoft.com/en-us/fabric/admin/region-availability)
 - [Fabric Copilot capacity](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-copilot-capacity)
