@@ -46,8 +46,8 @@ Un modèle bien conçu aide Copilot à produire des suggestions précises, y com
 | Élément | Bonne pratique | Point d'attention |
 |---|---|---|
 | Descriptions (tables, colonnes, mesures) | Saisie manuelle au cas par cas (volet Propriétés) ; pour une passe en masse sur tout le modèle, préférer le MCP server ([module 04, fiche 03](../../04-mcp-data-modelling/phase1-formation/03-documentation.md)) | **Copilot ne lit que les 200 premiers caractères** ; utilisées dans les requêtes DAX et la recherche |
-| Calculation groups | Documenter les items de calcul dans la description de la colonne du groupe | Les items de calcul n'apparaissent pas dans les métadonnées du modèle |
-| Actualisation | Communiquer les plannings de refresh | « Données actualisées chaque jour à 06h00 UTC » |
+| Calculation groups | Documenter les items dans la description de la colonne du groupe (une seule fois — pas sur chaque mesure) | Les items de calcul n'apparaissent pas dans les métadonnées du modèle |
+| Actualisation | Communiquer les plannings de refresh dans la description du modèle sémantique | « Données actualisées chaque jour à 06h00 UTC » |
 | Sécurité | Définir des rôles RLS si données sensibles | Vue Modèle > Gérer les rôles |
 
 ## Cas d'usage de démonstration
