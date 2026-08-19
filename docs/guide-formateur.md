@@ -21,6 +21,7 @@ Votre rôle : **garant de la méthode et du rythme**. Le contenu vit dans les mo
 
 | Guide | Pour |
 |---|---|
+| [setup/00](../setup/00-recuperer-depot.md) | Clonage de la copie client du dépôt — tout le monde |
 | [setup/01](../setup/01-powerbi-desktop.md) | Power BI Desktop + aperçu *Prep data for AI* — tout le monde |
 | [setup/02](../setup/02-vscode-mcp.md) | VS Code + serveur MCP — module 04 (profils dev) |
 | [setup/03](../setup/03-skills-copilot-cli.md) | Copilot CLI + plugin Skills — module 05 (profils dev) |

@@ -96,7 +96,7 @@ v2 ajoute : Hiérarchie Dates (Annee > Trimestre > Mois), Hiérarchie Géographi
 
 Les 6 requêtes Power Query lisent les CSV via le paramètre **`DossierData`** (valeur par défaut : `C:\dev\genai-powerbi-fabric\assets\data\brut`).
 
-Si le dépôt est ailleurs sur ton poste : `Transformer les données > Gérer les paramètres > DossierData` > modifier le chemin > `Fermer et appliquer`. Une seule valeur à changer pour les 6 tables de v2. (v1 pointe encore en chemin absolu : `Transformer les données > Modifier la source` sur chaque requête si nécessaire.)
+Si le dépôt est ailleurs sur ton poste : `Transformer les données > Gérer les paramètres > DossierData` > modifier le chemin > `Fermer et appliquer`. Une seule valeur à changer pour les 6 tables de v2. (v1 pointe encore en chemin absolu : `Transformer les données > Modifier la source` sur chaque requête si nécessaire.) Le clonage standard du dépôt ([setup/00](../../setup/00-recuperer-depot.md)) pose ce chemin par défaut — cette adaptation ne concerne que les postes hors gabarit.
 
 ## Pour aller plus loin : calculation groups
 
