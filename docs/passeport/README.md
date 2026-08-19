@@ -6,7 +6,7 @@ Votre suivi personnel à travers le parcours : **6 modules, 6 badges**. Conserve
 
 ---
 
-## Étape 1 · 🛠️ Modèle Copilot-ready — [Module 01](../../modules/01-preparation-copilot-ready/)
+## Étape 1 · 🛠️ Copilot-ready — [Module 01](../../modules/01-preparation-copilot-ready/)
 
 **Je sais faire :**
 - Évaluer et auditer un modèle sémantique au regard des exigences de l'IA
@@ -18,7 +18,7 @@ Votre suivi personnel à travers le parcours : **6 modules, 6 badges**. Conserve
 
 **Badge obtenu le : ______**
 
-## Étape 2 · 💬 Prompteur vérifié — [Module 02](../../modules/02-copilot-powerbi/)
+## Étape 2 · 💬 Copilot — [Module 02](../../modules/02-copilot-powerbi/)
 
 **Je sais faire :**
 - Cartographier les expériences Copilot et choisir la bonne selon mon profil
@@ -31,7 +31,7 @@ Votre suivi personnel à travers le parcours : **6 modules, 6 badges**. Conserve
 
 **Badge obtenu le : ______**
 
-## Étape 3 · 🤖 Agent Builder — [Module 03](../../modules/03-fabric-data-agents/)
+## Étape 3 · 🤖 Fabric Agent — [Module 03](../../modules/03-fabric-data-agents/)
 
 **Je sais faire :**
 - Situer le data agent parmi les leviers IA et arbitrer (matrice d'arbitrage)
@@ -44,7 +44,7 @@ Votre suivi personnel à travers le parcours : **6 modules, 6 badges**. Conserve
 
 **Badge obtenu le : ______**
 
-## Étape 4 · 🔧 Agent Codeur — [Module 04](../../modules/04-mcp-data-modelling/)
+## Étape 4 · 🔧 MCP — [Module 04](../../modules/04-mcp-data-modelling/)
 
 **Je sais faire :**
 - Expliquer MCP (client/serveur) et ce que le Power BI Modeling MCP Server sait faire
@@ -57,7 +57,7 @@ Votre suivi personnel à travers le parcours : **6 modules, 6 badges**. Conserve
 
 **Badge obtenu le : ______**
 
-## Étape 5 · 🎨 Skill Author — [Module 05](../../modules/05-fabric-skills-authoring/)
+## Étape 5 · 🎨 Fabric Skills — [Module 05](../../modules/05-fabric-skills-authoring/)
 
 **Je sais faire :**
 - Distinguer **skill** (instructions chargées à la demande) et **MCP** (outil)
@@ -70,7 +70,7 @@ Votre suivi personnel à travers le parcours : **6 modules, 6 badges**. Conserve
 
 **Badge obtenu le : ______**
 
-## Étape 6 · 🛡️ Gardien des CUs — [Module 06](../../modules/06-gouvernance-cus/)
+## Étape 6 · 🛡️ Gouvernance CUs — [Module 06](../../modules/06-gouvernance-cus/)
 
 **Je sais faire :**
 - Expliquer le modèle de capacité : CUs, F/P SKUs, bursting/smoothing, timepoints

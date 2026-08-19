@@ -15,12 +15,12 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 
 | Étape | Badge | Module | Capacité validée |
 |---|---|---|---|
-| 1 | 🛠️ Modèle Copilot-ready | [01](modules/01-preparation-copilot-ready/) | Préparer et valider un modèle sémantique pour l'IA |
-| 2 | 💬 Prompteur vérifié | [02](modules/02-copilot-powerbi/) | Générer et vérifier avec Copilot Power BI |
-| 3 | 🤖 Agent Builder | [03](modules/03-fabric-data-agents/) | Construire, recetter et partager un data agent |
-| 4 | 🔧 Agent Codeur | [04](modules/04-mcp-data-modelling/) | Auditer et documenter un modèle via MCP |
-| 5 | 🎨 Skill Author | [05](modules/05-fabric-skills-authoring/) | Créer, re-thématiser et traduire des rapports |
-| 6 | 🛡️ Gardien des CUs | [06](modules/06-gouvernance-cus/) | Mesurer et gouverner la consommation IA |
+| 1 | 🛠️ Copilot-ready | [01](modules/01-preparation-copilot-ready/) | Préparer et valider un modèle sémantique pour l'IA |
+| 2 | 💬 Copilot | [02](modules/02-copilot-powerbi/) | Générer et vérifier avec Copilot Power BI |
+| 3 | 🤖 Fabric Agent | [03](modules/03-fabric-data-agents/) | Construire, recetter et partager un data agent |
+| 4 | 🔧 MCP | [04](modules/04-mcp-data-modelling/) | Auditer et documenter un modèle via MCP |
+| 5 | 🎨 Fabric Skills | [05](modules/05-fabric-skills-authoring/) | Créer, re-thématiser et traduire des rapports |
+| 6 | 🛡️ Gouvernance CUs | [06](modules/06-gouvernance-cus/) | Mesurer et gouverner la consommation IA |
 
 > Chaque badge s'obtient sur preuve : quiz d'ancrage ≥ 4/5 **et** ateliers validés. Suivez votre progression dans le **[passeport IA](docs/passeport/)** ; planning dans l'[agenda suggéré](docs/06-agenda-suggere/).
 
