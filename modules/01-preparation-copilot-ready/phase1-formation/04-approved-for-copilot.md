@@ -30,13 +30,21 @@ Le skill picker permet d'activer/simuler des combinaisons de capacités Copilot 
 | **Analyze report visuals** | Interpréter et répondre sur les visuels du rapport |
 | **Create new report pages** | Générer de nouvelles pages de rapport |
 
-Scénarios de test recommandés :
+Scénarios de test recommandés — les capacités suivent l'**environnement**, pas la personne :
 
-| Environnement simulé | Capacités à activer |
-|---|---|
-| Copilot autonome (Home) | Answer questions about the data |
-| Volet Copilot d'un rapport — mode Lecture | Answer + Analyze report visuals |
-| Volet Copilot d'un rapport — mode Édition | les trois |
+| Environnement simulé | Où / Qui | Capacités à activer |
+|---|---|---|
+| Copilot autonome (Home) | Icône Copilot de la **navigation gauche** du service, sans rapport ouvert — tout utilisateur activé ; seul environnement influencé par le marquage *Approved* | Answer questions about the data |
+| Volet Copilot d'un rapport — mode Lecture | Rapport ouvert en **consultation** — consommateurs ; un créateur qui ouvre en lecture obtient la même expérience | Answer + Analyze report visuals |
+| Volet Copilot d'un rapport — mode Édition | Rapport ouvert en **modification** — créateurs / contributeurs | les trois |
+
+Pourquoi ne pas tout cocher :
+
+- **Create new report pages** brouille le test des réponses vérifiées : Copilot peut router la question vers la création d'une page (visuel généré, sans coche) au lieu de la réponse vérifiée — le troubleshooting Microsoft demande de la désactiver pour cela.
+- **Analyze report visuals** est neutre pour les questions de données (elle ne s'active que sur un visuel de la page).
+- Règle : cocher la combinaison de **l'audience visée** — les trois cochées testent l'expérience d'un auteur. Priorité au scénario autonome : le plus restreint et le seul que le marquage *Approved* influence — si les réponses tiennent là, elles tiennent partout.
+
+Variante sans skill picker pour le scénario « lecture » : ouvrir le rapport en mode Lecture — l'expérience consommateur s'applique d'elle-même.
 
 Desktop active les trois par défaut ; le sélecteur se trouve dans le menu déroulant de la zone de saisie Copilot. Après chaque modification *Prep data for AI*, fermer et rouvrir le volet pour que les changements soient pris en compte.
 
