@@ -22,7 +22,7 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 5 | [05](modules/05-fabric-skills-authoring/) | Créer, re-thématiser et traduire des rapports |
 | 6 | [06](modules/06-gouvernance-cus/) | Mesurer et gouverner la consommation IA |
 
-> Chaque module se conclut par un quiz d'ancrage (~10 min) ; planning dans l'[agenda suggéré](docs/06-agenda-suggere/).
+> Chaque module se conclut par un quiz d'ancrage (~10 min).
 
 ## Modules
 
@@ -35,7 +35,7 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse | ✅ | ~2,5 h + ≈ 0,75 j |
 | 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling | ✅ | ~2 h + ≈ 0,5 j |
 
-> Durée totale du parcours (modules 01-06, phases 1 + 2) : **≈ 6,25 jours**, + documentation transversale (docs 01-06) et installation des postes ([setup](setup/)).
+> Durée totale du parcours (modules 01-06, phases 1 + 2) : **≈ 6,25 jours**, + documentation transversale (docs 01-05) et installation des postes ([setup](setup/)).
 
 ## Documentation transversale
 
@@ -46,7 +46,6 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 03 | [Limites, hallucinations & validation humaine](docs/03-limites-hallucinations-validation/) | ✅ |
 | 04 | [Consommation des CUs par les features IA](docs/04-consommation-cus-ia/) — tarifs tokens, throttling, Fabric Copilot capacity | ✅ |
 | 05 | [Matrice d'arbitrage globale](docs/05-matrice-arbitrage-globale/) — Copilot vs Data Agent vs MCP vs Skills | ✅ |
-| 06 | [Agenda suggéré](docs/06-agenda-suggere/) — formats intensif et alterné | ✅ |
 
 ## Supports participants
 
