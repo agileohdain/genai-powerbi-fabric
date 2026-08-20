@@ -50,7 +50,7 @@ Tous les fichiers : UTF-8 BOM, séparateur `;`. Montants et taux en **texte avec
 
 ### `magasins.csv` — 25 magasins
 
-MagID, MagLbl, Ville, DeptCd, **Secteur** (Nord-Est, Nord-Ouest, Île-de-France, Sud-Est, Sud-Ouest), SurfM2, DtOuvert. ⚠️ « Secteur » = zone géographique — source de l'ambiguïté avec la catégorie produit.
+MagID, MagLbl, Ville, DeptCd, **Secteur** (Nord-Est, Nord-Ouest, Île-de-France, Sud-Est, Sud-Ouest), SurfM2, DtOuvert. ⚠️ « Secteur » = zone géographique, aussi porté par `clients.csv` — Copilot demande de clarifier (piège #7).
 
 ### `vendeurs.csv` — 60 vendeurs
 
@@ -76,7 +76,7 @@ DateKey (AAAAMMJJ), Date, Annee, Trimestre, MoisNum, MoisLbl, JourNum, JourSemLb
 | 4 | Commandes Annulées à exclure du CA | ventes.StatutCde | ⚠️ subsiste | Fiche 01 — sinon le CA est faux |
 | 5 | Noms de colonnes obscurs (ProdID, Qt, MttTTcNet…) | partout | ⚠️ subsiste | Fiche 01 — renommage |
 | 6 | CatLbl « Divers » (catégorie fourre-tout) | produits | ⚠️ subsiste | Fiche 01 — nommage ambigu |
-| 7 | « Secteur » géographique vs catégorie produit | magasins / produits | ⚠️ subsiste | Fiche 02 — ambiguïté « ventes par secteur » |
+| 7 | « Secteur » porté par deux tables (clients, magasins) | clients / magasins | ⚠️ subsiste | Fiche 02 — clarification demandée sur « ventes par secteur » |
 | 8 | Deux indicateurs proches : ventes (MttTTcNet) vs marge (MttTTcNet − CstLigne) | ventes | ⚠️ subsiste | Fiche 02 — schéma IA (Total Ventes vs Total Marge) |
 | 9 | Saisonnalité double pic (hiver + été) | ventes | ⚠️ subsiste (donnée) | Fiche 03 — « Saison blanche » / « Saison verte » |
 | 10 | Cibles mensuelles vendeurs | vendeurs | ⚠️ subsiste (donnée) | Fiche 03 — définition « Champion » |
@@ -133,7 +133,7 @@ Non implémentés dans v2 (mesures YTD/N-1 explicites suffisantes pour les démo
 | Démo | Assets mobilisés |
 |---|---|
 | Fiche 01 — avant/après | modèles v1 + v2 côte à côte |
-| Fiche 02 — schéma IA, réponse vérifiée | v2 : retirer Total Marge du schéma, demander « les ventes » ; « ventes par secteur » → visuel CA par DimMagasin[Secteur] |
+| Fiche 02 — schéma IA, réponse vérifiée | v2 : décocher `DimClient[Secteur]` et `Total Marge` du schéma IA (« ventes par secteur » sans clarification, « les ventes » sans confusion marge) ; visuel CA par `DimMagasin[Secteur]` en réponse vérifiée |
 | Fiche 03 — instructions IA | vocabulaire-metier.md (saisons, Champion, closers, comptoir) |
 | Fiche 04 — HCAAT / diagnostics | v2 configuré |
 | Module 02 — fiches 01-05 (panorama, création de rapport, questions, narratifs, DAX) | v2 + un rapport de départ 2-3 pages à construire (voir README phase 1 du module) |

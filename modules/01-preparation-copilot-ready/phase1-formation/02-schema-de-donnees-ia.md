@@ -18,7 +18,7 @@
 | Problème | Solution |
 |---|---|
 | « Les ventes » peut renvoyer la marge (`Total GPM`) au lieu de `Total Sales` | Retirer le champ ambigu du schéma IA |
-| « Ventes par secteur » : Copilot comprend *secteur produit*, l'attendu est *région* | Réponse vérifiée sur le visuel régional |
+| « Ventes par secteur » : deux champs `Secteur` (client, magasin) → Copilot demande de clarifier à chaque question | Retirer le champ ambigu du schéma IA ; réponse vérifiée pour figer l'interprétation |
 | Question stratégique posée chaque semaine, réponse à normaliser | Réponse vérifiée (visuel approuvé + phrases déclencheuses) |
 | Tables techniques ou de travail inutiles aux utilisateurs | Les exclure du schéma IA |
 
@@ -31,10 +31,14 @@
 
 **Déroulé de la démo (v2 publié, volet Copilot ouvert)** :
 
-1. Demander `Show me sales by sector` **avant** toute préparation : Copilot peut agréger par catégorie produit au lieu de la zone géographique (piège #7) — c'est l'état de départ à montrer.
-2. Dérouler le pas-à-pas 1 en live : retirer `Total Marge` du schéma IA, Apply, fermer/rouvrir le volet. Rejouer une question sur « les ventes » : seule `Total Ventes` reste candidate (piège #8).
-3. Dérouler le pas-à-pas 2 : visuel CA par `DimMagasin[Secteur]` → *Set up a verified answer*, phrases déclencheuses `sales by sector` / `sales by region` — la réponse vérifiée fige la bonne interprétation.
-4. Conclure avec le test négatif/positif ci-dessous sur un champ retiré du schéma.
+1. **Avant toute préparation** : demander `Show me sales by sector`. Copilot ne choisit pas — il demande de lever l'ambiguïté (réponse réelle) :
+   > *« Your model has two different "Sector" fields: Client sector: DimClient[Secteur], Store sector: DimMagasin[Secteur]. Do you want to see sales by client sector or by store sector? »*
+
+   Sans préparation, chaque question « secteur » mobilise l'utilisateur : friction permanente (piège #7).
+2. **Prep data for AI** (onglets grisés : activer Q&A) > **Simplify data schema** : décocher `DimClient[Secteur]`, **Apply**, fermer/rouvrir le volet Copilot. Rejouer la même question : réponse directe par `DimMagasin[Secteur]`, plus de demande de clarification.
+3. Toujours dans le schéma IA : retirer `Total Marge`, **Apply**, fermer/rouvrir. Rejouer une question sur « les ventes » : seule `Total Ventes` reste candidate (piège #8).
+4. Dérouler le pas-à-pas 2 : visuel CA par `DimMagasin[Secteur]` → *Set up a verified answer*, phrases déclencheuses `sales by sector` / `sales by region` — la réponse vérifiée fige la bonne interprétation.
+5. Conclure avec le test négatif/positif ci-dessous sur un champ retiré du schéma.
 
 ## Pas-à-pas 1 — Schéma de données IA
 

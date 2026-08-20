@@ -87,7 +87,7 @@ v2 ajoute : Hiérarchie Dates (Annee > Trimestre > Mois), Hiérarchie Géographi
 
 À appliquer dans Power BI Desktop (bouton **Prep data for AI**) :
 
-1. **Schéma de données IA** : tout sélectionner **sauf** Total Marge, Taux de Marge, PrixUnitaireTTC, CoutAchat, CoutLigne et colonnes techniques → « ventes » ne peut plus être confondu avec la marge (démo fiche 02)
+1. **Schéma de données IA** : tout sélectionner **sauf** Total Marge, Taux de Marge, PrixUnitaireTTC, CoutAchat, CoutLigne, `DimClient[Secteur]` et colonnes techniques → « ventes » ne peut plus être confondu avec la marge, et « ventes par secteur » répond directement par `DimMagasin[Secteur]` sans demande de clarification (démo fiche 02)
 2. **Instructions IA** : coller le bloc FR de [vocabulaire-metier.md](../vocabulaire-metier.md) → saisons, Champion, closers, comptoir (démo fiche 03)
 
 ---
