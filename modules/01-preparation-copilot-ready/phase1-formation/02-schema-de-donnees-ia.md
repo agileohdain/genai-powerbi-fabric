@@ -35,8 +35,8 @@
    > *« Your model has two different "Sector" fields: Client sector: DimClient[Secteur], Store sector: DimMagasin[Secteur]. Do you want to see sales by client sector or by store sector? »*
 
    Sans préparation, chaque question « secteur » mobilise l'utilisateur : friction permanente (piège #7).
-2. **Prep data for AI** (onglets grisés : activer Q&A) > **Simplify data schema** : décocher `DimClient[Secteur]`, **Apply**, fermer/rouvrir le volet Copilot. Rejouer la même question : réponse directe par `DimMagasin[Secteur]`, plus de demande de clarification.
-3. Toujours dans le schéma IA : retirer `Total Marge`, **Apply**, fermer/rouvrir. Rejouer une question sur « les ventes » : seule `Total Ventes` reste candidate (piège #8).
+2. **Pas-à-pas 1** en décochant `DimClient[Secteur]` : rejouer la même question → réponse directe par `DimMagasin[Secteur]`, plus de demande de clarification.
+3. Retirer aussi `Total Marge` (pas-à-pas 1) : rejouer une question sur « les ventes » → seule `Total Ventes` reste candidate (piège #8).
 4. Dérouler le pas-à-pas 2 : visuel CA par `DimMagasin[Secteur]` → *Set up a verified answer*, phrases déclencheuses `sales by sector` / `sales by region` — la réponse vérifiée fige la bonne interprétation.
 5. Conclure avec le test négatif/positif ci-dessous sur un champ retiré du schéma.
 
@@ -44,7 +44,7 @@
 
 1. Ruban Accueil > **Prep data for AI** (onglets grisés : activer Q&A) > **Simplify data schema**.
 2. Sélectionner les champs que Copilot doit utiliser ; exclure technique, redondant, ambigu.
-3. **Apply** (même démarche dans le service, page du modèle sémantique).
+3. **Apply**, fermer et rouvrir le volet Copilot (même démarche dans le service, page du modèle sémantique).
 
 ## Pas-à-pas 2 — Réponses vérifiées (démo)
 
