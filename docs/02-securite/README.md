@@ -21,6 +21,22 @@ Ce que la sécurité technique implique pour les 4 leviers de la formation (Copi
 - **Point de vigilance important** : le RLS ne s'applique qu'aux membres **Viewer** du workspace. Les rôles **Admin / Member / Contributor voient les données non filtrées** — y compris via Copilot. Travailler les démos avec un compte Viewer (ou *Test as role*) pour refléter l'expérience utilisateur.
 - **Limite de vérification** : la fonctionnalité **Test as role** ne couvre **pas** Copilot, ni Q&A visuals, ni Quick insights. Pour vérifier ce qu'un viewer verrait via Copilot : se connecter avec un compte de ce viewer, ou tester le RLS séparément (rapport seul) puis transposer à l'usage Copilot.
 
+### Authoring vs consommation — qui peut quoi sur *Prep data for AI*
+
+Les fonctionnalités de préparation (schéma IA, réponses vérifiées, instructions IA — module 01, fiches 02-03) distinguent deux niveaux :
+
+| Action | Qui | Restriction possible |
+|---|---|---|
+| **Authoring** (créer/modifier via *Prep data for AI*) | Rôles avec écriture sur le modèle : Admin / Member / Contributor du workspace (réponses vérifiées dans le service : mode édition du rapport requis en plus) | Par défaut — les Viewers ne peuvent pas configurer |
+| **Consommation** (bénéficier des effets dans les réponses Copilot) | Tout utilisateur pouvant interroger le modèle, **Viewers inclus** — configs invisibles et non désactivables côté consommateur | **Non** : aucun réglage par modèle ni par workspace |
+
+Leviers pour restreindre le bénéfice de ces fonctionnalités :
+
+1. **Groupe de sécurité tenant** (paramètre Copilot) — restreint Copilot globalement, pas par modèle ; recommandé pour un usage ciblé (voir [doc 01](../01-prerequis-admin/))
+2. **Accès au modèle / workspace** — qui ne voit pas le modèle n'interroge rien
+3. **RLS / OLS** — restreint les *données* des réponses (pas les fonctionnalités) ; rappel : le RLS ne filtre que les Viewers
+4. **Paramètre de capacité** — délégation tenant : un admin de capacité peut activer/désactiver Copilot pour sa capacité, granularité par workspace assigné, jamais par modèle
+
 ## 2. Data Agents — permissions et sécurité des sources
 
 Sources officielles : [Fabric data agent creation](https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent) et [sharing & permissions](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-sharing).
@@ -65,6 +81,7 @@ Les modules 04 (MCP) et 05 (Skills) génèrent **en local** (VS Code / Copilot C
 ## Sources
 
 - [Privacy, security, and responsible use for Copilot in Power BI](https://learn.microsoft.com/en-us/fabric/fundamentals/copilot-power-bi-privacy-security) — données accédées, non-entraînement, frontière tenant (maj. 05/2026)
+- [Enable Fabric Copilot for Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-enable-power-bi) — paramètre tenant (groupe de sécurité), Copilot autonome, délégation et paramètre de capacité
 - [Row-level security (RLS) with Power BI](https://learn.microsoft.com/en-us/fabric/security/service-admin-row-level-security) — rôles Viewer vs Admin/Member/Contributor, limites Test as role (Q&A, Quick insights, Copilot exclus)
 - [Fabric data agent sharing and permission management](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-sharing) — RLS/CLS honorés, permissions minimales par source, Read suffisant (maj. 05/2026)
 - [Fabric data agent creation](https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent) — sources, lecture seule, limites produit

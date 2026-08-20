@@ -111,6 +111,7 @@ Ouvrir le volet Copilot, skill picker > **Answer questions about the data**. Apr
 - Le visuel du rapport et la réponse vérifiée ne sont **pas synchronisés** : la modifier passe par la boîte de dialogue de gestion.
 - Après publication : ~15 min de délai ; intégration Git non supportée pour les réponses vérifiées.
 - **RLS/OLS non garantis** pendant l'aperçu : ne pas considérer les réponses vérifiées comme une fonction de sécurité (voir [docs/02-securite](../../../docs/02-securite/)).
+- Authoring (schéma IA, réponses vérifiées) réservé aux rôles avec écriture sur le modèle ; les effets s'appliquent à **tous** ceux qui peuvent interroger le modèle, Viewers inclus — pas de restriction d'usage par modèle ni par workspace ([docs/02-securite](../../../docs/02-securite/)).
 
 ## Sources
 

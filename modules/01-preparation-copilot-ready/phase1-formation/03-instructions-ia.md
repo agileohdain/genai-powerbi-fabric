@@ -95,6 +95,7 @@ Toujours analyser le chiffre d'affaires par trimestre.
 
 - Limite : **10 000 caractères** ; interprétation par le LLM sans garantie de suivi exact
 - Enregistrées au niveau du modèle (pas de variantes par rapport ni par persona : un terme = une seule définition)
+- Configurées par les auteurs (écriture sur le modèle) ; bénéficient à **tous** ceux qui peuvent interroger le modèle, Viewers inclus — pas de restriction d'usage par modèle ni par workspace ([docs/02-securite](../../../docs/02-securite/))
 - Pas d'import de fichier dans Desktop : copier/coller le texte
 - Après chaque édition : fermer et rouvrir le volet Copilot
 - Avant chaque test : ouvrir une **nouvelle conversation** (clear chat) — l'historique fait partie de l'ancrage et peut conserver les filtres d'une question précédente (symptôme typique : un filtre « Champion » qui s'invite sur une question « closers »)
