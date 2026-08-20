@@ -12,12 +12,13 @@
 |---|---|---|
 | Modèle **altisport-v2** publié et configuré (fiches 02-03) | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Support des tests : skill picker, HCAAT, diagnostics, marquage *Approved* |
 
-**Déroulé de la démo (v2 configuré)** :
+**Déroulé de la démo (v2 configuré)** — vérifier que les préparations des fiches 02-03 tiennent pour un utilisateur final, puis officialiser :
 
-1. Configurer le skill picker en mode « Copilot autonome » (*Answer questions about the data* seul) et rejouer les questions validées aux fiches 02-03 (`sales by sector`, question « closers ») : mêmes réponses fiables, sans le rapport.
-2. Sur une réponse : déployer *How Copilot arrived at this* — y retrouver le schéma IA (plus de `Total Marge`) et la réponse vérifiée configurés en fiche 02.
-3. Menu **...** > *Download diagnostics* : montrer le fichier et les fonctionnalités *Prep data for AI* qu'il confirme.
-4. Finir sur le marquage *Approved for Copilot* du modèle v2 dans le service (procédure ci-dessous).
+1. **Se mettre en peau d'utilisateur** : menu déroulant de la zone de saisie Copilot > **Select skills** > ne garder que *Answer questions about the data* — simulation du Copilot autonome, le plus restreint des trois environnements (voir tableau ci-dessous).
+2. **Rejouer** les questions de référence : `sales by sector` → réponse vérifiée (coche, phrase *matched*) ; question « closers » saison blanche 2025-2026 → `DimVendeur` sans filtre, bonne période. Attendu : mêmes réponses que fiches 02-03, sans le rapport.
+3. **Auditer** : sur une réponse, déployer *How Copilot arrived at this* — le schéma IA (plus de `Total Marge`) et la réponse vérifiée y sont visibles.
+4. **Documenter** : menu **...** > *Download diagnostics* — le fichier confirme les fonctionnalités *Prep data for AI* appliquées (pièce jointe officielle d'un ticket support).
+5. **Officialiser** : marquage *Approved for Copilot* du modèle v2 dans le service (procédure ci-dessous). Le marquage ne teste rien — il consacre la recette qui vient d'être faite.
 
 ## Tester comme un utilisateur final : le skill picker
 
