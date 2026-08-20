@@ -81,7 +81,7 @@ Toujours analyser le chiffre d'affaires par trimestre.
 
 1. Ouvrir une **nouvelle conversation** (l'historique fait partie de l'ancrage et peut conserver les filtres d'une question précédente), puis demander `Show me the sales of the closers for the white season 2025-2026` **avant** instructions : Copilot ne connaît ni « closers » ni « white season » — réponse approximative ou refus.
 2. *Prep data for AI* > *Add AI instructions* : coller le bloc AltiSport (section « Instructions IA prêtes à coller » du vocabulaire-metier.md), Apply, fermer/rouvrir le volet.
-3. Rejouer la même question : `DimVendeur` est ciblée sans filtre, la période décembre 2025-février 2026 est appliquée. Montrer aussi « Champion » (définition conditionnelle sur *Atteinte Cible*).
+3. Rejouer la même question : `DimVendeur` est ciblée sans filtre, la période décembre 2025-février 2026 est appliquée. La variante française `Montre-moi les ventes des closers pour la saison blanche 2025-2026` donne le même résultat : instructions IA, questions et réponses fonctionnent en français comme en anglais (testé avec le bloc d'instructions dans la même langue que la question). Montrer aussi « Champion » (définition conditionnelle sur *Atteinte Cible*).
 4. Enchaîner sur le template à trous ci-dessous — celui que les participants rempliront avec le vocabulaire de leur entreprise en atelier.
 
 ## Pas-à-pas

@@ -60,7 +60,7 @@ Toute réponse = **visuel + résumé textuel + champs utilisés**. Trois réflex
 
 ## Limites et pièges
 
-- Questions de données : **anglais uniquement** (support multilingue non officiel) ; dans Desktop, l'expérience questions de données reste en déploiement — privilégier le service pour les démos questions/réponses
+- Questions de données : **anglais recommandé** (support multilingue non officiel) ; le français fonctionne — testé avec des termes métier définis dans les instructions IA (module 01), sans garantie officielle ; dans Desktop, l'expérience questions de données reste en déploiement — privilégier le service pour les démos questions/réponses
 - Q&A doit être activé ; DirectQuery / Direct Lake peuvent demander une activation manuelle
 - Les pourcentages peuvent s'afficher différemment entre le texte et les tableaux (formats du modèle)
 - Même prompt + même modèle ≠ même réponse garantie : la recette (atelier 1) intègre cette variabilité
