@@ -47,9 +47,16 @@ Le détail des variations d'ancrage par expérience est en **annexe** en fin de 
 - **Filtrage de contenu** : des mots présents dans les métadonnées du modèle (noms de tables/colonnes légitimes mais « sensibles » pour les filtres IA) peuvent faire échouer **tous** les prompts. Symptôme : erreurs systématiques dès qu'on interroge le modèle.
 - **Consommation** : les interactions sont facturées en CUs, traitées comme opérations d'arrière-plan (voir [docs/04](../../../docs/04-consommation-cus-ia/)).
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** + rapport de départ publiés | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) ; rapport 2-3 pages construit en amont ([README de phase](README.md#matériel-de-démo-requis)) | Support commun : le même rapport servi par les trois expériences |
+| App publiée contenant le rapport | Service Power BI (workspace Copilot-enabled) | Démo du Copilot dans les apps (préversion) |
+
 ## Cas d'usage de démonstration
 
-Ouvrir le même rapport publié dans le service : montrer le volet Copilot (GA), puis le Copilot autonome (préversion) et sa recherche d'items, puis le même rapport ouvert dans une app. Comparer les périmètres de réponse.
+Ouvrir le **rapport AltiSport** publié dans le service : montrer le volet Copilot (GA) — résumé et questions sur le contenu —, puis le **Copilot autonome** (préversion) et sa recherche d'items (retrouver le rapport et le modèle AltiSport), puis le même rapport ouvert dans une **app**. Comparer les périmètres de réponse : contenu du rapport ouvert vs tous les items accessibles.
 
 ## Limites et pièges
 

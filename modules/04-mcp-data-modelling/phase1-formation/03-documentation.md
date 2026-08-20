@@ -16,6 +16,13 @@
 
 Les descriptions du modèle sont la **condition n°1 de la qualité des réponses IA** (module 01) : une mesure sans description est une boîte noire pour Copilot et les data agents. La fiche 03 du module 01 (instructions IA) définit le contenu attendu ; ici on passe à l'échelle.
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Dossier PBIP **altisport-v1** | `assets/modeles/altisport-v1/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Terrain : décrire v1 en masse, puis comparer au v2 cible |
+| **vocabulaire-metier.md** | [assets/vocabulaire-metier.md](../../../assets/vocabulaire-metier.md) | Vocabulaire imposé dans les descriptions (< 200 caractères) |
+
 ## Pas-à-pas — décrire AltiSport v1 en masse
 
 ### 1. Descriptions des mesures

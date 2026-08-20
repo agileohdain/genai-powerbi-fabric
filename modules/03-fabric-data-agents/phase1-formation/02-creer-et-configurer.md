@@ -10,6 +10,13 @@
 - Connaître la limitation « exemples non supportés sur modèle sémantique » et ses conséquences
 - Tester dans l'expérience directe
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** publié (permission **Read** suffit) | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Source unique de l'agent `Agent Ventes AltiSport` |
+| **vocabulaire-metier.md** | [assets/vocabulaire-metier.md](../../../assets/vocabulaire-metier.md) | Base des instructions de l'agent (routage, définitions métier) |
+
 ## Pas-à-pas — créer l'agent AltiSport
 
 ### 1. Créer l'item

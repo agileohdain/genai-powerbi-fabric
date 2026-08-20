@@ -6,6 +6,12 @@
 - Générer les descriptions de mesures, puis les traduire
 - Découvrir la modélisation web assistée et connaître ses garde-fous
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** publié dans le service | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Vue Requête DAX (questions sur `Total Ventes`, `Ventes N-1`…) et modélisation web |
+
 ## Vue Requête DAX (DAX Query View)
 
 Copilot y génère des **requêtes DAX** (pas des mesures isolées — demander une requête donne les meilleurs résultats). Une mesure définie dans une requête peut ensuite être **ajoutée au modèle** en un clic.

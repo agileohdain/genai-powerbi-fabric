@@ -12,9 +12,15 @@ Le **visuel Narratif avec Copilot** (Desktop + service) résume le rapport, des 
 
 Le visuel remplace progressivement l'ancien *smart narrative* : au premier ajout, un choix est proposé ; on peut basculer entre les deux sans perdre le contenu (seul le narratif Copilot n'est pas éditable directement — copier/coller vers le smart narrative pour éditer le texte à la main).
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Rapport AltiSport (v2) avec la page produits générée en fiche 02 | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Terrain du visuel narratif et des résumés (les prompts « winter equipment » y trouvent leur sens) |
+
 ## Pas-à-pas (visuel narratif)
 
-1. (Service) Ouvrir un rapport en mode Édition, ou depuis le hub de données : `... > Créer un rapport`
+1. (Service) Ouvrir le **rapport AltiSport** en mode Édition, ou depuis le hub de données : `... > Créer un rapport`
 2. Volet Visualisations > icône **Narratif** > choisir le type **Copilot**
 3. Choisir la portée : rapport entier, pages ou visuels (inclure/exclure individuellement)
 4. **Lire et vérifier** le résumé ; survoler les **notes de référence** : Power BI met en surbrillance le visuel source de chaque affirmation

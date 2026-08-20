@@ -22,6 +22,20 @@
 | Question stratégique posée chaque semaine, réponse à normaliser | Réponse vérifiée (visuel approuvé + phrases déclencheuses) |
 | Tables techniques ou de travail inutiles aux utilisateurs | Les exclure du schéma IA |
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** publié | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Terrain des deux pas-à-pas : schéma IA puis réponse vérifiée |
+| Pièges #7-8 (« Secteur » géo vs catégorie ; ventes vs marge) | [assets/README — table des pièges](../../../assets/README.md) | La matière des cas d'usage AltiSport |
+
+**Déroulé de la démo (v2 publié, volet Copilot ouvert)** :
+
+1. Demander `Show me sales by sector` **avant** toute préparation : Copilot peut agréger par catégorie produit au lieu de la zone géographique (piège #7) — c'est l'état de départ à montrer.
+2. Dérouler le pas-à-pas 1 en live : retirer `Total Marge` du schéma IA, Apply, fermer/rouvrir le volet. Rejouer une question sur « les ventes » : seule `Total Ventes` reste candidate (piège #8).
+3. Dérouler le pas-à-pas 2 : visuel CA par `DimMagasin[Secteur]` → *Set up a verified answer*, phrases déclencheuses `sales by sector` / `sales by region` — la réponse vérifiée fige la bonne interprétation.
+4. Conclure avec le test négatif/positif ci-dessous sur un champ retiré du schéma.
+
 ## Pas-à-pas 1 — Schéma de données IA
 
 1. Ruban Accueil > **Prep data for AI** (onglets grisés : activer Q&A) > **Simplify data schema**.

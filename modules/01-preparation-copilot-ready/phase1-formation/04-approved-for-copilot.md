@@ -6,6 +6,19 @@
 - Auditer le raisonnement de Copilot (HCAAT) et collecter des diagnostics
 - Officialiser un modèle prêt pour la consommation à grande échelle
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** publié et configuré (fiches 02-03) | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Support des tests : skill picker, HCAAT, diagnostics, marquage *Approved* |
+
+**Déroulé de la démo (v2 configuré)** :
+
+1. Configurer le skill picker en mode « Copilot autonome » (*Answer questions about the data* seul) et rejouer les questions validées aux fiches 02-03 (`sales by sector`, question « closers ») : mêmes réponses fiables, sans le rapport.
+2. Sur une réponse : déployer *How Copilot arrived at this* — y retrouver le schéma IA (plus de `Total Marge`) et la réponse vérifiée configurés en fiche 02.
+3. Menu **...** > *Download diagnostics* : montrer le fichier et les fonctionnalités *Prep data for AI* qu'il confirme.
+4. Finir sur le marquage *Approved for Copilot* du modèle v2 dans le service (procédure ci-dessous).
+
 ## Tester comme un utilisateur final : le skill picker
 
 Le skill picker permet d'activer/simuler des combinaisons de capacités Copilot :

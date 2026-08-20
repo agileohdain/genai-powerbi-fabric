@@ -42,6 +42,13 @@ Coût par jour ≈ (nb_users × nb_req/jour) × CU·h par requête
 Part de capacité ≈ coût par jour ÷ (SKU × 24)
 ```
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| **Metrics App** sur la capacité de démo | [setup/04](../../../setup/04-capacite-gouvernance.md) | Isoler Copilot in Fabric / AI Query (pas-à-pas) |
+| Tarifs à jour | [docs/04](../../../docs/04-consommation-cus-ia/) | Recouper avant chiffrage (taux variables) |
+
 ## Pas-à-pas — isoler et chiffrer la consommation IA
 
 1. Dans la Metrics App (capacité de démo), filtrer/repérer les opérations **Copilot in Fabric** et **AI Query**.

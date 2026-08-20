@@ -50,9 +50,15 @@ Un modèle bien conçu aide Copilot à produire des suggestions précises, y com
 | Actualisation | Communiquer les plannings de refresh dans la description du modèle sémantique | « Données actualisées chaque jour à 06h00 UTC » |
 | Sécurité | Définir des rôles RLS si données sensibles | Vue Modèle > Gérer les rôles |
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèles **altisport-v1** (mal nommé) et **altisport-v2** (bien nommé) | `assets/modeles/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Démo avant/après détaillée ci-dessous |
+
 ## Cas d'usage de démonstration
 
-Présenter côte à côte deux versions du même modèle (mal nommé / bien nommé) et poser la même question à Copilot : la différence de qualité de réponse illustre immédiatement l'impact du nommage et des descriptions.
+Ouvrir côte à côte les deux modèles sémantiques AltiSport fournis — `altisport-v1` (mal nommé) et `altisport-v2` (bien nommé), dans `assets/modeles/` ([guide-modeles.md](../../../assets/modeles/guide-modeles.md)) — et poser la même question à Copilot sur chacun : la différence de qualité de réponse illustre immédiatement l'impact du nommage et des descriptions.
 
 ## Limites et pièges
 

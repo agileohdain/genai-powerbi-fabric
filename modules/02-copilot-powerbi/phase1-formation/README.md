@@ -23,6 +23,6 @@ Session théorique avec démonstrations sur le modèle AltiSport v2 (voir `asset
 
 ## Rappel des conventions
 
-- Chaque fiche : objectifs > concepts > pas-à-pas / cas d'usage > limites et pièges > sources
+- Chaque fiche : objectifs > concepts > matériel de démo > pas-à-pas / cas d'usage > limites et pièges > sources — la section *Matériel de démo* pointe les assets AltiSport à ouvrir (chemins, usage, déroulé)
 - Prompts d'exemple **en anglais** (recommandation Microsoft) avec traduction française
 - Les démonstrations utilisent le modèle générique AltiSport ; l'application sur les modèles réels du client se fait en [Phase 2](../phase2-ateliers/)

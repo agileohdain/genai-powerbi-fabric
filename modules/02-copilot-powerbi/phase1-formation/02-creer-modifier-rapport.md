@@ -12,9 +12,16 @@ Copilot génère des **pages complètes** à partir d'un prompt descriptif : il 
 
 Dans Desktop, le bouton Copilot est toujours visible dans le ruban ; au premier usage, il faut sélectionner un **workspace Copilot-compatible** (qui sert à la facturation, pas nécessairement celui de publication). Le workspace se change via `Options > Copilot (préversion)`.
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Ouverture du rapport, *Suggest content*, itération par prompts |
+| Thème AltiSport | [assets/theme-charte.json](../../../assets/theme-charte.json) | Harmonisation manuelle après génération (Copilot ne fait pas le style) |
+
 ## Pas-à-pas
 
-1. Ouvrir le modèle AltiSport v2 (Desktop : rapport + workspace actif Copilot-compatible ; service : mode Édition)
+1. Ouvrir le modèle AltiSport v2 (`assets/modeles/altisport-v2/altisport-v2.pbip` — Desktop : rapport + workspace actif Copilot-compatible ; service : mode Édition)
 2. Ruban **Accueil > Copilot** → le volet s'ouvre à droite
 3. Choisir :
    - **Suggest content for this report** : Copilot évalue les données et propose un **plan de rapport** (pages suggérées), que l'on peut créer en un clic — utile pour partir de zéro

@@ -33,6 +33,14 @@ La charte du client arrive souvent comme un **PowerPoint ou des maquettes** (pas
 1. **Donner les images** à l'agent (coller des captures de pages PPT/charte dans le chat) : il en extrait tone, couleurs, style pour bâtir le brief
 2. **Fournir un theme JSON** quand on l'a (cas AltiSport : `assets/theme-charte.json` déjà fourni)
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Rapport **vide altisport-v2** (PBIP ouvert dans VS Code + Desktop) | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Terrain de création : brief puis implémentation |
+| Charte **theme-charte.json** | [assets/theme-charte.json](../../../assets/theme-charte.json) | Input du design brief, puis thème appliqué |
+| Plugin **powerbi-authoring** + CLIs | [setup/03](../../../setup/03-skills-copilot-cli.md) | Environnement installé avant la session |
+
 ## Pas-à-pas — créer un rapport thématisé sur v2
 
 Prérequis : [setup/03](../../../setup/03-skills-copilot-cli.md) suivi ; rapport **vide** `altisport-v2` ouvert en PBIP dans VS Code ; Desktop avec le PBIP ouvert.

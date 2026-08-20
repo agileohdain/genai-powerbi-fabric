@@ -49,6 +49,13 @@ Copilot est activé par défaut sur tenant payant. Pour une **montée en charge 
 3. **Extrapoler** : back-of-the-envelope × le nombre cible d'utilisateurs/requêtes
 4. **Scaler** (ou ajuster) : seuils + éventuelle FCC posées avant le déploiement large
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| **Real-Time Hub** (événements de capacité) | [setup/04](../../../setup/04-capacite-gouvernance.md) | Configuration de l'alerte sur seuil (pas-à-pas) |
+| Matrice d'arbitrage globale | [docs/05](../../../docs/05-matrice-arbitrage-globale/) | Synthèse de l'étape 3 du pas-à-pas |
+
 ## Pas-à-pas — construire l'alerte et l'estimation
 
 ### 1. Alerte sur seuil ([rôle admin])

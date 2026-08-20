@@ -70,6 +70,20 @@ Toujours analyser le chiffre d'affaires par trimestre.
 - Toujours analyser ______________ sur une base ______________ (jour / semaine / mois / trimestre)
 ```
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** publié | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Support de la démo : saisir puis tester les instructions IA |
+| **vocabulaire-metier.md** | [assets/vocabulaire-metier.md](../../../assets/vocabulaire-metier.md) | Source des définitions : saisons, « Champion », « closers », « comptoir » (pièges #9-10) — contient un bloc d'instructions **prêt à coller** pour v2 |
+
+**Déroulé de la démo (v2 publié)** :
+
+1. Demander `Show me the sales of the closers for the white season` **avant** instructions : Copilot ne connaît ni « closers » ni « white season » — réponse approximative ou refus.
+2. *Prep data for AI* > *Add AI instructions* : coller le bloc AltiSport (section « Instructions IA prêtes à coller » du vocabulaire-metier.md), Apply, fermer/rouvrir le volet.
+3. Rejouer la même question : `DimVendeur` est ciblée, la période décembre-février est appliquée. Montrer aussi « Champion » (définition conditionnelle sur *Atteinte Cible*).
+4. Enchaîner sur le template à trous ci-dessous — celui que les participants rempliront avec le vocabulaire de leur entreprise en atelier.
+
 ## Pas-à-pas
 
 1. **Prep data for AI** > onglet **Add AI instructions**.

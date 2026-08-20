@@ -7,6 +7,19 @@
 - Itérer par un **processus de test structuré** (brouillon vs publié)
 - Connaître les limites produit qui expliquent une réponse « fausse » avant de corriger l'agent
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèles **altisport-v1** et **altisport-v2** publiés | `assets/modeles/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Comparaison sur une même question : agent faible (v1) vs base saine (v2) |
+| Rapport AltiSport existant | `assets/modeles/altisport-v2/` | Référence de croisement des montants (étape 2 de la vérification) |
+
+**Déroulé de la démo (v1 vs v2)** :
+
+1. Créer un agent brouillon avec **v1** comme source, poser `What is the total sales amount for 2025?` : la requête générée vise les colonnes obscures (`MttTTcNet`…), filtre mal les annulées ou rate la table de dates.
+2. Basculer la source sur **v2**, même question : la requête utilise la mesure `Total Ventes` et `DimDate` — le filtre annulées est déjà dans la mesure.
+3. Croiser le montant v2 avec le visuel du rapport AltiSport (référence), puis conclure sur les 4 leviers de qualité ci-dessous.
+
 ## D'où vient la qualité ?
 
 Pour une source **modèle sémantique**, l'agent génère du DAX à partir des métadonnées. Sans exemples possibles (fiche 02), la qualité dépend directement de :

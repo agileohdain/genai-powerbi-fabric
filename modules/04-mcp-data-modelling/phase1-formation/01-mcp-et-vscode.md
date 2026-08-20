@@ -24,6 +24,13 @@ Le **Power BI Modeling MCP Server** (Microsoft, Public Preview) expose ~20 group
 | Workspace Fabric | `Connect to semantic model '[Name]' in Fabric Workspace '[Workspace]'` | Modèle publié, le partagé avec les data agents (module 03) |
 | Dossier PBIP | `/ConnectToPBIP` (ouvrir le dossier TMDL) | **Chemin de la formation** : diff Git, versionné, sans Desktop ouvert |
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Dossier PBIP **altisport-v1** | `assets/modeles/altisport-v1/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Cible de connexion du premier prompt (vue d'ensemble du modèle) |
+| VS Code + extension **Power BI Modeling MCP** | [setup/02](../../../setup/02-vscode-mcp.md) | Environnement installé avant la session |
+
 ## Pas-à-pas — connexion et premier prompt
 
 ### 1. Vérifier l'environnement

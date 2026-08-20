@@ -9,6 +9,14 @@
 - **Vérifier chaque réponse** : raisonnement, champs et filtres utilisés
 - Connaître les pièges documentés et savoir réagir
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** + rapport de départ publiés | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) ; rapport 2-3 pages ([README de phase](README.md#matériel-de-démo-requis)) | Terrain des questions et de la vérification |
+
+**Questions à rejouer en démo** (en anglais — voir limites) : `Show me sales by sector` (ambiguïté du piège #7 : vérifier la colonne retenue dans HCAAT), `What were the top 5 selling products last month?`, relance `Now only for 2025`, puis une question utilisant un terme des instructions IA (`white season`). Chaque réponse passe par les trois réflexes de la section « Lire et vérifier ».
+
 ## Ordre de résolution — le modèle mental
 
 1. Copilot cherche d'abord si la réponse est dans les **visuels du rapport** ouvert

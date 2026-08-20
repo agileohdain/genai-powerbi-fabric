@@ -7,6 +7,13 @@
 - Choisir le bon **modèle de permission** de partage et connaître les permissions minimales sur les sources
 - Situer les responsabilités de **gouvernance** : Purview, régions, ALM
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Agent **Agent Ventes AltiSport** (brouillon de la fiche 02) | Workspace Fabric de démo | Publication, description, partage, bascule brouillon/publié |
+| Modèle **altisport-v2** partagé en **Read** | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Source de l'agent : permission minimale à accorder aux consommateurs |
+
 ## Publier : brouillon vs publié
 
 1. Bouton **Publish** → saisir la **description** : explique aux consommateurs ce que l'agent sait faire ; c'est aussi cette description que les orchestrateurs (Foundry, Copilot Studio, endpoint MCP) lisent pour décider de l'appeler → *« Agent répondant aux questions sur les ventes, la marge et l'atteinte des cibles AltiSport, à partir du modèle sémantique v2. »*

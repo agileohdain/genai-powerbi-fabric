@@ -48,6 +48,13 @@ Publication dans Fabric                         → powerbi-report-management
 Modèle sémantique                               → module 04 (MCP / semantic-model-authoring)
 ```
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Rapport **altisport-rapport-legacy** | `assets/modeles/altisport-rapport-legacy/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Terrain de l'inventaire CLI et de l'audit des visuels (2 pages, 4 types legacy) |
+| CLIs `powerbi-report-author` + `powerbi-desktop` | [setup/03](../../../setup/03-skills-copilot-cli.md) | Environnement installé avant la session |
+
 ## Pas-à-pas — vérifier l'environnement et lire un rapport
 
 ### 1. Vérifier l'installation

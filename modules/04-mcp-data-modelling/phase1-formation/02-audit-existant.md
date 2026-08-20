@@ -29,6 +29,14 @@ Chaque constat est classé par **gravité** — c'est la convention de lecture c
 
 Le rapport d'audit est un **document markdown** généré dans le projet (ex. `audit/altisport-v1_audit_20260817.md`) : il se committe, se partage, et sert de contrat de correction.
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Dossier PBIP **altisport-v1** | `assets/modeles/altisport-v1/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Terrain d'audit puis de correction |
+| **guide-modeles.md** | [assets/modeles/guide-modeles.md](../../../assets/modeles/guide-modeles.md) | Référence de relecture : les écarts v1→v2 justifiés |
+| Dépôt Git propre (`git status`) | Racine du dépôt | Sauvegarde avant les corrections (pas-à-pas, étape 4) |
+
 ## Pas-à-pas — audit d'AltiSport v1
 
 ### 1. Cadrer l'audit (prompt mode agent)

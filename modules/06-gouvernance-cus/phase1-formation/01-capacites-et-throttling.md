@@ -43,6 +43,13 @@ Points de vigilance :
 - Performance lente ≠ throttling (souvent la conception de l'item) — **vérifier dans la Metrics App** avant d'agir.
 - Exceptions : Real-Time Intelligence (pas de palier 20 s), Warehouse (presque tout en background), eventstreams (baisse des ressources allouées au lieu de throttle).
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| **Metrics App** sur la capacité de démo | [setup/04](../../../setup/04-capacite-gouvernance.md) | Lecture Utilization / Throttling / System events (pas-à-pas) |
+| Capacité ayant servi aux modules 02-03 | Tenant Fabric de démo | Historique d'usage IA à observer |
+
 ## Pas-à-pas — lire la capacité dans la Metrics App
 
 1. Ouvrir la **Microsoft Fabric Capacity Metrics app** (installée au [setup/04](../../../setup/04-capacite-gouvernance.md)) pour la capacité de démo.

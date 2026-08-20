@@ -47,6 +47,13 @@ Sans skill, traduire un rapport = éditer des dizaines de `visual.json`, `page.j
 
 Le skill applique la langue cible partout, en préservant la structure — c'est un **refactor de contenu**, pas un simple find/replace.
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Rapport **altisport-rapport-legacy** (PBIP ouvert dans VS Code + Desktop) | `assets/modeles/altisport-rapport-legacy/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Terrain : migration des visuels, re-thémérisation, traduction EN→FR |
+| Charte **theme-charte.json** | [assets/theme-charte.json](../../../assets/theme-charte.json) | Thème appliqué à l'étape 4 |
+
 ## Pas-à-pas — moderniser et traduire le rapport legacy
 
 Prérequis : [setup/03](../../../setup/03-skills-copilot-cli.md) ; rapport **legacy** `altisport-rapport-legacy` ouvert en PBIP ; Desktop avec le PBIP ouvert.

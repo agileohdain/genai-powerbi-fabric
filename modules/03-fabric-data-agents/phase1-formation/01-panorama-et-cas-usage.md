@@ -7,6 +7,12 @@
 - Cartographier les **canaux de consommation** d'un agent après son édition post-26/08/2026 (expérience directe, Microsoft 365 Copilot, Copilot Studio, Foundry, MCP)
 - Connaître le cycle de vie d'un agent : créer → configurer → tester → publier → partager → itérer
 
+## Matériel de démo
+
+| Élément | Où | Usage dans la fiche |
+|---|---|---|
+| Modèle **altisport-v2** publié | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Aucun nouvel asset requis : ce modèle servira de source à l'agent construit en fiche 02 |
+
 ## Qu'est-ce qu'un data agent ?
 
 Un **Fabric data agent** (GA) est un agent conversationnel no-code qui répond en langage naturel à partir de données hébergées dans Fabric : lakehouse, warehouse, **modèle sémantique Power BI**, KQL Database, mirrored database, ontology, et Microsoft Graph.

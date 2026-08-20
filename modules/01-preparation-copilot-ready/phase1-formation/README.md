@@ -18,7 +18,7 @@ Session théorique avec démonstrations sur le jeu de données générique (voir
 ## Matériel de démo requis
 
 - Jeu de données générique (dossier `assets/`) avec :
-  - une version « mal préparée » et une version « bien préparée » du même modèle (fiche 01)
+  - les modèles AltiSport `altisport-v1` (mal préparé) et `altisport-v2` (bien préparé) dans `assets/modeles/`, présentés côte à côte en fiche 01
   - un visuel candidat pour une réponse vérifiée (fiche 02)
   - un vocabulaire métier fictif pour les instructions IA (fiche 03)
 - Power BI Desktop avec *Prep data for AI* activé (Fichier > Options et paramètres > Options > Fonctionnalités d'aperçu)
@@ -63,5 +63,5 @@ Session théorique avec démonstrations sur le jeu de données générique (voir
 
 ## Rappel des conventions
 
-- Chaque fiche : objectifs > concepts > pas-à-pas > limites et pièges > sources
+- Chaque fiche : objectifs > concepts > matériel de démo > pas-à-pas > limites et pièges > sources — la section *Matériel de démo* pointe les assets AltiSport à ouvrir (chemins, usage, déroulé)
 - Les démonstrations utilisent le jeu générique ; l'application sur les modèles réels du client se fait en [Phase 2](../phase2-ateliers/)
