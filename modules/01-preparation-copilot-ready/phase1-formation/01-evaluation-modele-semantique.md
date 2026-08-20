@@ -58,7 +58,31 @@ Un modèle bien conçu aide Copilot à produire des suggestions précises, y com
 
 ## Cas d'usage de démonstration
 
-Ouvrir côte à côte les deux modèles sémantiques AltiSport fournis — `altisport-v1` (mal nommé) et `altisport-v2` (bien nommé), dans `assets/modeles/` ([guide-modeles.md](../../../assets/modeles/guide-modeles.md)) — et poser la même question à Copilot sur chacun : la différence de qualité de réponse illustre immédiatement l'impact du nommage et des descriptions.
+Ouvrir côte à côte les deux modèles sémantiques AltiSport fournis — `altisport-v1` (mal nommé) et `altisport-v2` (bien nommé), dans `assets/modeles/` ([guide-modeles.md](../../../assets/modeles/guide-modeles.md)) — et poser les deux questions ci-dessous à Copilot sur chacun, dans l'ordre.
+
+### Étape 1 — « Quel est le chiffre d'affaires net ? »
+
+Poser la question **telle quelle, sans épeler la règle métier** (« annulées exclues ») : la question courte est le scénario réaliste — c'est celle que posera un utilisateur.
+
+| | `altisport-v1` | `altisport-v2` |
+|---|---|---|
+| Mesure trouvée | Aucune mesure nommée → Copilot improvise une somme de `MttTTcNet` | Mesure `Total Ventes` sélectionnée (nom + description) |
+| Règle métier | Commandes annulées **incluses** → CA faux | `StatutCommande <> "Annulee"` appliquée par la mesure |
+| Réponse | Plausible, mécaniquement juste, métier faux | Correcte |
+
+> ⚠️ **Formateur** : ne pas ajouter « annulées exclues » à la question. Épeler la règle permet à Copilot de la retrouver même sur v1 (filtre ad hoc) et casse la démo. C'est justement le point : la règle doit vivre dans le modèle, pas dans la tête de l'utilisateur.
+
+### Étape 2 — « Quels sont les 10 meilleurs vendeurs ? »
+
+Enchaîner immédiatement : même divergence, autre lecture. Les classements diffèrent entre v1 et v2 — v1 classe les vendeurs sur un CA faux (annulées incluses, en plus de la relation vendeurs inactive), v2 sur `Total Ventes`. Le classement faux est **silencieux** : aucune erreur visible, personne ne s'en rend compte sans le modèle corrigé à côté.
+
+### Enseignements à souligner
+
+- **La règle d'affaires vit dans la mesure** : une mesure organisationnelle décrite applique la règle partout, quelle que soit la formulation de la question — pas seulement quand on l'épèle.
+- **La description guide Copilot** (200 premiers caractères) : c'est elle qui fait choisir la bonne mesure parmi les champs du modèle.
+- **Mesures explicites = réponses plus rapides** : quand la mesure existe, Copilot n'improvise pas de DAX — il comprend plus vite et répond plus vite (bénéfice typique, gain variable selon les questions).
+
+> Rappel : Copilot est non déterministe — présenter les écarts comme typiques, jamais garantis.
 
 ## Limites et pièges
 
