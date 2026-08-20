@@ -8,17 +8,13 @@
 
 ## Matériel de démo
 
-| Élément | Où | Usage dans la fiche |
-|---|---|---|
-| Modèle **altisport-v2** publié et configuré (fiches 02-03) | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Support des tests : skill picker, HCAAT, diagnostics, marquage *Approved* |
+Modèle **altisport-v2** publié et configuré (fiches 02-03) — [guide des modèles](../../../assets/modeles/guide-modeles.md). Support unique des tests : skill picker, HCAAT, diagnostics, marquage *Approved*.
 
-**Déroulé de la démo (v2 configuré)** — vérifier que les préparations des fiches 02-03 tiennent pour un utilisateur final, puis officialiser :
+**Déroulé de la démo (v2 configuré)** — montrer les gestes de la recette une fois, vite :
 
-1. **Se mettre en peau d'utilisateur** : menu déroulant de la zone de saisie Copilot > **Select skills** > ne garder que *Answer questions about the data* — simulation du Copilot autonome, le plus restreint des trois environnements (voir tableau ci-dessous).
-2. **Rejouer** les questions de référence : `sales by sector` → réponse vérifiée (coche, phrase *matched*) ; question « closers » saison blanche 2025-2026 → `DimVendeur` sans filtre, bonne période. Attendu : mêmes réponses que fiches 02-03, sans le rapport.
-3. **Auditer** : sur une réponse, déployer *How Copilot arrived at this* — le schéma IA (plus de `Total Marge`) et la réponse vérifiée y sont visibles.
-4. **Documenter** : menu **...** > *Download diagnostics* — le fichier confirme les fonctionnalités *Prep data for AI* appliquées (pièce jointe officielle d'un ticket support).
-5. **Officialiser** : marquage *Approved for Copilot* du modèle v2 dans le service (procédure ci-dessous). Le marquage ne teste rien — il consacre la recette qui vient d'être faite.
+1. **Simuler l'environnement final, vérifier en une question** : skill picker > *Answer questions about the data* seul > `sales by sector` → la réponse vérifiée se déclenche (coche). Les fiches 02-03 ont testé en mode auteur (3 capacités) : c'est la preuve que ça tient côté consommateur.
+2. **Auditer et documenter** : HCAAT sur la réponse (schéma IA et réponse vérifiée visibles) ; menu **...** > *Download diagnostics* — confirme les fonctionnalités *Prep data for AI* appliquées, pièce jointe officielle d'un ticket support.
+3. **Officialiser** : marquage *Approved for Copilot* du modèle v2 dans le service (procédure ci-dessous) — ne teste rien, consacre la recette.
 
 ## Tester comme un utilisateur final : le skill picker
 
