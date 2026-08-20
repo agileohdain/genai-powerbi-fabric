@@ -20,7 +20,7 @@ Auteurs de rapports, analystes, développeurs BI ; les fiches 01, 03 et 04 conce
 
 ## Prérequis
 
-- Copilot activé sur le tenant et la capacité, workspace assigné (voir [docs/01-prerequis-activation](../../docs/01-prerequis-activation/))
+- Copilot activé sur le tenant et la capacité, workspace assigné (voir [docs/01-prerequis-admin](../../docs/01-prerequis-admin/))
 - Un modèle sémantique préparé selon la démarche du [module 01](../01-preparation-copilot-ready/) — pour les démos, le modèle AltiSport v2 (voir [assets/modeles](../../assets/modeles/guide-modeles.md))
 - Q&A activé sur le modèle (Copilot s'appuie sur le même moteur pour construire ses requêtes)
 

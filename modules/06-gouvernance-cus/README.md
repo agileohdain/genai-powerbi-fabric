@@ -22,7 +22,7 @@ Les cinq modules précédents ont rendu l'équipe **productrice** d'IA : Copilot
 
 - Une **capacité Fabric (F2+/P1+) avec historique d'usage IA** : idéalement d'avoir déroulé les modules 02-03 sur la capacité de démo pour avoir des opérations **Copilot in Fabric** et **AI Query** à regarder (sinon, générer quelques requêtes Copilot avant la fiche 02)
 - [setup/04-capacite-gouvernance.md](../../setup/04-capacite-gouvernance.md) suivi : capacité identifiée, rôles, Metrics App installée
-- `[rôle admin]` avoir activé Copilot (voir [docs/01](../../docs/01-prerequis-activation/)) ; pour l'atelier 2 option, l'admin tenant présent pour une Fabric Copilot capacity
+- `[rôle admin]` avoir activé Copilot (voir [docs/01](../../docs/01-prerequis-admin/)) ; pour l'atelier 2 option, l'admin tenant présent pour une Fabric Copilot capacity
 - La référence factuelle [docs/04 — consommation des CUs par les features IA](../../docs/04-consommation-cus-ia/) (lue et disponible)
 
 ## Contenu

@@ -9,7 +9,7 @@ Votre rôle : **garant de la méthode et du rythme**. Le contenu vit dans les mo
 | # | Action | Où | Blocant pour |
 |---|---|---|---|
 | 1 | Créer la copie client du dépôt : `gh repo create client-xyz --template agileohdain/genai-powerbi-fabric --private` | [README racine](../README.md) | tout |
-| 2 | Transmettre la checklist d'activation à l'admin tenant (licences, capacité, Copilot) et convenir d'une date de vérification | [docs/01](01-prerequis-activation/) | toutes les démos Copilot (modules 01-03, 05) |
+| 2 | Transmettre la checklist d'activation à l'admin tenant (licences, capacité, Copilot) et convenir d'une date de vérification | [docs/01](01-prerequis-admin/) | toutes les démos Copilot (modules 01-03, 05) |
 | 3 | Choisir le format — intensif (7 j) ou alterné (1 j/semaine) — et poser les dates | [docs/06](06-agenda-suggere/) | agenda |
 | 4 | Faire identifier par le client : **les modèles sémantiques pilotes** (terrain des ateliers) et **la liste des participants** par profil | README de chaque module (section Public) | ateliers M01+ |
 
@@ -55,7 +55,7 @@ Votre rôle : **garant de la méthode et du rythme**. Le contenu vit dans les mo
 | Contenu d'un module (fiches, ateliers, durées) | `modules/<module>/README.md` puis `phase1-formation/` et `phase2-ateliers/` |
 | Démos : quoi montrer, sur quel modèle | [Mapping démos ↔ assets](../assets/README.md) + README de phase 1 du module |
 | Jeu de données, pièges pédagogiques, modèles v1/v2 | [assets/README](../assets/README.md) + [guide des modèles](../assets/modeles/guide-modeles.md) |
-| Activation tenant, licences (admin) | [docs/01](01-prerequis-activation/) |
+| Activation tenant, licences (admin) | [docs/01](01-prerequis-admin/) |
 | Sécurité, RLS et features IA | [docs/02](02-securite/) |
 | Limites, hallucinations, cache 24 h | [docs/03](03-limites-hallucinations-validation/) |
 | Coûts, CUs, throttling | [docs/04](04-consommation-cus-ia/) |

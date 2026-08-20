@@ -1,4 +1,4 @@
-# Doc 01 — Prérequis & activation de Copilot
+# Doc 01 — Pour admin : prérequis & activation de Copilot
 
 Ce que l'admin doit activer **avant** la formation, et comment vérifier que tout est prêt. Toutes les démos Copilot (fiches 02-04, modules 02, 03 et 05) et l'étape *Prep data for AI* du modèle v2 en dépendent.
 
@@ -49,17 +49,11 @@ Si les paramètres Copilot du tenant sont [délégués aux administrateurs de ca
 
 L'accès Copilot est contrôlé par le **rôle dans le workspace** : pas de licence Copilot spécifique côté utilisateur.
 
-## 5. Power BI Desktop
+## 5. Power BI Desktop (côté participants)
 
-Le bouton **Copilot** du ruban est toujours visible ; c'est la **sélection d'un workspace éligible** qui l'active :
+La dernière étape — sélectionner un workspace Copilot-enabled comme **workspace actif** — se fait côté participant dans Power BI Desktop : pas-à-pas détaillé dans [setup/01, section 3](../../setup/01-powerbi-desktop.md#3-activer-copilot-dans-desktop).
 
-1. `Fichier > Compte` : être connecté
-2. Cliquer sur **Copilot** (ruban Accueil) → le volet invite à choisir un **workspace assigné à une capacité Copilot** (seuls les éligibles s'affichent)
-3. Pour revoir ou changer ce workspace : engrenage ⚙️ en bas à droite → **Options > Copilot (préversion)**
-
-> Contrairement au service (contrôle au niveau workspace), Copilot Desktop requiert en plus le **réglage tenant actif** (étape 2) — sinon le bouton reste grisé. Erreur type dans *Options > Copilot (préversion)* : *« Either none of your workspaces have the right capacity to use Copilot, or you don't have the right permission to use them »* → capacité non éligible ou droits insuffisants (retour aux étapes 1-4).
-
-L'usage est imputé à la capacité du workspace sélectionné.
+À retenir côté admin : contrairement au service (contrôle au niveau workspace), Copilot Desktop requiert en plus le **réglage tenant actif** (étape 2) — sinon le bouton reste grisé. L'usage est imputé à la capacité du workspace sélectionné.
 
 ## 6. Vérification (5 minutes, avant la formation)
 

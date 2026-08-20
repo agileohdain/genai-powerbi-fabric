@@ -11,7 +11,7 @@ Vocabulaire IA & BI utilisé dans les modules et les docs — classé alphabéti
 | **CLS** | Column-Level Security : sécurité au niveau des colonnes d'une table. → [docs/02](02-securite/) |
 | **CU (Capacity Unit)** | Unité de consommation des capacités Fabric ; toutes les opérations s'y facturent. → [docs/04](04-consommation-cus-ia/) |
 | **Data agent** | Agent conversationnel no-code de Fabric, construit puis publié, qui répond en langage naturel sur OneLake et modèles sémantiques. → [module 03](../modules/03-fabric-data-agents/) |
-| **F SKU / P SKU** | Références de capacité Fabric (F2+… / P1+…) : taille et CUs alloués. → [docs/01](01-prerequis-activation/) |
+| **F SKU / P SKU** | Références de capacité Fabric (F2+… / P1+…) : taille et CUs alloués. → [docs/01](01-prerequis-admin/) |
 | **Fabric Copilot capacity (FCC)** | Groupement de facturation centralisant la consommation Copilot (dont Pro/PPU/Desktop). → [module 06](../modules/06-gouvernance-cus/) |
 | **Hallucination** | Réponse plausible mais fausse produite par un modèle d'IA ; se combat par la vérification humaine. → [docs/03](03-limites-hallucinations-validation/) |
 | **LLM** | Large Language Model : modèle de langage derrière les réponses génératives. → [docs/03](03-limites-hallucinations-validation/) |

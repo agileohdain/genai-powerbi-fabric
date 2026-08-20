@@ -41,7 +41,7 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 
 | # | Sujet | Statut |
 |---|---|---|
-| 01 | [Prérequis & activation](docs/01-prerequis-activation/) — licences, régions, paramètres tenant | ✅ |
+| 01 | [Pour admin](docs/01-prerequis-admin/) — licences, régions, paramètres tenant | ✅ |
 | 02 | [Sécurité](docs/02-securite/) — RLS/OLS et features IA (périmètre technique) | ✅ |
 | 03 | [Limites, hallucinations & validation humaine](docs/03-limites-hallucinations-validation/) | ✅ |
 | 04 | [Consommation des CUs par les features IA](docs/04-consommation-cus-ia/) — tarifs tokens, throttling, Fabric Copilot capacity | ✅ |
@@ -80,4 +80,4 @@ gh repo create client-xyz --template agileohdain/genai-powerbi-fabric --private
 
 Présentation commerciale du parcours (projection + leave-behind) : [prevente/index.html](prevente/index.html).
 
-Puis suivre les guides [setup](setup/) (postes des participants) et la checklist d'activation de [docs/01-prerequis-activation](docs/01-prerequis-activation/) (admin tenant).
+Puis suivre les guides [setup](setup/) (postes des participants) et la checklist d'activation de [docs/01-prerequis-admin](docs/01-prerequis-admin/) (admin tenant).

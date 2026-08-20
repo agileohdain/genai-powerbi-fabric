@@ -2,7 +2,7 @@
 
 Configuration de l'environnement du module 06 (Gouvernance & CUs) : **identifier/avoir une capacité Fabric**, comprendre les rôles, installer la **Microsoft Fabric Capacity Metrics app**, et préparer les prérequis admin (Copilot actif, alertes, option Fabric Copilot capacity). À faire **une fois par capacité concernée** (démo + client), en partie par un `[rôle admin]` (~30 min, étapes admin non incluses).
 
-> Ce guide est le **volet « capacité »** : les prérequis d'entreprise (licences, activation Copilot) restent dans [docs/01-prerequis-activation](../docs/01-prerequis-activation/).
+> Ce guide est le **volet « capacité »** : les prérequis d'entreprise (licences, activation Copilot) restent dans [docs/01-prerequis-admin](../docs/01-prerequis-admin/).
 
 ## 1. Prérequis
 
@@ -39,7 +39,7 @@ Configuration de l'environnement du module 06 (Gouvernance & CUs) : **identifier
 
 ## 5. Prérequis admin pour le module 06
 
-- [ ] **Copilot activé** (tenant settings) — normalement déjà fait pour les modules 02-03 (voir [docs/01](../docs/01-prerequis-activation/))
+- [ ] **Copilot activé** (tenant settings) — normalement déjà fait pour les modules 02-03 (voir [docs/01](../docs/01-prerequis-admin/))
 - [ ] **Historique d'usage IA** sur la capacité (avoir exécuté des requêtes Copilot / Data Agents)
 - [ ] `[rôle admin]` **alertes** : prévoir d'activer les **Capacity Overview Events** (Real-Time Hub) lors de l'atelier 2 — tutoriel : [Monitor capacity threshold](https://learn.microsoft.com/en-us/fabric/real-time-hub/tutorial-monitor-capacity-threshold)
 - [ ] (Option atelier 2) **autorisation FCC** : admin Fabric pour autoriser la désignation d'une Fabric Copilot capacity ; capacité F2+/P1+ dans la région home — [Fabric Copilot capacity](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-copilot-capacity)

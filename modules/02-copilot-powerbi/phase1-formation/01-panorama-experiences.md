@@ -61,7 +61,7 @@ Ouvrir le **rapport AltiSport** publié dans le service : montrer le volet Copil
 ## Limites et pièges
 
 - Impossible d'activer/désactiver Copilot par expérience ou par workload : c'est global pour les utilisateurs activés
-- Le bouton Copilot dans Desktop apparaît toujours dans le ruban ; il reste **grisé** si le paramètre tenant est désactivé (voir [docs/01](../../../docs/01-prerequis-activation/))
+- Le bouton Copilot dans Desktop apparaît toujours dans le ruban ; il reste **grisé** si le paramètre tenant est désactivé (voir [docs/01](../../../docs/01-prerequis-admin/))
 - Après un changement de capacité, jusqu'à **24 h** peuvent être nécessaires pour que Copilot la reconnaisse
 - Les réponses du Copilot autonome/app reposent sur les **métadonnées** (descriptions, noms) : sans descriptions d'items, la recherche et les résumés déçoivent (traité en atelier 2)
 - Les data agents du Copilot autonome sont abordés au [module 03](../../03-fabric-data-agents/) ; les Fabric Apps (apps de données générées par agents) au [module 05](../../05-fabric-skills-authoring/)

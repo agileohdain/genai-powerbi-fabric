@@ -39,7 +39,7 @@ Le Copilot autonome (et les apps) retrouvent le contenu par ses **métadonnées*
 
 **Approved for Copilot** (module 01) joue aussi ici : un modèle approuvé (et ses rapports) est signalé comme préparé pour l'IA ; les administrateurs de workspace peuvent **limiter la recherche aux items approuvés** (`Paramètres du workspace > Paramètres délégués > Copilot and Azure OpenAI service`) — décision de gouvernance à prendre ici (propagation jusqu'à 24 h ; les data agents comptent toujours comme approuvés).
 
-> Prérequis côté tenant pour la recherche : **Global search** activé ; le réglage cross-geo peut être nécessaire pour la recherche sémantique selon la région (voir [docs/01](../../../docs/01-prerequis-activation/)).
+> Prérequis côté tenant pour la recherche : **Global search** activé ; le réglage cross-geo peut être nécessaire pour la recherche sémantique selon la région (voir [docs/01](../../../docs/01-prerequis-admin/)).
 
 ## 3. Abonnements avec résumés Copilot — démo optionnelle (15 min)
 
@@ -58,7 +58,7 @@ Rédiger une page de consignes courtes pour les utilisateurs :
 ## 5. Plan de déploiement (30 min)
 
 1. Public pilote = les participants aux ateliers + les utilisateurs métier ayant co-construit les prompts
-2. Élargissement par vagues, en s'appuyant sur le groupe de sécurité activé lors du paramétrage ([docs/01](../../../docs/01-prerequis-activation/))
+2. Élargissement par vagues, en s'appuyant sur le groupe de sécurité activé lors du paramétrage ([docs/01](../../../docs/01-prerequis-admin/))
 3. Suivi de la consommation CUs dans l'app Fabric Capacity Metrics (opération *Copilot in Fabric*) → ajuster le périmètre si besoin ([docs/04](../../../docs/04-consommation-cus-ia/))
 
 ## Livrables

@@ -40,7 +40,7 @@ La Metrics App elle-même **n'émet pas d'alerte** « % CU atteint » : le méca
 
 ### Tenant settings — activer de façon ciblée
 
-Copilot est activé par défaut sur tenant payant. Pour une **montée en charge maîtrisée** : cibler un **groupe de sécurité** sur le réglage *Users can use Copilot…* plutôt que tout le tenant (déjà vu en [docs/01](../../../docs/01-prerequis-activation/)), puis élargir une fois la consommation mesurée.
+Copilot est activé par défaut sur tenant payant. Pour une **montée en charge maîtrisée** : cibler un **groupe de sécurité** sur le réglage *Users can use Copilot…* plutôt que tout le tenant (déjà vu en [docs/01](../../../docs/01-prerequis-admin/)), puis élargir une fois la consommation mesurée.
 
 ### Adoption incrémentale (recommandation Microsoft)
 
@@ -94,7 +94,7 @@ Pour un besoin donné, croiser **coût CU** et **compte utilisateur** :
 - **La FCC ne change pas la consommation**, elle la **concentre** : utile à la visibilité/au pilotage, pas un palliatif au throttling
 - Une FCC **par utilisateur max** et **région home** : vérifier l'adéquation avant de convaincre le client de la mettre en place
 - **Ne pas sur-alerter** : des seuils trop bas créent un bruit qui tue le dispositif — commencer par les événements de throttling, ajuster ensuite
-- **Décision documentée** pour l'ouverture (tenant settings tenant-à-tenant, région, groupe) — voir [docs/01](../../../docs/01-prerequis-activation/) et [docs/02](../../../docs/02-securite/)
+- **Décision documentée** pour l'ouverture (tenant settings tenant-à-tenant, région, groupe) — voir [docs/01](../../../docs/01-prerequis-admin/) et [docs/02](../../../docs/02-securite/)
 - **L'équipe BI ne pilote pas la capacité seule** : les remèdes coûteux (overage 3×, pause/resume) sont des décisions d'admin — le module forme à **signaler et chiffrer**, pas à trancher la facture
 
 ## Sources

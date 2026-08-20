@@ -19,7 +19,7 @@ Auteurs de rapports, analystes, développeurs BI qui construisent et partagent d
 
 ## Prérequis
 
-- Capacité **F2 ou supérieure** (ou P1+ avec Fabric activé) et workspace assigné (voir [docs/01-prerequis-activation](../../docs/01-prerequis-activation/))
+- Capacité **F2 ou supérieure** (ou P1+ avec Fabric activé) et workspace assigné (voir [docs/01-prerequis-admin](../../docs/01-prerequis-admin/))
 - Copilot et Azure OpenAI activés sur le tenant (mêmes paramètres que le module 02)
 - **Paramètres tenant spécifiques** : *Data sent to Azure OpenAI can be processed/stored outside your capacity's geographic region* — requis uniquement si la région de la capacité est **hors de l'EU data boundary et des États-Unis** (non requis pour une capacité en France). La prise d'effet peut prendre jusqu'à une heure.
 - Un modèle sémantique préparé selon la démarche du [module 01](../01-preparation-copilot-ready/) — pour les démos, le modèle AltiSport v2 (voir [assets/modeles](../../assets/modeles/guide-modeles.md)), avec permission **Read** sur le modèle

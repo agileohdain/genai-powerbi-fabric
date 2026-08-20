@@ -1,6 +1,6 @@
 # Doc 06 — Agenda suggéré
 
-Deux déclinaisons du parcours (≈ 6,25 jours de contenu) : **intensif** et **alterné**. Les deux sont indicatifs — à ajuster selon la disponibilité des participants, l'état des modèles du client et les étapes admin ([docs/01](../01-prerequis-activation/)) qui doivent être faites **avant** le premier jour.
+Deux déclinaisons du parcours (≈ 6,25 jours de contenu) : **intensif** et **alterné**. Les deux sont indicatifs — à ajuster selon la disponibilité des participants, l'état des modèles du client et les étapes admin ([docs/01](../01-prerequis-admin/)) qui doivent être faites **avant** le premier jour.
 
 > Repères de durée : phase 1 ≈ 16 h de formation (M01-M02 ~3 h chacun, M03 ~3 h, M04-M05 ~2,5 h, M06 ~2 h) ; phase 2 ≈ 4,25 jours d'ateliers (M01-M05 ≈ 0,75 j chacun, M06 ≈ 0,5 j). Les durées détaillées figurent dans chaque module et chaque atelier.
 

@@ -83,7 +83,7 @@ v2 ajoute : Hiérarchie Dates (Annee > Trimestre > Mois), Hiérarchie Géographi
 
 ### 9. Configuration Copilot (Prep data for AI)
 
-> ⏳ **À appliquer après activation de Copilot par l'admin** (prérequis de licences et tenant : [docs/01-prerequis-activation](../../docs/01-prerequis-activation/)). Le modèle v2 est fonctionnel sans cette étape ; elle est requise pour les démos des fiches 02 à 04.
+> ⏳ **À appliquer après activation de Copilot par l'admin** (prérequis de licences et tenant : [docs/01-prerequis-admin](../../docs/01-prerequis-admin/)). Le modèle v2 est fonctionnel sans cette étape ; elle est requise pour les démos des fiches 02 à 04.
 
 À appliquer dans Power BI Desktop (bouton **Prep data for AI**) :
 

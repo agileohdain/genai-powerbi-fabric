@@ -39,6 +39,16 @@ git pull
 
 (Équivalent ZIP : re-télécharger et re-extraire.)
 
+## 6. Devenir indépendant du dépôt d'origine
+
+Git est **décentralisé** : dès qu'ils ont cloné, les participants possèdent une copie complète (historique, branches) et n'ont plus besoin du dépôt d'origine. Ce dépôt n'utilise **aucun submodule ni LFS**, donc aucune dépendance cachée. Pour basculer vers un nouveau repo :
+
+```powershell
+git remote set-url origin <url-du-nouveau-repo>
+git push -u origin --all
+git push --tags
+```
+
 ## Checklist finale
 
 - [ ] Dépôt présent dans `C:\dev\genai-powerbi-fabric`

@@ -32,7 +32,7 @@ Référence de décision : les **4 leviers IA** couverts par la formation (modul
 |---|---|---|---|---|
 | **Licence** | Capacité Fabric F2+ / P1+ (ou FCC pour Pro/PPU/Desktop) | Capacité F2+ / P1+ (ou FCC) ; Copilot + Azure OpenAI tenant | GitHub Copilot (Pro ou Business) | GitHub Copilot (Pro ou Business) |
 | **Outils** | Desktop ou Service | Service Fabric | VS Code + extension MCP | Copilot CLI/VS Code + plugin `powerbi-authoring` + CLIs Node |
-| **Setup** | [docs/01](../01-prerequis-activation/) (tenant + capacité) | [docs/01](../01-prerequis-activation/) + paramètres tenant région | [setup/02](../../setup/02-vscode-mcp.md) | [setup/03](../../setup/03-skills-copilot-cli.md) |
+| **Setup** | [docs/01](../01-prerequis-admin/) (tenant + capacité) | [docs/01](../01-prerequis-admin/) + paramètres tenant région | [setup/02](../../setup/02-vscode-mcp.md) | [setup/03](../../setup/03-skills-copilot-cli.md) |
 | **Modele préparé** | Module 01 requis | Module 01 requis (pas d'exemples Q/R sur modèle sémantique) | Module 01 utile (l'objet de l'audit) | Module 01 requis, PBIR obligatoire |
 
 ### Coût CUs (génération)
@@ -75,5 +75,5 @@ Référence de décision : les **4 leviers IA** couverts par la formation (modul
 
 - Modules [02-copilot-powerbi](../../modules/02-copilot-powerbi/), [03-fabric-data-agents](../../modules/03-fabric-data-agents/), [04-mcp-data-modelling](../../modules/04-mcp-data-modelling/), [05-fabric-skills-authoring](../../modules/05-fabric-skills-authoring/) (périmètres, prérequis, points d'attention)
 - [Doc 04 — Consommation des CUs par les features IA](../04-consommation-cus-ia/) (tarifs, FCC, monitoring)
-- [Doc 01 — Prérequis & activation](../01-prerequis-activation/) (capacité, tenant, vérifications)
+- [Doc 01 — Pour admin](../01-prerequis-admin/) (capacité, tenant, vérifications)
 - Liens officiels détaillés dans les sources de chaque module (Copilot, Data Agents, Power BI Modeling MCP, Skills for Fabric)

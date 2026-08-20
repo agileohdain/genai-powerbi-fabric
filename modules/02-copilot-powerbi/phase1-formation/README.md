@@ -18,7 +18,7 @@ Session théorique avec démonstrations sur le modèle AltiSport v2 (voir `asset
 
 - Modèle AltiSport **v2** publié dans un espace de travail sur capacité Copilot-enabled (voir [guide-modeles](../../../assets/modeles/guide-modeles.md))
 - Un rapport de départ avec 2-3 pages construites (sert de support aux narratifs et aux questions sur le contenu)
-- Power BI Desktop avec un workspace actif Copilot-compatible (voir [docs/01-prerequis-activation](../../../docs/01-prerequis-activation/))
+- Power BI Desktop avec un workspace actif Copilot-compatible (voir [docs/01-prerequis-admin](../../../docs/01-prerequis-admin/))
 - Q&A activé sur le modèle (nécessaire pour la création de pages et les questions de données)
 
 ## Rappel des conventions

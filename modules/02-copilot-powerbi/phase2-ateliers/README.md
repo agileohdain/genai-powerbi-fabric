@@ -4,7 +4,7 @@ Application du module 02 sur un rapport et un modèle réels du client, publiés
 
 ## Prérequis
 
-- Copilot activé et vérifié (checklist de [docs/01-prerequis-activation](../../../docs/01-prerequis-activation/))
+- Copilot activé et vérifié (checklist de [docs/01-prerequis-admin](../../../docs/01-prerequis-admin/))
 - Le modèle cible audité lors du [module 01](../../01-preparation-copilot-ready/phase2-ateliers/) et, idéalement, corrigé sur les points haute priorité (nommage, descriptions, champs visibles) : les ateliers mesurent directement l'effet de cette préparation
 - 2-3 utilisateurs métier disponibles pour formuler les vraies questions du quotidien (atelier 1) — ils sont les meilleurs auteurs de prompts
 

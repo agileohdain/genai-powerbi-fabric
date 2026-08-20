@@ -1,8 +1,8 @@
 # Doc 02 — Sécurité des features IA (périmètre technique)
 
-Ce que la sécurité technique implique pour les 4 leviers de la formation (Copilot, Data Agents, MCP, Skills) : ce que chaque outil **voit**, ce qu'il **respecte** (RLS, OLS/CLS, permissions), et ce qu'il **fait transiter** hors de l'environnement. Référence factuelle — les modules 01, 04, 05 y renvoient ; le volet d'activation est dans [doc 01](../01-prerequis-activation/).
+Ce que la sécurité technique implique pour les 4 leviers de la formation (Copilot, Data Agents, MCP, Skills) : ce que chaque outil **voit**, ce qu'il **respecte** (RLS, OLS/CLS, permissions), et ce qu'il **fait transiter** hors de l'environnement. Référence factuelle — les modules 01, 04, 05 y renvoient ; le volet d'activation est dans [doc 01](../01-prerequis-admin/).
 
-> Périmètre : **technique uniquement** (permissions, RLS/OLS, transit des données, garde-fous). Les implications RGPD / conformité de l'activation Copilot (données traitées hors région) sont signalées à la [doc 01](../01-prerequis-activation/#2-paramètres-tenant-portail-dadministration-fabric) : décision à documenter, hors champ de cette doc.
+> Périmètre : **technique uniquement** (permissions, RLS/OLS, transit des données, garde-fous). Les implications RGPD / conformité de l'activation Copilot (données traitées hors région) sont signalées à la [doc 01](../01-prerequis-admin/#2-paramètres-tenant-portail-dadministration-fabric) : décision à documenter, hors champ de cette doc.
 
 ## Vue d'ensemble — les 3 frontières
 
@@ -49,7 +49,7 @@ Les modules 04 (MCP) et 05 (Skills) génèrent **en local** (VS Code / Copilot C
 
 ## 4. Ce qui ne dépend pas de l'outil
 
-- **Tenant / capacité** : activation Copilot (tenant + capacité, groupe de sécurité recommandé) et éventuelle **Fabric Copilot capacity (FCC)** pour regrouper la facturation d'un groupe d'utilisateurs — voir [docs/01](../01-prerequis-activation/) et [docs/04](../04-consommation-cus-ia/).
+- **Tenant / capacité** : activation Copilot (tenant + capacité, groupe de sécurité recommandé) et éventuelle **Fabric Copilot capacity (FCC)** pour regrouper la facturation d'un groupe d'utilisateurs — voir [docs/01](../01-prerequis-admin/) et [docs/04](../04-consommation-cus-ia/).
 - **Région & résidence** : selon la région de la capacité, l'activation du *second paramètre tenant* (traitement possible hors région) peut être nécessaire — implication documentée côté admin (docs/01).
 - **Copilot n'entraîne pas sur vos données** : les prompts/réponses ne sont pas stockés après la session et ne servent pas à l'entraînement des modèles de fondation (frontière du tenant respectée) — page officielle ci-dessous.
 
