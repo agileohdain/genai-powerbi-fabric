@@ -18,12 +18,12 @@
 - c) être rédigées en anglais uniquement
 - d) être stockées dans un document markdown séparé
 
-**3. Après un déploiement du modèle via Git ou pipeline, les instructions IA et schémas IA…**
+**3. Les instructions IA servent surtout à…**
 
-- a) sont perdues définitivement
-- b) s'appliquent immédiatement, sans action
-- c) demandent une actualisation du modèle pour se synchroniser
-- d) doivent être resaisies à la main dans le service
+- a) traduire le jargon métier interne pour Copilot (ex. « closers » = les vendeurs)
+- b) remplacer les descriptions de tables et colonnes
+- c) garantir une réponse identique à chaque question
+- d) restreindre Copilot à certains utilisateurs
 
 **4. Un modèle parfaitement préparé garantit-il que Copilot renvoie la même réponse à chaque fois ?**
 
@@ -46,7 +46,7 @@
 
 **2. b** — L'essentiel doit tenir dans les **200 premiers caractères** : c'est ce que l'IA lit en priorité. → [fiche 02](02-schema-de-donnees-ia.md)
 
-**3. c** — Instructions et schémas IA sont enregistrés dans la LSDL : après déploiement Git/pipeline, une actualisation du modèle est nécessaire. → [README du module](../README.md)
+**3. a** — Seule fonctionnalité qui transmet le vocabulaire interne : mapping, définitions conditionnelles, périodes métier. → [fiche 03](03-instructions-ia.md)
 
 **4. b** — Non-déterminisme documenté : la préparation élève la qualité, pas la reproductibilité. → [fiche 01](01-evaluation-modele-semantique.md)
 
