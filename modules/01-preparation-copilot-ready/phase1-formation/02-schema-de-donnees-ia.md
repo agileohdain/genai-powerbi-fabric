@@ -59,6 +59,17 @@ Les phrases déclencheuses sont le **seul mécanisme d'activation** d'une répon
 
 D'où **5 à 7 phrases** représentatives par réponse (plafonds : 15 phrases, 500 caractères) : le match sémantique couvre synonymes et réordonnements, pas les changements de champ ou de mesure — puiser dans les formulations réelles des utilisateurs.
 
+Précision : sans réponse vérifiée, la réponse générée n'est pas « fausse » — après un schéma IA propre, elle est mécaniquement correcte la plupart du temps — mais **non garantie** : format variable, interprétation possible différente, résultat non reproductible d'une session à l'autre. La distinction à retenir : *fausse* ≠ *non garantie*.
+
+Une réponse vérifiée fonctionne **sans aucun filtre** configuré (visuel certifié tel quel). Les filtres cochés dans *Available to users* définissent **ce que Copilot a le droit d'ajuster** sans casser la certification :
+
+| Situation | Comportement Copilot |
+|---|---|
+| Prompt matche une phrase, aucun filtre demandé | Visuel certifié tel quel |
+| Prompt matche + filtre demandé **coché** dans *Available to users* (Vendeur) | Visuel certifié + filtre appliqué : `sales by sector for vendor BERNARD` ✓ |
+| Prompt matche + filtre demandé **non coché** (Magasin) | Copilot **refuse d'ajuster** la vue certifiée et propose des alternatives (réponse Chamonix, §4) — il protège la certification plutôt que de la déformer |
+| Prompt ne matche aucune phrase | Génération normale, sans coche |
+
 #### Préparer le visuel et ses filtres (avant la configuration)
 
 - Créer le visuel : CA (`Total Ventes`) par `DimMagasin[Secteur]`.
