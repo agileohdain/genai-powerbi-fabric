@@ -57,7 +57,7 @@ Desktop active les trois par défaut ; le sélecteur se trouve dans le menu dér
 
 Effets :
 
-- Le Copilot autonome n'applique plus le *friction treatment* aux réponses issues de ce modèle.
+- Le Copilot autonome n'applique plus le *friction treatment* aux réponses issues de ce modèle : sans marquage, il affiche un avertissement « réponse potentiellement de faible qualité » et exige un clic *View answer* ; avec marquage, les réponses s'affichent directement dans le chat.
 - Les rapports utilisant ce modèle sont considérés comme approuvés.
 - Propagation : généralement moins d'une heure, jusqu'à 24 h si beaucoup de rapports sont rattachés ; forcer en enregistrant une petite modification dans un rapport.
 
