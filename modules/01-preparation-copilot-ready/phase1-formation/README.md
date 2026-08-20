@@ -63,5 +63,5 @@ Session théorique avec démonstrations sur le jeu de données générique (voir
 
 ## Rappel des conventions
 
-- Chaque fiche : objectifs > concepts > matériel de démo > pas-à-pas > limites et pièges > sources — la section *Matériel de démo* pointe les assets AltiSport à ouvrir (chemins, usage, déroulé)
+- Chaque fiche : objectifs > concepts > matériel de démo > pas-à-pas > limites et pièges > sources — la section *Matériel de démo* pointe les assets AltiSport à ouvrir (chemins, usage, déroulé). Exception fiche 02 : pas-à-pas, matching et tests sont fusionnés dans la section unique *Déroulé de la démo* (sous-sections numérotées)
 - Les démonstrations utilisent le jeu générique ; l'application sur les modèles réels du client se fait en [Phase 2](../phase2-ateliers/)
