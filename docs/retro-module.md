@@ -17,7 +17,7 @@ Modèle de rétro **5 minutes**, à passer en fin de chaque module (fin de phase
 3. Après la session : ouvrir **1 à 3 actions max** — un point flou repris vaut mieux que dix listés.
 4. Ouvrir le module suivant par les « je retiens » de la rétro précédente : boucle de feedback visible pour l'équipe.
 
-> La rétro de fin de formation (après le module 06) suit le même format, augmenté du **passeport** : chaque participant partage où il en est de ses badges et ce qu'il applique en premier.
+> La rétro de fin de formation (après le module 06) suit le même format : chaque participant partage ce qu'il applique en premier.
 
 Modèle à copier :
 

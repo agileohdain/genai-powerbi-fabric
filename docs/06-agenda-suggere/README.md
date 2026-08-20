@@ -12,14 +12,14 @@ Pour une équipe disponible et un objectif d'équipement rapide. Formation en bl
 |---|---|---|
 | **J1** | Formation M01 — préparation Copilot-ready | Formation M02 — Copilot Power BI |
 | **J2** | Formation M03 — Fabric Data Agents | Formation M04 — MCP Data Modelling |
-| **J3** | Formation M05 — Fabric Skills | Formation M06 — Gouvernance & CUs + quiz & passeport |
+| **J3** | Formation M05 — Fabric Skills | Formation M06 — Gouvernance & CUs + quiz |
 | **J4** | Ateliers M01 — audit & mise en œuvre/recette | (suite) |
 | **J5** | Ateliers M02 — découverte/recette & prompts/adoption | (suite) |
 | **J6** | Ateliers M03 — construction/recette & diffusion | (suite) |
-| **J7** | Ateliers M04 puis M05 (profils dev) | Ateliers M06 + clôture : rétro globale, passeport 🏁 |
+| **J7** | Ateliers M04 puis M05 (profils dev) | Ateliers M06 + clôture : rétro globale 🏁 |
 
 **Conseils** :
-- J1 à J3 en présentiel de préférence (démos + questions) ; les quiz se passent en fin de J3, le passeport se distribue à J1.
+- J1 à J3 en présentiel de préférence (démos + questions) ; les quiz se passent en fin de J3.
 - Les ateliers M04/M05 visent le même profil dev : ils peuvent s'enchaîner sur une journée et demie, ou se dérouler en parallèle par binômes.
 - Garder la rétro express (5 min) en fin de chaque journée de formation ([modèle](../retro-module.md)).
 
@@ -31,11 +31,11 @@ Pour une équipe en production : une journée par semaine, le temps de digérer 
 |---|---|---|
 | **S1** | 1 j | Formation M01 + M02 |
 | **S2** | 1 j | Formation M03 + M04 |
-| **S3** | 1 j | Formation M05 + M06 + quiz & passeport |
+| **S3** | 1 j | Formation M05 + M06 + quiz |
 | **S4** | ~0,75 j | Ateliers M01 — audit, mise en œuvre & recette |
 | **S5** | 1 j | Ateliers M02 + lancement ateliers M03 |
 | **S6** | 1 j | Fin ateliers M03 + ateliers M04 |
-| **S7** | ~1 j | Ateliers M05 + M06, clôture : rétro globale, passeport 🏁 |
+| **S7** | ~1 j | Ateliers M05 + M06, clôture : rétro globale 🏁 |
 
 **Conseils** :
 - L'alterné laisse 4 jours ouvrés entre sessions : les points durs remontés en rétro peuvent être traités avant la suivante.

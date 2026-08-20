@@ -32,19 +32,17 @@ Votre rôle : **garant de la méthode et du rythme**. Le contenu vit dans les mo
 1. Ouvrir `assets/modeles/altisport-v2` dans Power BI Desktop ; vérifier le paramètre Power Query `DossierData` (chemin des CSV — voir [assets/README](../assets/README.md)) si le dépôt n'est pas dans `C:\dev`.
 2. Rejouer **2-3 démos** du [mapping démos ↔ assets](../assets/README.md) — au minimum une du module que vous maîtrisez le moins.
 3. Vérifier que Copilot répond sur le tenant (question simple sur v2).
-4. Imprimer les [antisèches](../assets/antiseches/) et prévoir les passeports ([docs/passeport](passeport/)) — un par participant.
+4. Imprimer les [antisèches](../assets/antiseches/).
 
 ### 3 · Jour J — animer
 
-- **Distribuer le passeport dès le début de J1** — il rythme le parcours.
 - **Rythme type** : formation du module (fiches + démos AltiSport) → quiz d'ancrage (~10 min, corrigé plié dans chaque `quiz.md`) → [rétro express](retro-module.md) (5 min, fin de module ou fin de journée).
-- **Badges sur preuve uniquement** : quiz ≥ 4/5 **et** ateliers validés ([feuille de route](../README.md)).
 - **Ateliers = modèles réels du client**, jamais des exercices : les participants appliquent sur leurs propres modèles, vous circulez. AltiSport reste le terrain de repli si un modèle client n'est pas prêt.
 - Les durées détaillées vivent dans chaque module et chaque atelier — l'[agenda](06-agenda-suggere/) reste indicatif, à ajuster.
 
 ### 4 · Après la formation
 
-- Clôture : rétro globale + badges finaux (le passeport fait foi).
+- Clôture : rétro globale.
 - Vérifier que les **livrables d'ateliers** sont remis au client — plan d'action M01, fiches de recette, catalogue de prompts, charte de gouvernance M06. C'est le retour sur investissement de la mission, à ne pas laisser dans les postes de travail.
 - Archiver la copie client du dépôt (elle contient la trace des ateliers).
 
@@ -61,7 +59,7 @@ Votre rôle : **garant de la méthode et du rythme**. Le contenu vit dans les mo
 | Coûts, CUs, throttling | [docs/04](04-consommation-cus-ia/) |
 | Choisir entre Copilot / Data Agent / MCP / Skills | [docs/05](05-matrice-arbitrage-globale/) |
 | Agenda, formats, conseils de rythme | [docs/06](06-agenda-suggere/) |
-| Supports participants (passeport, antisèches, glossaire) | [README racine — Supports participants](../README.md) |
+| Supports participants (antisèches, glossaire) | [README racine — Supports participants](../README.md) |
 
 ## Réflexes d'animation
 

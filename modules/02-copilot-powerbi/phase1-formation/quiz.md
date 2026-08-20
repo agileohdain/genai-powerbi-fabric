@@ -52,4 +52,4 @@
 
 ---
 
-**Score indicatif** : 5/5 ou 4/5 → badge en vue, passez aux ateliers. ≤ 3/5 → relire les fiches citées dans le corrigé avant les ateliers. Reportez votre résultat dans le [passeport IA](../../../docs/passeport/).
+**Score indicatif** : 5/5 ou 4/5 → passez aux ateliers. ≤ 3/5 → relire les fiches citées dans le corrigé avant les ateliers.

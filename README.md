@@ -11,18 +11,18 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | **Phase 1 — Formation & démonstrations** | Concepts et démonstrations sur le jeu de données générique AltiSport (`assets/`) | `modules/*/phase1-formation/` |
 | **Phase 2 — Ateliers d'application** | Prise en main directe par l'équipe sur des cas d'usage et modèles sémantiques réels du client | `modules/*/phase2-ateliers/` |
 
-## Feuille de route — 6 badges
+## Feuille de route
 
-| Étape | Badge | Module | Capacité validée |
-|---|---|---|---|
-| 1 | 🛠️ Copilot-ready | [01](modules/01-preparation-copilot-ready/) | Préparer et valider un modèle sémantique pour l'IA |
-| 2 | 💬 Copilot | [02](modules/02-copilot-powerbi/) | Générer et vérifier avec Copilot Power BI |
-| 3 | 🤖 Fabric Agent | [03](modules/03-fabric-data-agents/) | Construire, recetter et partager un data agent |
-| 4 | 🔧 MCP | [04](modules/04-mcp-data-modelling/) | Auditer et documenter un modèle via MCP |
-| 5 | 🎨 Fabric Skills | [05](modules/05-fabric-skills-authoring/) | Créer, re-thématiser et traduire des rapports |
-| 6 | 🛡️ Gouvernance CUs | [06](modules/06-gouvernance-cus/) | Mesurer et gouverner la consommation IA |
+| Étape | Module | Capacité développée |
+|---|---|---|
+| 1 | [01](modules/01-preparation-copilot-ready/) | Préparer et valider un modèle sémantique pour l'IA |
+| 2 | [02](modules/02-copilot-powerbi/) | Générer et vérifier avec Copilot Power BI |
+| 3 | [03](modules/03-fabric-data-agents/) | Construire, recetter et partager un data agent |
+| 4 | [04](modules/04-mcp-data-modelling/) | Auditer et documenter un modèle via MCP |
+| 5 | [05](modules/05-fabric-skills-authoring/) | Créer, re-thématiser et traduire des rapports |
+| 6 | [06](modules/06-gouvernance-cus/) | Mesurer et gouverner la consommation IA |
 
-> Chaque badge s'obtient sur preuve : quiz d'ancrage ≥ 4/5 **et** ateliers validés. Suivez votre progression dans le **[passeport IA](docs/passeport/)** ; planning dans l'[agenda suggéré](docs/06-agenda-suggere/).
+> Chaque module se conclut par un quiz d'ancrage (~10 min) ; planning dans l'[agenda suggéré](docs/06-agenda-suggere/).
 
 ## Modules
 
@@ -52,7 +52,6 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 
 | Support | Usage |
 |---|---|
-| [Passeport IA](docs/passeport/) | Suivi de progression et 6 badges, à conserver tout au long du parcours |
 | [Antisèches](assets/antiseches/) | Prompting Copilot · MCP · arbitrage — 1 page chacune, à imprimer |
 | [Glossaire](docs/glossaire.md) | Vocabulaire IA & BI de la formation |
 | [Rétro express](docs/retro-module.md) | Modèle de rétro 5 min en fin de module |
