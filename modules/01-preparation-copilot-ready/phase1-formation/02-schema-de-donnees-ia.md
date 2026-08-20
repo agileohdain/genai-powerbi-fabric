@@ -92,7 +92,7 @@ Une réponse vérifiée fonctionne **sans aucun filtre** configuré (visuel cert
 
 ### 4. Tester (négatif/positif)
 
-Ouvrir le volet Copilot, skill picker > **Answer data question**. Après chaque modification : fermer et rouvrir le volet.
+Ouvrir le volet Copilot, skill picker > **Answer questions about the data**. Après chaque modification : fermer et rouvrir le volet.
 
 | Question | Résultat attendu |
 |---|---|

@@ -79,9 +79,9 @@ Toujours analyser le chiffre d'affaires par trimestre.
 
 **Déroulé de la démo (v2 publié)** :
 
-1. Demander `Show me the sales of the closers for the white season` **avant** instructions : Copilot ne connaît ni « closers » ni « white season » — réponse approximative ou refus.
+1. Ouvrir une **nouvelle conversation** (l'historique fait partie de l'ancrage et peut conserver les filtres d'une question précédente), puis demander `Show me the sales of the closers for the white season 2025-2026` **avant** instructions : Copilot ne connaît ni « closers » ni « white season » — réponse approximative ou refus.
 2. *Prep data for AI* > *Add AI instructions* : coller le bloc AltiSport (section « Instructions IA prêtes à coller » du vocabulaire-metier.md), Apply, fermer/rouvrir le volet.
-3. Rejouer la même question : `DimVendeur` est ciblée, la période décembre-février est appliquée. Montrer aussi « Champion » (définition conditionnelle sur *Atteinte Cible*).
+3. Rejouer la même question : `DimVendeur` est ciblée sans filtre, la période décembre 2025-février 2026 est appliquée. Montrer aussi « Champion » (définition conditionnelle sur *Atteinte Cible*).
 4. Enchaîner sur le template à trous ci-dessous — celui que les participants rempliront avec le vocabulaire de leur entreprise en atelier.
 
 ## Pas-à-pas
@@ -89,7 +89,7 @@ Toujours analyser le chiffre d'affaires par trimestre.
 1. **Prep data for AI** > onglet **Add AI instructions**.
 2. Rédiger les instructions (utiliser le template ci-dessus).
 3. **Apply**, puis fermer et rouvrir le volet Copilot pour tester.
-4. Skill picker > **Answer data question**, poser une question utilisant un terme défini, vérifier la réponse, itérer.
+4. Skill picker > **Answer questions about the data**, poser une question utilisant un terme défini, vérifier la réponse, itérer.
 
 ## Limites et pièges
 
@@ -97,6 +97,7 @@ Toujours analyser le chiffre d'affaires par trimestre.
 - Enregistrées au niveau du modèle (pas de variantes par rapport ni par persona : un terme = une seule définition)
 - Pas d'import de fichier dans Desktop : copier/coller le texte
 - Après chaque édition : fermer et rouvrir le volet Copilot
+- Avant chaque test : ouvrir une **nouvelle conversation** (clear chat) — l'historique fait partie de l'ancrage et peut conserver les filtres d'une question précédente (symptôme typique : un filtre « Champion » qui s'invite sur une question « closers »)
 - Peuvent ne pas être respectées lors de la création de pages : tester avec le skill picker sur **Create new report pages** seul
 
 ## Sources
