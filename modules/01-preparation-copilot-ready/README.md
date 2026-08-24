@@ -19,7 +19,7 @@ Modélisateurs de données, développeurs BI, analystes responsables de modèles
 
 ## Prérequis
 
-- Copilot activé sur le tenant et la capacité (voir [docs/01-prerequis-admin](../../docs/01-prerequis-admin/))
+- Copilot activé sur le tenant et une capacité **F2+/P1+** (ou Fabric Copilot capacity — voir [docs/01-prerequis-admin](../../docs/01-prerequis-admin/))
 - Power BI Q&A activé sur le modèle (nécessaire pour les onglets de *Prep data for AI*)
 - Power BI Desktop avec la fonctionnalité d'aperçu *Prep data for AI* activée, ou un espace de travail Copilot-enabled dans le service
 

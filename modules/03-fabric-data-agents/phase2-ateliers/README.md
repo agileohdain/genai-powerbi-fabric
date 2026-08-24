@@ -6,9 +6,9 @@ Application sur les **modèles sémantiques réels du client** : construction d'
 
 | Horaire | Atelier | Objectif |
 |---|---|---|
-| 09h00 | [Atelier 1 — Construction & recette](atelier-1-construction-recette.md) | Spécifier et construire l'agent pilote sur un modèle réel, établir la recette de questions vérifiées |
-| 11h30 | Pause | — |
-| 13h30 | [Atelier 2 — Diffusion & adoption](atelier-2-diffusion-adoption.md) | Publier, partager au groupe pilote, choisir les canaux, planifier itération et gouvernance |
+| 09h00 | [Atelier 1 — Construction & recette](atelier-1-construction-recette.md) | Spécifier et construire l'agent pilote sur un modèle réel, établir la recette de questions vérifiées (≈ 3 h 45) |
+| 12h45 | Pause | — |
+| 13h45 | [Atelier 2 — Diffusion & adoption](atelier-2-diffusion-adoption.md) | Publier, partager au groupe pilote, choisir les canaux, planifier itération et gouvernance (≈ 2 h 30) |
 
 ## Matériel requis
 

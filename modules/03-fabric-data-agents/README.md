@@ -34,7 +34,7 @@ Auteurs de rapports, analystes, développeurs BI qui construisent et partagent d
 
 ## Points d'attention transversaux
 
-- **Changement récent** : l'accès aux data agents depuis Copilot in Power BI est **retiré depuis le 26 août 2026** (l'intégration reposait sur l'OpenAI Assistants API, elle-même retirée). Le data agent lui-même est inchangé ; il se consomme via l'expérience directe, Microsoft 365 Copilot, Copilot Studio, Microsoft Foundry ou un **endpoint MCP** (voir fiche 01).
+- **Changement récent** : l'accès aux data agents depuis Copilot in Power BI est **retiré à partir du 26 août 2026** (l'intégration reposait sur l'OpenAI Assistants API, elle-même retirée à cette date). Le data agent lui-même est inchangé ; il se consomme via l'expérience directe, Microsoft 365 Copilot, Copilot Studio, Microsoft Foundry ou un **endpoint MCP** (voir fiche 01).
 - Un data agent est **read-only** : il ne génère que des requêtes de lecture (SQL, DAX, KQL) et ne déclenche aucun workflow d'écriture.
 - Toute interaction consomme des CUs de la capacité : voir [docs/04-consommation-cus-ia](../../docs/04-consommation-cus-ia/).
 - Les réponses sont **limitées à 25 lignes × 25 colonnes** : l'agent convient à l'analyse conversationnelle, pas au téléchargement de données.

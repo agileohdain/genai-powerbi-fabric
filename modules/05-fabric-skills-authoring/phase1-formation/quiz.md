@@ -45,9 +45,9 @@
 
 **2. b** — PBIR obligatoire ; et le `getDefinition` depuis Fabric doit demander `format=PBIR`. → [fiche 01](01-skills-et-agentes.md)
 
-**3. b** — Règle absolue : ne jamais laisser deviner le JSON PBIR — le CLI et les références font foi. → [fiche 02](02-charte-et-creation.md)
+**3. b** — Règle absolue : ne jamais laisser deviner le JSON PBIR — le CLI et les références font foi. → [fiche 01](01-skills-et-agentes.md)
 
-**4. b** — Edit → Validate → Reload → Screenshot : la vérification du rendu en Desktop local avant toute publication. → [fiche 03](03-refactoring-et-traduction.md)
+**4. b** — Edit → Validate → Reload → Screenshot : la vérification du rendu en Desktop local avant toute publication. → [fiche 01](01-skills-et-agentes.md)
 
 **5. b** — Répartition claire : modèle = MCP (module 04), rapport = Skills (module 05). → [README du module](../README.md)
 

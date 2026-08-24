@@ -31,7 +31,7 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | 01 | [Préparation Copilot-ready](modules/01-preparation-copilot-ready/) | Bonnes pratiques de préparation des données et modèles sémantiques pour Copilot, Data Agents | ✅ | ~3 h + ≈ 0,75 j |
 | 02 | [Copilot Power BI](modules/02-copilot-powerbi/) | Desktop & Service : génération de rapports, requêtes en langage naturel, prompting | ✅ | ~3 h + ≈ 0,75 j |
 | 03 | [Fabric Data Agents](modules/03-fabric-data-agents/) | Création, configuration, interrogation d'un Data Agent (no-code), matrice d'arbitrage | ✅ | ~3 h + ≈ 0,75 j |
-| 04 | [MCP Data Modelling](modules/04-mcp-data-modelling/) | Code agentique via VS Code : audit & corrections DAX, documentation de masse | ✅ | ~2,5 h + ≈ 0,75 j |
+| 04 | [MCP Data Modelling](modules/04-mcp-data-modelling/) | Code agentique via VS Code : audit & corrections DAX, documentation de masse | ✅ | ~2,5 h + ≈ 0,6 j |
 | 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse | ✅ | ~2,5 h + ≈ 0,75 j |
 | 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling | ✅ | ~2 h + ≈ 0,5 j |
 

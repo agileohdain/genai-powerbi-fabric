@@ -12,8 +12,8 @@ Application du module 02 sur un rapport et un modèle réels du client, publiés
 
 | # | Atelier | Livrable | Durée indicative |
 |---|---|---|---|
-| 1 | [Découverte & recette](atelier-1-decouverte-recette.md) | Fiche de recette Copilot du rapport (vérification des réponses) | 0,5 jour |
-| 2 | [Prompts & adoption](atelier-2-prompts-adoption.md) | Catalogue de prompts éprouvés, découvrabilité, lignes de conduite, plan de déploiement | 0,25 jour |
+| 1 | [Découverte & recette](atelier-1-decouverte-recette.md) | Fiche de recette Copilot du rapport (vérification des réponses) | ≈ 3 h |
+| 2 | [Prompts & adoption](atelier-2-prompts-adoption.md) | Catalogue de prompts éprouvés, découvrabilité, lignes de conduite, plan de déploiement | ≈ 4 h |
 
 ## Conventions
 

@@ -54,7 +54,7 @@ La sécurité suit la source : RLS/CLS appliqués, moindre privilège, politique
 
 ## Consommation : où les utilisateurs interrogent l'agent ?
 
-> **Changement récent** : l'accès aux data agents **depuis Copilot in Power BI est retiré depuis le 26 août 2026** (l'intégration reposait sur l'OpenAI Assistants API, retirée à la même date). Ne plus former ni communiquer ce chemin ; pour les utilisateurs qui l'ont connu, annoncer la bascule dans les fiches d'adoption.
+> **Changement récent** : l'accès aux data agents **depuis Copilot in Power BI est retiré à partir du 26 août 2026** (l'intégration reposait sur l'OpenAI Assistants API, retirée à la même date). Ne plus former ni communiquer ce chemin ; pour les utilisateurs qui l'ont connu, annoncer la bascule dans les fiches d'adoption.
 
 | Canal | Public | Notes |
 |---|---|---|

@@ -29,7 +29,7 @@ Développeurs BI, data engineers, analystes avancés à l'aise avec VS Code. Les
 | Phase | Contenu | Durée indicative |
 |---|---|---|
 | [Phase 1 — Formation](phase1-formation/) | 3 fiches : MCP & VS Code, audit d'un existant, documentation | ~2,5 h |
-| [Phase 2 — Ateliers](phase2-ateliers/) | 2 ateliers sur les modèles réels du client : audit & plan de correction, documentation & adoption | ≈ 0,75 jour |
+| [Phase 2 — Ateliers](phase2-ateliers/) | 2 ateliers sur les modèles réels du client : audit & plan de correction, documentation & adoption | ≈ 5 h (~0,6 jour) |
 | [Quiz d'ancrage](phase1-formation/quiz.md) | 5 questions d'auto-évaluation (corrigé plié inclus) | ~10 min |
 ## Points d'attention transversaux
 

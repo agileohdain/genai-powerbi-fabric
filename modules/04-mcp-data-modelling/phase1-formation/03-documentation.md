@@ -71,7 +71,7 @@ Le document généré est un **brouillon** : trois contrôles avant publication
 - Les descriptions trop longues sont tronquées par les expériences IA : viser < 200 caractères, l'essentiel d'abord
 - La documentation générée reflète le modèle **tel qu'il est** — sur v1, elle documentera aussi les défauts (c'est un artefact utile à l'audit, pas un défaut)
 - Ne pas documenter ce qui n'existe pas : l'agent ne doit pas « deviner » une granularité ou un usage
-- Descriptions en **français** pour un modèle consommé par Copilot/data agents anglais : la langue de travail du modèle reste l'anglais (module 01) — adapter selon le public cible du modèle
+- Descriptions en **français** pour un modèle consommé par Copilot/data agents anglais : la langue de travail du modèle reste l'anglais (module 02) — adapter selon le public cible du modèle
 
 ## Sources
 

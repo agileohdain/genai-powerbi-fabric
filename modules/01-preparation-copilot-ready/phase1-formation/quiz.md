@@ -44,7 +44,7 @@
 
 **1. b** — Toute la configuration *Prep data for AI* vit dans le modèle sémantique, pas dans le rapport. → [fiche 02](02-schema-de-donnees-ia.md)
 
-**2. b** — L'essentiel doit tenir dans les **200 premiers caractères** : c'est ce que l'IA lit en priorité. → [fiche 02](02-schema-de-donnees-ia.md)
+**2. b** — L'essentiel doit tenir dans les **200 premiers caractères** : c'est ce que l'IA lit en priorité. → [fiche 01](01-evaluation-modele-semantique.md)
 
 **3. a** — Seule fonctionnalité qui transmet le vocabulaire interne : mapping, définitions conditionnelles, périodes métier. → [fiche 03](03-instructions-ia.md)
 

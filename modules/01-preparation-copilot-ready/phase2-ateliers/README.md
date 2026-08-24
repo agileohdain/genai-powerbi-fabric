@@ -4,8 +4,8 @@ Application de la démarche sur **un modèle sémantique réel du client** (mod�
 
 | Atelier | Objectif | Durée indicative |
 |---|---|---|
-| [1 — Audit du modèle](atelier-1-audit-modele.md) | Évaluer le modèle pilote avec la grille d'audit, produire un plan d'action priorisé | 2 h |
-| [2 — Mise en œuvre & recette](atelier-2-mise-en-oeuvre-recette.md) | Configurer schéma IA, réponses vérifiées, instructions IA ; recetter et marquer *Approved for Copilot* | 4 h |
+| [1 — Audit du modèle](atelier-1-audit-modele.md) | Évaluer le modèle pilote avec la grille d'audit, produire un plan d'action priorisé | ≈ 3 h |
+| [2 — Mise en œuvre & recette](atelier-2-mise-en-oeuvre-recette.md) | Configurer schéma IA, réponses vérifiées, instructions IA ; recetter et marquer *Approved for Copilot* | ≈ 3 h 30 |
 
 > Total ≈ 0,75 jour sur **un seul modèle pilote**. La grille d'audit de l'atelier 1 est conçue pour être **réutilisée en autonomie** sur les autres modèles du client (manuellement, ou via MCP — module 04).
 

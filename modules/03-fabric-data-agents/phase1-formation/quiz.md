@@ -16,7 +16,7 @@
 - a) au téléchargement de données en volume
 - b) à l'analyse conversationnelle, pas à l'extraction massive
 
-**3. Depuis le 26 août 2026, comment consomme-t-on un data agent ?**
+**3. À partir du 26 août 2026, comment consomme-t-on un data agent ?**
 
 - a) Uniquement via Copilot in Power BI
 - b) Via l'expérience directe, Microsoft 365 Copilot, Copilot Studio, Microsoft Foundry ou un endpoint MCP — plus via Copilot in Power BI (intégration retirée)
@@ -43,7 +43,7 @@
 
 **2. b** — Limite produit 25×25 : l'agent est fait pour la conversation analytique. → [README du module](../README.md)
 
-**3. b** — Le retrait de l'intégration Copilot in Power BI (26/08/2026) laisse l'agent inchangé, consommable par les autres canaux. → [fiche 04](04-publier-partager-gouverner.md)
+**3. b** — Le retrait de l'intégration Copilot in Power BI (26/08/2026) laisse l'agent inchangé, consommable par les autres canaux. → [fiche 01](01-panorama-et-cas-usage.md)
 
 **4. b** — Spécificité clé pour les modèles sémantiques : tout repose sur la préparation (schéma IA, descriptions, instructions IA). → [README du module](../README.md)
 

@@ -26,7 +26,7 @@ Pour une source **modèle sémantique**, l'agent génère du DAX à partir des m
 
 1. **Le schéma IA** (module 01, fiche 02) : tables et colonnes visibles nommées clairement, colonnes techniques masquées
 2. **Les descriptions** : de chaque mesure, chaque colonne métier — elles guident le choix du DAX
-3. **Les instructions IA du modèle** (Prep data for AI, module 01 fiche 03) : définitions métier, conventions (« exporter les annulées »…)
+3. **Les instructions IA du modèle** (Prep data for AI, module 01 fiche 03) : définitions métier, conventions (« exclure les annulées »…)
 4. **Les instructions de l'agent** (fiche 02) : routage et vocabulaire complémentaires
 
 > Un modèle v1 « mal préparé » (noms obscurs, mesures sans description, colonnes de dates parasites) donnera un agent faible ; un modèle v2 bien préparé donne une base saine. La démo compare les deux sur la même question.

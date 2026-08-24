@@ -10,14 +10,14 @@ Votre rôle : **garant de la méthode et du rythme**. Le contenu vit dans les mo
 |---|---|---|---|
 | 1 | Créer la copie client du dépôt : `gh repo create client-xyz --template agileohdain/genai-powerbi-fabric --private` | [README racine](../README.md) | tout |
 | 2 | Transmettre la checklist d'activation à l'admin tenant (licences, capacité, Copilot) et convenir d'une date de vérification | [docs/01](01-prerequis-admin/) | toutes les démos Copilot (modules 01-03, 05) |
-| 3 | Choisir le format — intensif (7 j) ou alterné (1 j/semaine) — et poser les dates | [Choisir le format](#choisir-le-format-du-parcours) (ce guide) | agenda |
+| 3 | Choisir le format — intensif (8 j) ou alterné (1 j/semaine) — et poser les dates | [Choisir le format](#choisir-le-format-du-parcours) (ce guide) | agenda |
 | 4 | Faire identifier par le client : **les modèles sémantiques pilotes** (terrain des ateliers) et **la liste des participants** par profil | README de chaque module (section Public) | ateliers M01+ |
 
 > L'étape 2 est la seule vraiment critique : sans Copilot activé sur le tenant et la capacité, aucune démo ne fonctionne. La vérifier soi-même, pas seulement sur parole.
 
 ### 2 · J-7 — préparer l'environnement
 
-**Les postes des participants** — faire suivre les 4 guides par les équipes IT (ou les préparer vous-même pour une salle) :
+**Les postes des participants** — faire suivre les 5 guides par les équipes IT (ou les préparer vous-même pour une salle) :
 
 | Guide | Pour |
 |---|---|
@@ -50,7 +50,7 @@ Votre rôle : **garant de la méthode et du rythme**. Le contenu vit dans les mo
 
 Deux déclinaisons du parcours (≈ 6,25 jours de contenu), toutes deux indicatives — à ajuster selon la disponibilité des participants, l'état des modèles du client et les étapes admin ([docs/01](01-prerequis-admin/)) qui doivent être faites **avant** le premier jour.
 
-### Intensif — 7 jours ouvrés
+### Intensif — 8 jours ouvrés
 
 | Jour | Matin | Après-midi |
 |---|---|---|
@@ -60,19 +60,21 @@ Deux déclinaisons du parcours (≈ 6,25 jours de contenu), toutes deux indicati
 | **J4** | Ateliers M01 — audit & mise en œuvre/recette | (suite) |
 | **J5** | Ateliers M02 — découverte/recette & prompts/adoption | (suite) |
 | **J6** | Ateliers M03 — construction/recette & diffusion | (suite) |
-| **J7** | Ateliers M04 puis M05 (profils dev) | Ateliers M06 + clôture : rétro globale 🏁 |
+| **J7** | Ateliers M04 (profils dev) | Lancement ateliers M05 |
+| **J8** | Fin ateliers M05 | Ateliers M06 + clôture : rétro globale 🏁 |
 
-### Alterné — 7 semaines (1 journée / semaine)
+### Alterné — 8 semaines (1 journée / semaine)
 
 | Semaine | Journée | Contenu |
 |---|---|---|
 | **S1** | 1 j | Formation M01 + M02 |
 | **S2** | 1 j | Formation M03 + M04 |
 | **S3** | 1 j | Formation M05 + M06 + quiz |
-| **S4** | ~0,75 j | Ateliers M01 — audit, mise en œuvre & recette |
-| **S5** | 1 j | Ateliers M02 + lancement ateliers M03 |
-| **S6** | 1 j | Fin ateliers M03 + ateliers M04 |
-| **S7** | ~1 j | Ateliers M05 + M06, clôture : rétro globale 🏁 |
+| **S4** | ~0,9 j | Ateliers M01 — audit, mise en œuvre & recette |
+| **S5** | 1 j | Ateliers M02 — découverte/recette & prompts/adoption |
+| **S6** | ~0,9 j | Ateliers M03 — construction/recette & diffusion |
+| **S7** | 1 j | Ateliers M04 (profils dev) + lancement ateliers M05 |
+| **S8** | 1 j | Fin ateliers M05, ateliers M06 + clôture : rétro globale 🏁 |
 
 ### Conseils et choix
 
