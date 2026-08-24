@@ -37,10 +37,10 @@
 Bouton **Data agent instructions** → volet à droite. Les instructions guident le **routage** (quelle source pour quel type de question) et **définissent le jargon métier**. Exemple (EN affiché, traduction pour les équipes) :
 
 ```text
-Answer questions about AltiSport sales using the AltiSport v2 semantic model. Use the model measures for all revenue questions; never compute revenue yourself. "Sell-in" refers to sales to resellers only. The winter season ("saison blanche") runs December-February, the summer season ("saison verte") June-August. Exclude cancelled orders from all revenue figures.
+Answer questions about AltiSport sales using the AltiSport v2 semantic model. Use the model measures for all revenue questions; never compute revenue yourself. "Comptoir" refers to the Magasin channel only, as opposed to Web. The winter season ("saison blanche") runs December-February, the summer season ("saison verte") June-August. Exclude cancelled orders from all revenue figures.
 ```
 
-Traduction : *Réponds aux questions sur les ventes AltiSport à partir du modèle sémantique AltiSport v2. Utilise les mesures du modèle pour toute question de chiffre d'affaires ; ne calcule jamais les montants toi-même. « Sell-in » désigne les ventes aux revendeurs uniquement. La saison blanche court de décembre à février, la saison verte de juin à août. Exclure les commandes annulées de tout chiffre de vente.*
+Traduction : *Réponds aux questions sur les ventes AltiSport à partir du modèle sémantique AltiSport v2. Utilise les mesures du modèle pour toute question de chiffre d'affaires ; ne calcule jamais les montants toi-même. « Comptoir » désigne le canal Magasin uniquement, par opposition au Web. La saison blanche court de décembre à février, la saison verte de juin à août. Exclure les commandes annulées de tout chiffre de vente.*
 
 Règles : phrases courtes, pas de contradiction entre instructions, alignées sur le vocabulaire réel (dicter le routage depuis [vocabulaire-metier.md](../../../assets/vocabulaire-metier.md)).
 

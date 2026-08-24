@@ -54,11 +54,11 @@ Un modèle bien conçu aide Copilot à produire des suggestions précises, y com
 
 | Élément | Où | Usage dans la fiche |
 |---|---|---|
-| Modèles **altisport-v1** (mal nommé) et **altisport-v2** (bien nommé) | `assets/modeles/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Démo avant/après détaillée ci-dessous |
+| Modèles **altisport-v1** (mal préparé) et **altisport-v2** (bien préparé) | `assets/modeles/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Démo avant/après détaillée ci-dessous |
 
 ## Cas d'usage de démonstration
 
-Ouvrir côte à côte les deux modèles sémantiques AltiSport fournis — `altisport-v1` (mal nommé) et `altisport-v2` (bien nommé), dans `assets/modeles/` ([guide-modeles.md](../../../assets/modeles/guide-modeles.md)) — et poser les deux questions ci-dessous à Copilot sur chacun, dans l'ordre.
+Ouvrir côte à côte les deux modèles sémantiques AltiSport fournis — `altisport-v1` (mal préparé) et `altisport-v2` (bien préparé), dans `assets/modeles/` ([guide-modeles.md](../../../assets/modeles/guide-modeles.md)) — et poser les deux questions ci-dessous à Copilot sur chacun, dans l'ordre.
 
 ### Étape 1 — « Quel est le chiffre d'affaires net ? »
 

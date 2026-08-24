@@ -6,7 +6,7 @@ Appliquer la démarche officielle (anti-sèche du [README de phase 1](../phase1-
 
 ## Durée
 
-≈ 3 h 30 (étapes minutées ci-dessous).
+≈ 3 h 35 (étapes minutées ci-dessous).
 
 ## Prérequis
 

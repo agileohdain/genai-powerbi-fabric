@@ -17,7 +17,7 @@
 
 | Problème | Solution |
 |---|---|
-| « Les ventes » peut renvoyer la marge (`Total GPM`) au lieu de `Total Sales` | Retirer le champ ambigu du schéma IA |
+| « Les ventes » peut renvoyer la marge (`Total Marge`) au lieu de `Total Ventes` | Retirer le champ ambigu du schéma IA |
 | « Ventes par secteur » : deux champs `Secteur` (client, magasin) → Copilot demande de clarifier à chaque question | Retirer le champ ambigu du schéma IA ; réponse vérifiée pour figer l'interprétation |
 | Question stratégique posée chaque semaine, réponse à normaliser | Réponse vérifiée (visuel approuvé + phrases déclencheuses) |
 | Tables techniques ou de travail inutiles aux utilisateurs | Les exclure du schéma IA |
@@ -27,7 +27,7 @@
 | Élément | Où | Usage dans la fiche |
 |---|---|---|
 | Modèle **altisport-v2** publié | `assets/modeles/altisport-v2/` — [guide des modèles](../../../assets/modeles/guide-modeles.md) | Terrain de la démo : schéma IA puis réponse vérifiée |
-| Pièges #7-8 (« Secteur » géo vs catégorie ; ventes vs marge) | [assets/README — table des pièges](../../../assets/README.md) | La matière des cas d'usage AltiSport |
+| Pièges #7-8 (« Secteur » client vs magasin ; ventes vs marge) | [assets/README — table des pièges](../../../assets/README.md) | La matière des cas d'usage AltiSport |
 
 ## Déroulé de la démo (v2 publié, volet Copilot ouvert)
 

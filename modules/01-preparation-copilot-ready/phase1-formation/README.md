@@ -37,6 +37,8 @@ Session théorique avec démonstrations sur le jeu de données générique (voir
 | 3 | **Instructions IA** | Ajouter le contexte métier | Le réglage fin vient après la structure |
 | 4 | **Descriptions** | Enrichir les métadonnées | Fondation durable ; rôle croissant dans les capacités futures |
 
+> Le tableau couvre les fonctionnalités de configuration ; la démarche se conclut par le test et le marquage **Approved for Copilot** (fiche 04).
+
 ### Matrice capacité × fonctionnalité
 
 | Capacité Copilot | Schéma IA | Réponses vérifiées | Instructions IA | Descriptions |

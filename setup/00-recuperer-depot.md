@@ -14,7 +14,7 @@ New-Item -ItemType Directory -Force C:\dev
 git clone https://github.com/<organisation>/client-xyz.git C:\dev\genai-powerbi-fabric
 ```
 
-> **Pourquoi ce chemin exact** : les 3 projets PBIP (`altisport-v1`, `altisport-v2`, `altisport-rapport-legacy`) lisent leurs CSV via le paramètre Power Query `DossierData`, dont la valeur par défaut est `C:\dev\genai-powerbi-fabric\assets\data\brut` ([guide des modèles](../assets/modeles/guide-modeles.md)). Cloné à cet emplacement, chaque modèle s'ouvre sans aucune configuration ; ailleurs, il faut adapter `DossierData` dans chaque modèle.
+> **Pourquoi ce chemin exact** : les projets `altisport-v2` et `altisport-rapport-legacy` lisent leurs CSV via le paramètre Power Query `DossierData`, dont la valeur par défaut est `C:\dev\genai-powerbi-fabric\assets\data\brut` ; `altisport-v1` pointe vers ce même dossier en chemin absolu ([guide des modèles](../assets/modeles/guide-modeles.md)). Cloné à cet emplacement, chaque modèle s'ouvre sans aucune configuration ; ailleurs, il faut adapter `DossierData` (v2, legacy) ou modifier la source de chaque requête (v1).
 
 ## 3. Alternative sans git (profils non-dev, modules 01-03)
 

@@ -26,7 +26,7 @@ Configuration de l'environnement du module 06 (Gouvernance & CUs) : **identifier
 |---|---|---|
 | Admin capacité | Paramètres de capacité, Metrics App, désigner une FCC, remèdes (upscale, pause/resume, overage) | Module 06 (fiches 01-03, ateliers 1-2) |
 | Visiteur/Metrics App viewer | Consulter la Metrics App (lecture du relevé) | Module 06 (fiche 01, atelier 1) |
-| Admin Fabric | Paramètres tenant (activation Copilot, autorisation FCC) | docs/01, fiché 03 (option) |
+| Admin Fabric | Paramètres tenant (activation Copilot, autorisation FCC) | docs/01, fiche 03 (option) |
 
 > Selon la taille du tenant, la visibilité Metrics App est restreinte : demander à l'admin de capacité d'**autoriser le lecteur** au besoin avant l'atelier 1.
 

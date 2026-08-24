@@ -18,8 +18,8 @@ Les **instructions IA** sont du texte libre (max 10 000 caractères) enregistré
 Quand un terme interne désigne toujours le même élément du modèle.
 
 ```
-« closers » désigne les vendeurs : utiliser la table Sellers.
-« ABCD » désigne le champ Total Invoice (table Revenue).
+« closers » désigne les vendeurs : utiliser la table DimVendeur.
+« comptoir » désigne le canal Magasin (colonne Canal de la table FactVentes).
 ```
 
 ### Pattern 2 — Définition conditionnelle (terme = règle)
@@ -27,21 +27,21 @@ Quand un terme interne désigne toujours le même élément du modèle.
 Quand un terme implique une condition ou un regroupement absent du modèle.
 
 ```
-« High performer » = vendeur atteignant 100 % ou plus de sa cible mensuelle.
+« Champion » = vendeur atteignant 100 % ou plus de sa cible mensuelle.
 ```
 
 ### Pattern 3 — Périodes métier (terme = plage de dates)
 
 ```
-« Saison haute » = juin à août.
-« Saison morte » = janvier à mai.
+« Saison blanche » = décembre à février, à cheval sur deux années.
+« Hors-saison » = mars à mai et septembre à novembre.
 ```
 
 Bonus — règles d'orientation d'analyse :
 
 ```
-Pour toute question sur les ventes, utiliser la table sales_fact comme source principale.
-Toujours analyser le chiffre d'affaires par trimestre.
+Pour toute question sur les ventes, utiliser la mesure Total Ventes (commandes annulées exclues).
+Toujours analyser le chiffre d'affaires par mois.
 ```
 
 ## Bonnes pratiques express

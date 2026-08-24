@@ -29,13 +29,13 @@ Formation à l'IA générative pour Power BI & Microsoft Fabric : Copilot Power 
 | # | Module | Contenu | Statut | Durée |
 |---|---|---|---|---|
 | 01 | [Préparation Copilot-ready](modules/01-preparation-copilot-ready/) | Bonnes pratiques de préparation des données et modèles sémantiques pour Copilot, Data Agents | ✅ | ~3 h + ≈ 0,75 j |
-| 02 | [Copilot Power BI](modules/02-copilot-powerbi/) | Desktop & Service : génération de rapports, requêtes en langage naturel, prompting | ✅ | ~3 h + ≈ 0,75 j |
+| 02 | [Copilot Power BI](modules/02-copilot-powerbi/) | Desktop & Service : génération de rapports, requêtes en langage naturel, prompting | ✅ | ~3 h + ≈ 1 j |
 | 03 | [Fabric Data Agents](modules/03-fabric-data-agents/) | Création, configuration, interrogation d'un Data Agent (no-code), matrice d'arbitrage | ✅ | ~3 h + ≈ 0,75 j |
 | 04 | [MCP Data Modelling](modules/04-mcp-data-modelling/) | Code agentique via VS Code : audit & corrections DAX, documentation de masse | ✅ | ~2,5 h + ≈ 0,6 j |
 | 05 | [Fabric Skills Authoring](modules/05-fabric-skills-authoring/) | Charte visuelle, PPT → rapport, refactoring de visuels, traduction de masse | ✅ | ~2,5 h + ≈ 0,75 j |
 | 06 | [Gouvernance & CUs](modules/06-gouvernance-cus/) | Consommation des Capacity Units, seuils d'alerte, prévention du throttling | ✅ | ~2 h + ≈ 0,5 j |
 
-> Durée totale du parcours (modules 01-06, phases 1 + 2) : **≈ 6,25 jours**, + documentation transversale (docs 01-05) et installation des postes ([setup](setup/)).
+> Durée totale du parcours (modules 01-06, phases 1 + 2) : **≈ 6,5 jours**, + documentation transversale (docs 01-05) et installation des postes ([setup](setup/)).
 
 ## Documentation transversale
 

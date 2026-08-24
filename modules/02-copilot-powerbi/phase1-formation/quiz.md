@@ -23,10 +23,10 @@
 - c) La question était en français : la repasser en anglais
 - d) Le modèle n'a pas de table de dates marquée
 
-**4. Vous reposez la même question et obtenez la même réponse alors que vous avez corrigé le modèle. Pourquoi ?**
+**4. Vous avez corrigé le modèle en local, sans republier. Vous reposez la même question dans le service et obtenez la même réponse qu'avant la correction. Pourquoi ?**
 
 - a) Le modèle ne s'est pas actualisé — relancer l'actualisation
-- b) Le même prompt sur un modèle inchangé peut être servi depuis un cache pendant 24 h : effacer la conversation (clear chat) ou reformuler
+- b) Le modèle servi est inchangé (correction non republiée) : le même prompt peut être servi depuis un cache pendant 24 h — effacer la conversation (clear chat) ou reformuler
 
 **5. Peut-on activer Copilot uniquement pour les résumés par e-mail, sans ouvrir les autres expériences ?**
 
@@ -44,7 +44,7 @@
 
 **3. b** — Exemple Microsoft : les colonnes homonymes créent l'ambiguïté ; la préparation (module 01) ou un prompt précis la lève. → [fiche 03](03-questions-de-donnees.md)
 
-**4. b** — Cache de 24 h documenté : clear chat ou reformulation. → [README du module](../README.md)
+**4. b** — Cache de 24 h sur modèle inchangé : clear chat ou reformulation ; et republier la correction pour qu'elle soit prise en compte. → [README du module](../README.md)
 
 **5. b** — Impossible d'activer Copilot expérience par expérience : le réglage est global. → [README du module](../README.md)
 

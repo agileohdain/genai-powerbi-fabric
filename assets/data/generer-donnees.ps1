@@ -6,7 +6,7 @@ New-Item -ItemType Directory -Path $outDir -Force | Out-Null
 $rnd = [System.Random]::new(20260814)
 $fr  = [System.Globalization.CultureInfo]::GetCultureInfo('fr-FR')
 function Num([double]$v) { return ([math]::Round($v, 2)).ToString('0.00', $fr) }
-function Fd([datetime]$d) { return $d.ToString('dd/MM/yyyy') }
+function Fd([datetime]$d) { return $d.ToString('dd-MM-yyyy', [System.Globalization.CultureInfo]::InvariantCulture) }
 function PickW([array]$vals, [array]$ws) {
   $tot = 0.0; foreach ($w in $ws) { $tot += $w }
   $r = $rnd.NextDouble() * $tot; $c = 0.0

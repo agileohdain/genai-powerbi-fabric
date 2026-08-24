@@ -48,7 +48,7 @@ Votre rôle : **garant de la méthode et du rythme**. Le contenu vit dans les mo
 
 ## Choisir le format du parcours
 
-Deux déclinaisons du parcours (≈ 6,25 jours de contenu), toutes deux indicatives — à ajuster selon la disponibilité des participants, l'état des modèles du client et les étapes admin ([docs/01](01-prerequis-admin/)) qui doivent être faites **avant** le premier jour.
+Deux déclinaisons du parcours (≈ 6,5 jours de contenu), toutes deux indicatives — à ajuster selon la disponibilité des participants, l'état des modèles du client et les étapes admin ([docs/01](01-prerequis-admin/)) qui doivent être faites **avant** le premier jour.
 
 ### Intensif — 8 jours ouvrés
 

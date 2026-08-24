@@ -11,3 +11,6 @@
 # OS
 Thumbs.db
 .DS_Store
+
+# Config outil locale (ne pas propager dans les copies client)
+opencode.json
